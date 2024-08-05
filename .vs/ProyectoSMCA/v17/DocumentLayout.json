@@ -1,0 +1,343 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Usuario\\Documents\\adrian\\ProyectoSMCA\\ProyectoSMCA\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A9B69105-60EF-4C41-89D3-8AB4F35FD95D}|WCF_ESCUELA\\WCF_ESCUELA.csproj|c:\\users\\usuario\\documents\\adrian\\proyectosmca\\proyectosmca\\wcf_escuela\\servicioconsultas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A9B69105-60EF-4C41-89D3-8AB4F35FD95D}|WCF_ESCUELA\\WCF_ESCUELA.csproj|solutionrelative:wcf_escuela\\servicioconsultas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{646D6036-AA31-45FA-8A78-31631281B08D}|WEB CONSULTAS\\WEB CONSULTAS.csproj|c:\\users\\usuario\\documents\\adrian\\proyectosmca\\proyectosmca\\web consultas\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{646D6036-AA31-45FA-8A78-31631281B08D}|WEB CONSULTAS\\WEB CONSULTAS.csproj|solutionrelative:web consultas\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{646D6036-AA31-45FA-8A78-31631281B08D}|WEB CONSULTAS\\WEB CONSULTAS.csproj|c:\\users\\usuario\\documents\\adrian\\proyectosmca\\proyectosmca\\web consultas\\views\\cursos\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{646D6036-AA31-45FA-8A78-31631281B08D}|WEB CONSULTAS\\WEB CONSULTAS.csproj|solutionrelative:web consultas\\views\\cursos\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{646D6036-AA31-45FA-8A78-31631281B08D}|WEB CONSULTAS\\WEB CONSULTAS.csproj|c:\\users\\usuario\\documents\\adrian\\proyectosmca\\proyectosmca\\web consultas\\views\\estudiantes\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{646D6036-AA31-45FA-8A78-31631281B08D}|WEB CONSULTAS\\WEB CONSULTAS.csproj|solutionrelative:web consultas\\views\\estudiantes\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{646D6036-AA31-45FA-8A78-31631281B08D}|WEB CONSULTAS\\WEB CONSULTAS.csproj|c:\\users\\usuario\\documents\\adrian\\proyectosmca\\proyectosmca\\web consultas\\views\\estudiantes\\grados.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{646D6036-AA31-45FA-8A78-31631281B08D}|WEB CONSULTAS\\WEB CONSULTAS.csproj|solutionrelative:web consultas\\views\\estudiantes\\grados.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{646D6036-AA31-45FA-8A78-31631281B08D}|WEB CONSULTAS\\WEB CONSULTAS.csproj|c:\\users\\usuario\\documents\\adrian\\proyectosmca\\proyectosmca\\web consultas\\views\\secciones\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{646D6036-AA31-45FA-8A78-31631281B08D}|WEB CONSULTAS\\WEB CONSULTAS.csproj|solutionrelative:web consultas\\views\\secciones\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{646D6036-AA31-45FA-8A78-31631281B08D}|WEB CONSULTAS\\WEB CONSULTAS.csproj|c:\\users\\usuario\\documents\\adrian\\proyectosmca\\proyectosmca\\web consultas\\views\\profesores\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{646D6036-AA31-45FA-8A78-31631281B08D}|WEB CONSULTAS\\WEB CONSULTAS.csproj|solutionrelative:web consultas\\views\\profesores\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{646D6036-AA31-45FA-8A78-31631281B08D}|WEB CONSULTAS\\WEB CONSULTAS.csproj|c:\\users\\usuario\\documents\\adrian\\proyectosmca\\proyectosmca\\web consultas\\views\\profesores\\especialidad.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{646D6036-AA31-45FA-8A78-31631281B08D}|WEB CONSULTAS\\WEB CONSULTAS.csproj|solutionrelative:web consultas\\views\\profesores\\especialidad.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{646D6036-AA31-45FA-8A78-31631281B08D}|WEB CONSULTAS\\WEB CONSULTAS.csproj|c:\\users\\usuario\\documents\\adrian\\proyectosmca\\proyectosmca\\web consultas\\views\\matriculas\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{646D6036-AA31-45FA-8A78-31631281B08D}|WEB CONSULTAS\\WEB CONSULTAS.csproj|solutionrelative:web consultas\\views\\matriculas\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{646D6036-AA31-45FA-8A78-31631281B08D}|WEB CONSULTAS\\WEB CONSULTAS.csproj|c:\\users\\usuario\\documents\\adrian\\proyectosmca\\proyectosmca\\web consultas\\views\\matriculas\\fechas.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{646D6036-AA31-45FA-8A78-31631281B08D}|WEB CONSULTAS\\WEB CONSULTAS.csproj|solutionrelative:web consultas\\views\\matriculas\\fechas.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{646D6036-AA31-45FA-8A78-31631281B08D}|WEB CONSULTAS\\WEB CONSULTAS.csproj|c:\\users\\usuario\\documents\\adrian\\proyectosmca\\proyectosmca\\web consultas\\views\\matriculas\\dni.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{646D6036-AA31-45FA-8A78-31631281B08D}|WEB CONSULTAS\\WEB CONSULTAS.csproj|solutionrelative:web consultas\\views\\matriculas\\dni.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{646D6036-AA31-45FA-8A78-31631281B08D}|WEB CONSULTAS\\WEB CONSULTAS.csproj|c:\\users\\usuario\\documents\\adrian\\proyectosmca\\proyectosmca\\web consultas\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{646D6036-AA31-45FA-8A78-31631281B08D}|WEB CONSULTAS\\WEB CONSULTAS.csproj|solutionrelative:web consultas\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{646D6036-AA31-45FA-8A78-31631281B08D}|WEB CONSULTAS\\WEB CONSULTAS.csproj|c:\\users\\usuario\\documents\\adrian\\proyectosmca\\proyectosmca\\web consultas\\styles.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{646D6036-AA31-45FA-8A78-31631281B08D}|WEB CONSULTAS\\WEB CONSULTAS.csproj|solutionrelative:web consultas\\styles.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A9B69105-60EF-4C41-89D3-8AB4F35FD95D}|WCF_ESCUELA\\WCF_ESCUELA.csproj|c:\\users\\usuario\\documents\\adrian\\proyectosmca\\proyectosmca\\wcf_escuela\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{A9B69105-60EF-4C41-89D3-8AB4F35FD95D}|WCF_ESCUELA\\WCF_ESCUELA.csproj|solutionrelative:wcf_escuela\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C0BE730F-FBFB-4471-8334-0BF97E6CF1D4}|Windows_Tes\\Windows_Tes.csproj|c:\\users\\usuario\\documents\\adrian\\proyectosmca\\proyectosmca\\windows_tes\\properties\\resources.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C0BE730F-FBFB-4471-8334-0BF97E6CF1D4}|Windows_Tes\\Windows_Tes.csproj|solutionrelative:windows_tes\\properties\\resources.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C0BE730F-FBFB-4471-8334-0BF97E6CF1D4}|Windows_Tes\\Windows_Tes.csproj|c:\\users\\usuario\\documents\\adrian\\proyectosmca\\proyectosmca\\windows_tes\\mdiprincipal.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C0BE730F-FBFB-4471-8334-0BF97E6CF1D4}|Windows_Tes\\Windows_Tes.csproj|solutionrelative:windows_tes\\mdiprincipal.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C0BE730F-FBFB-4471-8334-0BF97E6CF1D4}|Windows_Tes\\Windows_Tes.csproj|C:\\Users\\Usuario\\Documents\\adrian\\ProyectoSMCA\\ProyectoSMCA\\windows_tes\\mdiprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C0BE730F-FBFB-4471-8334-0BF97E6CF1D4}|Windows_Tes\\Windows_Tes.csproj|solutionrelative:windows_tes\\mdiprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{a34b1c5d-6d37-4a0c-a8b0-99f8e8158b48}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ServicioConsultas.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\adrian\\ProyectoSMCA\\ProyectoSMCA\\WCF_ESCUELA\\ServicioConsultas.cs",
+              "RelativeDocumentMoniker": "WCF_ESCUELA\\ServicioConsultas.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Documents\\adrian\\ProyectoSMCA\\ProyectoSMCA\\WCF_ESCUELA\\ServicioConsultas.cs",
+              "RelativeToolTip": "WCF_ESCUELA\\ServicioConsultas.cs",
+              "ViewState": "AQIAANEAAAAAAAAAAAAowN8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T01:22:36.341Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Grados.cshtml",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\adrian\\ProyectoSMCA\\ProyectoSMCA\\WEB CONSULTAS\\Views\\Estudiantes\\Grados.cshtml",
+              "RelativeDocumentMoniker": "WEB CONSULTAS\\Views\\Estudiantes\\Grados.cshtml",
+              "ToolTip": "C:\\Users\\Usuario\\Documents\\adrian\\ProyectoSMCA\\ProyectoSMCA\\WEB CONSULTAS\\Views\\Estudiantes\\Grados.cshtml",
+              "RelativeToolTip": "WEB CONSULTAS\\Views\\Estudiantes\\Grados.cshtml",
+              "ViewState": "AQIAAAIAAAAAAAAAAAAAAAkAAABzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-23T01:08:21.171Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\adrian\\ProyectoSMCA\\ProyectoSMCA\\WEB CONSULTAS\\Views\\Estudiantes\\Index.cshtml",
+              "RelativeDocumentMoniker": "WEB CONSULTAS\\Views\\Estudiantes\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Usuario\\Documents\\adrian\\ProyectoSMCA\\ProyectoSMCA\\WEB CONSULTAS\\Views\\Estudiantes\\Index.cshtml",
+              "RelativeToolTip": "WEB CONSULTAS\\Views\\Estudiantes\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAABzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-23T01:07:27.115Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\adrian\\ProyectoSMCA\\ProyectoSMCA\\WEB CONSULTAS\\Views\\Cursos\\Index.cshtml",
+              "RelativeDocumentMoniker": "WEB CONSULTAS\\Views\\Cursos\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Usuario\\Documents\\adrian\\ProyectoSMCA\\ProyectoSMCA\\WEB CONSULTAS\\Views\\Cursos\\Index.cshtml",
+              "RelativeToolTip": "WEB CONSULTAS\\Views\\Cursos\\Index.cshtml",
+              "ViewState": "AQIAABgAAAAAAAAAAAAAAAkAAABzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-23T01:07:55.451Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\adrian\\ProyectoSMCA\\ProyectoSMCA\\WEB CONSULTAS\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "WEB CONSULTAS\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\Usuario\\Documents\\adrian\\ProyectoSMCA\\ProyectoSMCA\\WEB CONSULTAS\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "WEB CONSULTAS\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-23T00:48:38.659Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\adrian\\ProyectoSMCA\\ProyectoSMCA\\WEB CONSULTAS\\Views\\Secciones\\Index.cshtml",
+              "RelativeDocumentMoniker": "WEB CONSULTAS\\Views\\Secciones\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Usuario\\Documents\\adrian\\ProyectoSMCA\\ProyectoSMCA\\WEB CONSULTAS\\Views\\Secciones\\Index.cshtml",
+              "RelativeToolTip": "WEB CONSULTAS\\Views\\Secciones\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAABzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-23T01:06:48.747Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\adrian\\ProyectoSMCA\\ProyectoSMCA\\WEB CONSULTAS\\Views\\Profesores\\Index.cshtml",
+              "RelativeDocumentMoniker": "WEB CONSULTAS\\Views\\Profesores\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Usuario\\Documents\\adrian\\ProyectoSMCA\\ProyectoSMCA\\WEB CONSULTAS\\Views\\Profesores\\Index.cshtml",
+              "RelativeToolTip": "WEB CONSULTAS\\Views\\Profesores\\Index.cshtml",
+              "ViewState": "AQIAAAIAAAAAAAAAAAAAAAkAAABzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-23T01:07:01.652Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Especialidad.cshtml",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\adrian\\ProyectoSMCA\\ProyectoSMCA\\WEB CONSULTAS\\Views\\Profesores\\Especialidad.cshtml",
+              "RelativeDocumentMoniker": "WEB CONSULTAS\\Views\\Profesores\\Especialidad.cshtml",
+              "ToolTip": "C:\\Users\\Usuario\\Documents\\adrian\\ProyectoSMCA\\ProyectoSMCA\\WEB CONSULTAS\\Views\\Profesores\\Especialidad.cshtml",
+              "RelativeToolTip": "WEB CONSULTAS\\Views\\Profesores\\Especialidad.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAABlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-23T01:08:49.083Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\adrian\\ProyectoSMCA\\ProyectoSMCA\\WEB CONSULTAS\\Views\\Matriculas\\Index.cshtml",
+              "RelativeDocumentMoniker": "WEB CONSULTAS\\Views\\Matriculas\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Usuario\\Documents\\adrian\\ProyectoSMCA\\ProyectoSMCA\\WEB CONSULTAS\\Views\\Matriculas\\Index.cshtml",
+              "RelativeToolTip": "WEB CONSULTAS\\Views\\Matriculas\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAABzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-23T00:14:59.562Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Fechas.cshtml",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\adrian\\ProyectoSMCA\\ProyectoSMCA\\WEB CONSULTAS\\Views\\Matriculas\\Fechas.cshtml",
+              "RelativeDocumentMoniker": "WEB CONSULTAS\\Views\\Matriculas\\Fechas.cshtml",
+              "ToolTip": "C:\\Users\\Usuario\\Documents\\adrian\\ProyectoSMCA\\ProyectoSMCA\\WEB CONSULTAS\\Views\\Matriculas\\Fechas.cshtml",
+              "RelativeToolTip": "WEB CONSULTAS\\Views\\Matriculas\\Fechas.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAABzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-23T01:08:38.331Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "DNI.cshtml",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\adrian\\ProyectoSMCA\\ProyectoSMCA\\WEB CONSULTAS\\Views\\Matriculas\\DNI.cshtml",
+              "RelativeDocumentMoniker": "WEB CONSULTAS\\Views\\Matriculas\\DNI.cshtml",
+              "ToolTip": "C:\\Users\\Usuario\\Documents\\adrian\\ProyectoSMCA\\ProyectoSMCA\\WEB CONSULTAS\\Views\\Matriculas\\DNI.cshtml",
+              "RelativeToolTip": "WEB CONSULTAS\\Views\\Matriculas\\DNI.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAABzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-23T01:08:31.46Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\adrian\\ProyectoSMCA\\ProyectoSMCA\\WEB CONSULTAS\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "WEB CONSULTAS\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Usuario\\Documents\\adrian\\ProyectoSMCA\\ProyectoSMCA\\WEB CONSULTAS\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "WEB CONSULTAS\\Views\\Home\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-23T01:07:16.219Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "styles.css",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\adrian\\ProyectoSMCA\\ProyectoSMCA\\WEB CONSULTAS\\styles.css",
+              "RelativeDocumentMoniker": "WEB CONSULTAS\\styles.css",
+              "ToolTip": "C:\\Users\\Usuario\\Documents\\adrian\\ProyectoSMCA\\ProyectoSMCA\\WEB CONSULTAS\\styles.css",
+              "RelativeToolTip": "WEB CONSULTAS\\styles.css",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-07-23T00:56:52.813Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "App.config",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\adrian\\ProyectoSMCA\\ProyectoSMCA\\WCF_ESCUELA\\App.config",
+              "RelativeDocumentMoniker": "WCF_ESCUELA\\App.config",
+              "ToolTip": "C:\\Users\\Usuario\\Documents\\adrian\\ProyectoSMCA\\ProyectoSMCA\\WCF_ESCUELA\\App.config",
+              "RelativeToolTip": "WCF_ESCUELA\\App.config",
+              "ViewState": "AQIAAJMAAAAAAAAAAAAAAKkAAABBAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-07-23T00:08:32.434Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Resources.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\adrian\\ProyectoSMCA\\ProyectoSMCA\\Windows_Tes\\Properties\\Resources.Designer.cs",
+              "RelativeDocumentMoniker": "Windows_Tes\\Properties\\Resources.Designer.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Documents\\adrian\\ProyectoSMCA\\ProyectoSMCA\\Windows_Tes\\Properties\\Resources.Designer.cs",
+              "RelativeToolTip": "Windows_Tes\\Properties\\Resources.Designer.cs",
+              "ViewState": "AQIAABgAAAAAAAAAAAA6wCkAAAB9AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-22T00:32:56.286Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "MDIPrincipal.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\adrian\\ProyectoSMCA\\ProyectoSMCA\\Windows_Tes\\MDIPrincipal.cs",
+              "RelativeDocumentMoniker": "Windows_Tes\\MDIPrincipal.cs",
+              "ToolTip": "D:\\JAIRO\\Aplicaciones2\\ProyectoSMCA\\Windows_Tes\\MDIPrincipal.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-22T00:18:25.439Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "MDIPrincipal.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\adrian\\ProyectoSMCA\\ProyectoSMCA\\Windows_Tes\\MDIPrincipal.Designer.cs",
+              "RelativeDocumentMoniker": "Windows_Tes\\MDIPrincipal.Designer.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Documents\\adrian\\ProyectoSMCA\\ProyectoSMCA\\Windows_Tes\\MDIPrincipal.Designer.cs",
+              "RelativeToolTip": "Windows_Tes\\MDIPrincipal.Designer.cs",
+              "ViewState": "AQIAACEAAAAAAAAAAAAowDYAAAA/AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-22T00:03:15.266Z"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 441,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
