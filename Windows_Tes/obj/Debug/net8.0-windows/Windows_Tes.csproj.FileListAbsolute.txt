@@ -1,0 +1,247 @@
+C:\Users\adria\Documents\Isil\DESARROLLO DE APLIACIONES 2\delfgrupo\Proyecto-DAII\ProyectoSMCA-PRE\ProyectoSMCA\Windows_Tes\bin\Debug\net8.0-windows\Windows_Tes.exe
+C:\Users\adria\Documents\Isil\DESARROLLO DE APLIACIONES 2\delfgrupo\Proyecto-DAII\ProyectoSMCA-PRE\ProyectoSMCA\Windows_Tes\bin\Debug\net8.0-windows\Windows_Tes.deps.json
+C:\Users\adria\Documents\Isil\DESARROLLO DE APLIACIONES 2\delfgrupo\Proyecto-DAII\ProyectoSMCA-PRE\ProyectoSMCA\Windows_Tes\bin\Debug\net8.0-windows\Windows_Tes.runtimeconfig.json
+C:\Users\adria\Documents\Isil\DESARROLLO DE APLIACIONES 2\delfgrupo\Proyecto-DAII\ProyectoSMCA-PRE\ProyectoSMCA\Windows_Tes\bin\Debug\net8.0-windows\Windows_Tes.dll
+C:\Users\adria\Documents\Isil\DESARROLLO DE APLIACIONES 2\delfgrupo\Proyecto-DAII\ProyectoSMCA-PRE\ProyectoSMCA\Windows_Tes\bin\Debug\net8.0-windows\Windows_Tes.pdb
+C:\Users\adria\Documents\Isil\DESARROLLO DE APLIACIONES 2\delfgrupo\Proyecto-DAII\ProyectoSMCA-PRE\ProyectoSMCA\Windows_Tes\bin\Debug\net8.0-windows\Microsoft.Extensions.ObjectPool.dll
+C:\Users\adria\Documents\Isil\DESARROLLO DE APLIACIONES 2\delfgrupo\Proyecto-DAII\ProyectoSMCA-PRE\ProyectoSMCA\Windows_Tes\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Logging.dll
+C:\Users\adria\Documents\Isil\DESARROLLO DE APLIACIONES 2\delfgrupo\Proyecto-DAII\ProyectoSMCA-PRE\ProyectoSMCA\Windows_Tes\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Protocols.WsTrust.dll
+C:\Users\adria\Documents\Isil\DESARROLLO DE APLIACIONES 2\delfgrupo\Proyecto-DAII\ProyectoSMCA-PRE\ProyectoSMCA\Windows_Tes\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Tokens.dll
+C:\Users\adria\Documents\Isil\DESARROLLO DE APLIACIONES 2\delfgrupo\Proyecto-DAII\ProyectoSMCA-PRE\ProyectoSMCA\Windows_Tes\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Tokens.Saml.dll
+C:\Users\adria\Documents\Isil\DESARROLLO DE APLIACIONES 2\delfgrupo\Proyecto-DAII\ProyectoSMCA-PRE\ProyectoSMCA\Windows_Tes\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Xml.dll
+C:\Users\adria\Documents\Isil\DESARROLLO DE APLIACIONES 2\delfgrupo\Proyecto-DAII\ProyectoSMCA-PRE\ProyectoSMCA\Windows_Tes\bin\Debug\net8.0-windows\System.ServiceModel.Duplex.dll
+C:\Users\adria\Documents\Isil\DESARROLLO DE APLIACIONES 2\delfgrupo\Proyecto-DAII\ProyectoSMCA-PRE\ProyectoSMCA\Windows_Tes\bin\Debug\net8.0-windows\System.ServiceModel.Federation.dll
+C:\Users\adria\Documents\Isil\DESARROLLO DE APLIACIONES 2\delfgrupo\Proyecto-DAII\ProyectoSMCA-PRE\ProyectoSMCA\Windows_Tes\bin\Debug\net8.0-windows\System.ServiceModel.Http.dll
+C:\Users\adria\Documents\Isil\DESARROLLO DE APLIACIONES 2\delfgrupo\Proyecto-DAII\ProyectoSMCA-PRE\ProyectoSMCA\Windows_Tes\bin\Debug\net8.0-windows\System.ServiceModel.NetFramingBase.dll
+C:\Users\adria\Documents\Isil\DESARROLLO DE APLIACIONES 2\delfgrupo\Proyecto-DAII\ProyectoSMCA-PRE\ProyectoSMCA\Windows_Tes\bin\Debug\net8.0-windows\System.ServiceModel.NetNamedPipe.dll
+C:\Users\adria\Documents\Isil\DESARROLLO DE APLIACIONES 2\delfgrupo\Proyecto-DAII\ProyectoSMCA-PRE\ProyectoSMCA\Windows_Tes\bin\Debug\net8.0-windows\System.ServiceModel.NetTcp.dll
+C:\Users\adria\Documents\Isil\DESARROLLO DE APLIACIONES 2\delfgrupo\Proyecto-DAII\ProyectoSMCA-PRE\ProyectoSMCA\Windows_Tes\bin\Debug\net8.0-windows\System.ServiceModel.Primitives.dll
+C:\Users\adria\Documents\Isil\DESARROLLO DE APLIACIONES 2\delfgrupo\Proyecto-DAII\ProyectoSMCA-PRE\ProyectoSMCA\Windows_Tes\bin\Debug\net8.0-windows\System.ServiceModel.Security.dll
+C:\Users\adria\Documents\Isil\DESARROLLO DE APLIACIONES 2\delfgrupo\Proyecto-DAII\ProyectoSMCA-PRE\ProyectoSMCA\Windows_Tes\bin\Debug\net8.0-windows\cs\System.ServiceModel.Federation.resources.dll
+C:\Users\adria\Documents\Isil\DESARROLLO DE APLIACIONES 2\delfgrupo\Proyecto-DAII\ProyectoSMCA-PRE\ProyectoSMCA\Windows_Tes\bin\Debug\net8.0-windows\de\System.ServiceModel.Federation.resources.dll
+C:\Users\adria\Documents\Isil\DESARROLLO DE APLIACIONES 2\delfgrupo\Proyecto-DAII\ProyectoSMCA-PRE\ProyectoSMCA\Windows_Tes\bin\Debug\net8.0-windows\es\System.ServiceModel.Federation.resources.dll
+C:\Users\adria\Documents\Isil\DESARROLLO DE APLIACIONES 2\delfgrupo\Proyecto-DAII\ProyectoSMCA-PRE\ProyectoSMCA\Windows_Tes\bin\Debug\net8.0-windows\fr\System.ServiceModel.Federation.resources.dll
+C:\Users\adria\Documents\Isil\DESARROLLO DE APLIACIONES 2\delfgrupo\Proyecto-DAII\ProyectoSMCA-PRE\ProyectoSMCA\Windows_Tes\bin\Debug\net8.0-windows\it\System.ServiceModel.Federation.resources.dll
+C:\Users\adria\Documents\Isil\DESARROLLO DE APLIACIONES 2\delfgrupo\Proyecto-DAII\ProyectoSMCA-PRE\ProyectoSMCA\Windows_Tes\bin\Debug\net8.0-windows\ja\System.ServiceModel.Federation.resources.dll
+C:\Users\adria\Documents\Isil\DESARROLLO DE APLIACIONES 2\delfgrupo\Proyecto-DAII\ProyectoSMCA-PRE\ProyectoSMCA\Windows_Tes\bin\Debug\net8.0-windows\ko\System.ServiceModel.Federation.resources.dll
+C:\Users\adria\Documents\Isil\DESARROLLO DE APLIACIONES 2\delfgrupo\Proyecto-DAII\ProyectoSMCA-PRE\ProyectoSMCA\Windows_Tes\bin\Debug\net8.0-windows\pl\System.ServiceModel.Federation.resources.dll
+C:\Users\adria\Documents\Isil\DESARROLLO DE APLIACIONES 2\delfgrupo\Proyecto-DAII\ProyectoSMCA-PRE\ProyectoSMCA\Windows_Tes\bin\Debug\net8.0-windows\pt-BR\System.ServiceModel.Federation.resources.dll
+C:\Users\adria\Documents\Isil\DESARROLLO DE APLIACIONES 2\delfgrupo\Proyecto-DAII\ProyectoSMCA-PRE\ProyectoSMCA\Windows_Tes\bin\Debug\net8.0-windows\ru\System.ServiceModel.Federation.resources.dll
+C:\Users\adria\Documents\Isil\DESARROLLO DE APLIACIONES 2\delfgrupo\Proyecto-DAII\ProyectoSMCA-PRE\ProyectoSMCA\Windows_Tes\bin\Debug\net8.0-windows\tr\System.ServiceModel.Federation.resources.dll
+C:\Users\adria\Documents\Isil\DESARROLLO DE APLIACIONES 2\delfgrupo\Proyecto-DAII\ProyectoSMCA-PRE\ProyectoSMCA\Windows_Tes\bin\Debug\net8.0-windows\zh-Hans\System.ServiceModel.Federation.resources.dll
+C:\Users\adria\Documents\Isil\DESARROLLO DE APLIACIONES 2\delfgrupo\Proyecto-DAII\ProyectoSMCA-PRE\ProyectoSMCA\Windows_Tes\bin\Debug\net8.0-windows\zh-Hant\System.ServiceModel.Federation.resources.dll
+C:\Users\adria\Documents\Isil\DESARROLLO DE APLIACIONES 2\delfgrupo\Proyecto-DAII\ProyectoSMCA-PRE\ProyectoSMCA\Windows_Tes\bin\Debug\net8.0-windows\cs\System.ServiceModel.Http.resources.dll
+C:\Users\adria\Documents\Isil\DESARROLLO DE APLIACIONES 2\delfgrupo\Proyecto-DAII\ProyectoSMCA-PRE\ProyectoSMCA\Windows_Tes\bin\Debug\net8.0-windows\de\System.ServiceModel.Http.resources.dll
+C:\Users\adria\Documents\Isil\DESARROLLO DE APLIACIONES 2\delfgrupo\Proyecto-DAII\ProyectoSMCA-PRE\ProyectoSMCA\Windows_Tes\bin\Debug\net8.0-windows\es\System.ServiceModel.Http.resources.dll
+C:\Users\adria\Documents\Isil\DESARROLLO DE APLIACIONES 2\delfgrupo\Proyecto-DAII\ProyectoSMCA-PRE\ProyectoSMCA\Windows_Tes\bin\Debug\net8.0-windows\fr\System.ServiceModel.Http.resources.dll
+C:\Users\adria\Documents\Isil\DESARROLLO DE APLIACIONES 2\delfgrupo\Proyecto-DAII\ProyectoSMCA-PRE\ProyectoSMCA\Windows_Tes\bin\Debug\net8.0-windows\it\System.ServiceModel.Http.resources.dll
+C:\Users\adria\Documents\Isil\DESARROLLO DE APLIACIONES 2\delfgrupo\Proyecto-DAII\ProyectoSMCA-PRE\ProyectoSMCA\Windows_Tes\bin\Debug\net8.0-windows\ja\System.ServiceModel.Http.resources.dll
+C:\Users\adria\Documents\Isil\DESARROLLO DE APLIACIONES 2\delfgrupo\Proyecto-DAII\ProyectoSMCA-PRE\ProyectoSMCA\Windows_Tes\bin\Debug\net8.0-windows\ko\System.ServiceModel.Http.resources.dll
+C:\Users\adria\Documents\Isil\DESARROLLO DE APLIACIONES 2\delfgrupo\Proyecto-DAII\ProyectoSMCA-PRE\ProyectoSMCA\Windows_Tes\bin\Debug\net8.0-windows\pl\System.ServiceModel.Http.resources.dll
+C:\Users\adria\Documents\Isil\DESARROLLO DE APLIACIONES 2\delfgrupo\Proyecto-DAII\ProyectoSMCA-PRE\ProyectoSMCA\Windows_Tes\bin\Debug\net8.0-windows\pt-BR\System.ServiceModel.Http.resources.dll
+C:\Users\adria\Documents\Isil\DESARROLLO DE APLIACIONES 2\delfgrupo\Proyecto-DAII\ProyectoSMCA-PRE\ProyectoSMCA\Windows_Tes\bin\Debug\net8.0-windows\ru\System.ServiceModel.Http.resources.dll
+C:\Users\adria\Documents\Isil\DESARROLLO DE APLIACIONES 2\delfgrupo\Proyecto-DAII\ProyectoSMCA-PRE\ProyectoSMCA\Windows_Tes\bin\Debug\net8.0-windows\tr\System.ServiceModel.Http.resources.dll
+C:\Users\adria\Documents\Isil\DESARROLLO DE APLIACIONES 2\delfgrupo\Proyecto-DAII\ProyectoSMCA-PRE\ProyectoSMCA\Windows_Tes\bin\Debug\net8.0-windows\zh-Hans\System.ServiceModel.Http.resources.dll
+C:\Users\adria\Documents\Isil\DESARROLLO DE APLIACIONES 2\delfgrupo\Proyecto-DAII\ProyectoSMCA-PRE\ProyectoSMCA\Windows_Tes\bin\Debug\net8.0-windows\zh-Hant\System.ServiceModel.Http.resources.dll
+C:\Users\adria\Documents\Isil\DESARROLLO DE APLIACIONES 2\delfgrupo\Proyecto-DAII\ProyectoSMCA-PRE\ProyectoSMCA\Windows_Tes\bin\Debug\net8.0-windows\cs\System.ServiceModel.NetFramingBase.resources.dll
+C:\Users\adria\Documents\Isil\DESARROLLO DE APLIACIONES 2\delfgrupo\Proyecto-DAII\ProyectoSMCA-PRE\ProyectoSMCA\Windows_Tes\bin\Debug\net8.0-windows\de\System.ServiceModel.NetFramingBase.resources.dll
+C:\Users\adria\Documents\Isil\DESARROLLO DE APLIACIONES 2\delfgrupo\Proyecto-DAII\ProyectoSMCA-PRE\ProyectoSMCA\Windows_Tes\bin\Debug\net8.0-windows\es\System.ServiceModel.NetFramingBase.resources.dll
+C:\Users\adria\Documents\Isil\DESARROLLO DE APLIACIONES 2\delfgrupo\Proyecto-DAII\ProyectoSMCA-PRE\ProyectoSMCA\Windows_Tes\bin\Debug\net8.0-windows\fr\System.ServiceModel.NetFramingBase.resources.dll
+C:\Users\adria\Documents\Isil\DESARROLLO DE APLIACIONES 2\delfgrupo\Proyecto-DAII\ProyectoSMCA-PRE\ProyectoSMCA\Windows_Tes\bin\Debug\net8.0-windows\it\System.ServiceModel.NetFramingBase.resources.dll
+C:\Users\adria\Documents\Isil\DESARROLLO DE APLIACIONES 2\delfgrupo\Proyecto-DAII\ProyectoSMCA-PRE\ProyectoSMCA\Windows_Tes\bin\Debug\net8.0-windows\ja\System.ServiceModel.NetFramingBase.resources.dll
+C:\Users\adria\Documents\Isil\DESARROLLO DE APLIACIONES 2\delfgrupo\Proyecto-DAII\ProyectoSMCA-PRE\ProyectoSMCA\Windows_Tes\bin\Debug\net8.0-windows\ko\System.ServiceModel.NetFramingBase.resources.dll
+C:\Users\adria\Documents\Isil\DESARROLLO DE APLIACIONES 2\delfgrupo\Proyecto-DAII\ProyectoSMCA-PRE\ProyectoSMCA\Windows_Tes\bin\Debug\net8.0-windows\pl\System.ServiceModel.NetFramingBase.resources.dll
+C:\Users\adria\Documents\Isil\DESARROLLO DE APLIACIONES 2\delfgrupo\Proyecto-DAII\ProyectoSMCA-PRE\ProyectoSMCA\Windows_Tes\bin\Debug\net8.0-windows\pt-BR\System.ServiceModel.NetFramingBase.resources.dll
+C:\Users\adria\Documents\Isil\DESARROLLO DE APLIACIONES 2\delfgrupo\Proyecto-DAII\ProyectoSMCA-PRE\ProyectoSMCA\Windows_Tes\bin\Debug\net8.0-windows\ru\System.ServiceModel.NetFramingBase.resources.dll
+C:\Users\adria\Documents\Isil\DESARROLLO DE APLIACIONES 2\delfgrupo\Proyecto-DAII\ProyectoSMCA-PRE\ProyectoSMCA\Windows_Tes\bin\Debug\net8.0-windows\tr\System.ServiceModel.NetFramingBase.resources.dll
+C:\Users\adria\Documents\Isil\DESARROLLO DE APLIACIONES 2\delfgrupo\Proyecto-DAII\ProyectoSMCA-PRE\ProyectoSMCA\Windows_Tes\bin\Debug\net8.0-windows\zh-Hans\System.ServiceModel.NetFramingBase.resources.dll
+C:\Users\adria\Documents\Isil\DESARROLLO DE APLIACIONES 2\delfgrupo\Proyecto-DAII\ProyectoSMCA-PRE\ProyectoSMCA\Windows_Tes\bin\Debug\net8.0-windows\zh-Hant\System.ServiceModel.NetFramingBase.resources.dll
+C:\Users\adria\Documents\Isil\DESARROLLO DE APLIACIONES 2\delfgrupo\Proyecto-DAII\ProyectoSMCA-PRE\ProyectoSMCA\Windows_Tes\bin\Debug\net8.0-windows\cs\System.ServiceModel.NetNamedPipe.resources.dll
+C:\Users\adria\Documents\Isil\DESARROLLO DE APLIACIONES 2\delfgrupo\Proyecto-DAII\ProyectoSMCA-PRE\ProyectoSMCA\Windows_Tes\bin\Debug\net8.0-windows\de\System.ServiceModel.NetNamedPipe.resources.dll
+C:\Users\adria\Documents\Isil\DESARROLLO DE APLIACIONES 2\delfgrupo\Proyecto-DAII\ProyectoSMCA-PRE\ProyectoSMCA\Windows_Tes\bin\Debug\net8.0-windows\es\System.ServiceModel.NetNamedPipe.resources.dll
+C:\Users\adria\Documents\Isil\DESARROLLO DE APLIACIONES 2\delfgrupo\Proyecto-DAII\ProyectoSMCA-PRE\ProyectoSMCA\Windows_Tes\bin\Debug\net8.0-windows\fr\System.ServiceModel.NetNamedPipe.resources.dll
+C:\Users\adria\Documents\Isil\DESARROLLO DE APLIACIONES 2\delfgrupo\Proyecto-DAII\ProyectoSMCA-PRE\ProyectoSMCA\Windows_Tes\bin\Debug\net8.0-windows\it\System.ServiceModel.NetNamedPipe.resources.dll
+C:\Users\adria\Documents\Isil\DESARROLLO DE APLIACIONES 2\delfgrupo\Proyecto-DAII\ProyectoSMCA-PRE\ProyectoSMCA\Windows_Tes\bin\Debug\net8.0-windows\ja\System.ServiceModel.NetNamedPipe.resources.dll
+C:\Users\adria\Documents\Isil\DESARROLLO DE APLIACIONES 2\delfgrupo\Proyecto-DAII\ProyectoSMCA-PRE\ProyectoSMCA\Windows_Tes\bin\Debug\net8.0-windows\ko\System.ServiceModel.NetNamedPipe.resources.dll
+C:\Users\adria\Documents\Isil\DESARROLLO DE APLIACIONES 2\delfgrupo\Proyecto-DAII\ProyectoSMCA-PRE\ProyectoSMCA\Windows_Tes\bin\Debug\net8.0-windows\pl\System.ServiceModel.NetNamedPipe.resources.dll
+C:\Users\adria\Documents\Isil\DESARROLLO DE APLIACIONES 2\delfgrupo\Proyecto-DAII\ProyectoSMCA-PRE\ProyectoSMCA\Windows_Tes\bin\Debug\net8.0-windows\pt-BR\System.ServiceModel.NetNamedPipe.resources.dll
+C:\Users\adria\Documents\Isil\DESARROLLO DE APLIACIONES 2\delfgrupo\Proyecto-DAII\ProyectoSMCA-PRE\ProyectoSMCA\Windows_Tes\bin\Debug\net8.0-windows\ru\System.ServiceModel.NetNamedPipe.resources.dll
+C:\Users\adria\Documents\Isil\DESARROLLO DE APLIACIONES 2\delfgrupo\Proyecto-DAII\ProyectoSMCA-PRE\ProyectoSMCA\Windows_Tes\bin\Debug\net8.0-windows\tr\System.ServiceModel.NetNamedPipe.resources.dll
+C:\Users\adria\Documents\Isil\DESARROLLO DE APLIACIONES 2\delfgrupo\Proyecto-DAII\ProyectoSMCA-PRE\ProyectoSMCA\Windows_Tes\bin\Debug\net8.0-windows\zh-Hans\System.ServiceModel.NetNamedPipe.resources.dll
+C:\Users\adria\Documents\Isil\DESARROLLO DE APLIACIONES 2\delfgrupo\Proyecto-DAII\ProyectoSMCA-PRE\ProyectoSMCA\Windows_Tes\bin\Debug\net8.0-windows\zh-Hant\System.ServiceModel.NetNamedPipe.resources.dll
+C:\Users\adria\Documents\Isil\DESARROLLO DE APLIACIONES 2\delfgrupo\Proyecto-DAII\ProyectoSMCA-PRE\ProyectoSMCA\Windows_Tes\bin\Debug\net8.0-windows\cs\System.ServiceModel.NetTcp.resources.dll
+C:\Users\adria\Documents\Isil\DESARROLLO DE APLIACIONES 2\delfgrupo\Proyecto-DAII\ProyectoSMCA-PRE\ProyectoSMCA\Windows_Tes\bin\Debug\net8.0-windows\de\System.ServiceModel.NetTcp.resources.dll
+C:\Users\adria\Documents\Isil\DESARROLLO DE APLIACIONES 2\delfgrupo\Proyecto-DAII\ProyectoSMCA-PRE\ProyectoSMCA\Windows_Tes\bin\Debug\net8.0-windows\es\System.ServiceModel.NetTcp.resources.dll
+C:\Users\adria\Documents\Isil\DESARROLLO DE APLIACIONES 2\delfgrupo\Proyecto-DAII\ProyectoSMCA-PRE\ProyectoSMCA\Windows_Tes\bin\Debug\net8.0-windows\fr\System.ServiceModel.NetTcp.resources.dll
+C:\Users\adria\Documents\Isil\DESARROLLO DE APLIACIONES 2\delfgrupo\Proyecto-DAII\ProyectoSMCA-PRE\ProyectoSMCA\Windows_Tes\bin\Debug\net8.0-windows\it\System.ServiceModel.NetTcp.resources.dll
+C:\Users\adria\Documents\Isil\DESARROLLO DE APLIACIONES 2\delfgrupo\Proyecto-DAII\ProyectoSMCA-PRE\ProyectoSMCA\Windows_Tes\bin\Debug\net8.0-windows\ja\System.ServiceModel.NetTcp.resources.dll
+C:\Users\adria\Documents\Isil\DESARROLLO DE APLIACIONES 2\delfgrupo\Proyecto-DAII\ProyectoSMCA-PRE\ProyectoSMCA\Windows_Tes\bin\Debug\net8.0-windows\ko\System.ServiceModel.NetTcp.resources.dll
+C:\Users\adria\Documents\Isil\DESARROLLO DE APLIACIONES 2\delfgrupo\Proyecto-DAII\ProyectoSMCA-PRE\ProyectoSMCA\Windows_Tes\bin\Debug\net8.0-windows\pl\System.ServiceModel.NetTcp.resources.dll
+C:\Users\adria\Documents\Isil\DESARROLLO DE APLIACIONES 2\delfgrupo\Proyecto-DAII\ProyectoSMCA-PRE\ProyectoSMCA\Windows_Tes\bin\Debug\net8.0-windows\pt-BR\System.ServiceModel.NetTcp.resources.dll
+C:\Users\adria\Documents\Isil\DESARROLLO DE APLIACIONES 2\delfgrupo\Proyecto-DAII\ProyectoSMCA-PRE\ProyectoSMCA\Windows_Tes\bin\Debug\net8.0-windows\ru\System.ServiceModel.NetTcp.resources.dll
+C:\Users\adria\Documents\Isil\DESARROLLO DE APLIACIONES 2\delfgrupo\Proyecto-DAII\ProyectoSMCA-PRE\ProyectoSMCA\Windows_Tes\bin\Debug\net8.0-windows\tr\System.ServiceModel.NetTcp.resources.dll
+C:\Users\adria\Documents\Isil\DESARROLLO DE APLIACIONES 2\delfgrupo\Proyecto-DAII\ProyectoSMCA-PRE\ProyectoSMCA\Windows_Tes\bin\Debug\net8.0-windows\zh-Hans\System.ServiceModel.NetTcp.resources.dll
+C:\Users\adria\Documents\Isil\DESARROLLO DE APLIACIONES 2\delfgrupo\Proyecto-DAII\ProyectoSMCA-PRE\ProyectoSMCA\Windows_Tes\bin\Debug\net8.0-windows\zh-Hant\System.ServiceModel.NetTcp.resources.dll
+C:\Users\adria\Documents\Isil\DESARROLLO DE APLIACIONES 2\delfgrupo\Proyecto-DAII\ProyectoSMCA-PRE\ProyectoSMCA\Windows_Tes\bin\Debug\net8.0-windows\cs\System.ServiceModel.Primitives.resources.dll
+C:\Users\adria\Documents\Isil\DESARROLLO DE APLIACIONES 2\delfgrupo\Proyecto-DAII\ProyectoSMCA-PRE\ProyectoSMCA\Windows_Tes\bin\Debug\net8.0-windows\de\System.ServiceModel.Primitives.resources.dll
+C:\Users\adria\Documents\Isil\DESARROLLO DE APLIACIONES 2\delfgrupo\Proyecto-DAII\ProyectoSMCA-PRE\ProyectoSMCA\Windows_Tes\bin\Debug\net8.0-windows\es\System.ServiceModel.Primitives.resources.dll
+C:\Users\adria\Documents\Isil\DESARROLLO DE APLIACIONES 2\delfgrupo\Proyecto-DAII\ProyectoSMCA-PRE\ProyectoSMCA\Windows_Tes\bin\Debug\net8.0-windows\fr\System.ServiceModel.Primitives.resources.dll
+C:\Users\adria\Documents\Isil\DESARROLLO DE APLIACIONES 2\delfgrupo\Proyecto-DAII\ProyectoSMCA-PRE\ProyectoSMCA\Windows_Tes\bin\Debug\net8.0-windows\it\System.ServiceModel.Primitives.resources.dll
+C:\Users\adria\Documents\Isil\DESARROLLO DE APLIACIONES 2\delfgrupo\Proyecto-DAII\ProyectoSMCA-PRE\ProyectoSMCA\Windows_Tes\bin\Debug\net8.0-windows\ja\System.ServiceModel.Primitives.resources.dll
+C:\Users\adria\Documents\Isil\DESARROLLO DE APLIACIONES 2\delfgrupo\Proyecto-DAII\ProyectoSMCA-PRE\ProyectoSMCA\Windows_Tes\bin\Debug\net8.0-windows\ko\System.ServiceModel.Primitives.resources.dll
+C:\Users\adria\Documents\Isil\DESARROLLO DE APLIACIONES 2\delfgrupo\Proyecto-DAII\ProyectoSMCA-PRE\ProyectoSMCA\Windows_Tes\bin\Debug\net8.0-windows\pl\System.ServiceModel.Primitives.resources.dll
+C:\Users\adria\Documents\Isil\DESARROLLO DE APLIACIONES 2\delfgrupo\Proyecto-DAII\ProyectoSMCA-PRE\ProyectoSMCA\Windows_Tes\bin\Debug\net8.0-windows\pt-BR\System.ServiceModel.Primitives.resources.dll
+C:\Users\adria\Documents\Isil\DESARROLLO DE APLIACIONES 2\delfgrupo\Proyecto-DAII\ProyectoSMCA-PRE\ProyectoSMCA\Windows_Tes\bin\Debug\net8.0-windows\ru\System.ServiceModel.Primitives.resources.dll
+C:\Users\adria\Documents\Isil\DESARROLLO DE APLIACIONES 2\delfgrupo\Proyecto-DAII\ProyectoSMCA-PRE\ProyectoSMCA\Windows_Tes\bin\Debug\net8.0-windows\tr\System.ServiceModel.Primitives.resources.dll
+C:\Users\adria\Documents\Isil\DESARROLLO DE APLIACIONES 2\delfgrupo\Proyecto-DAII\ProyectoSMCA-PRE\ProyectoSMCA\Windows_Tes\bin\Debug\net8.0-windows\zh-Hans\System.ServiceModel.Primitives.resources.dll
+C:\Users\adria\Documents\Isil\DESARROLLO DE APLIACIONES 2\delfgrupo\Proyecto-DAII\ProyectoSMCA-PRE\ProyectoSMCA\Windows_Tes\bin\Debug\net8.0-windows\zh-Hant\System.ServiceModel.Primitives.resources.dll
+C:\Users\adria\Documents\Isil\DESARROLLO DE APLIACIONES 2\delfgrupo\Proyecto-DAII\ProyectoSMCA-PRE\ProyectoSMCA\Windows_Tes\obj\Debug\net8.0-windows\Windows_Tes.csproj.AssemblyReference.cache
+C:\Users\adria\Documents\Isil\DESARROLLO DE APLIACIONES 2\delfgrupo\Proyecto-DAII\ProyectoSMCA-PRE\ProyectoSMCA\Windows_Tes\obj\Debug\net8.0-windows\TestWindows_WCF_SistemaMatricula.AlumnoMan01.resources
+C:\Users\adria\Documents\Isil\DESARROLLO DE APLIACIONES 2\delfgrupo\Proyecto-DAII\ProyectoSMCA-PRE\ProyectoSMCA\Windows_Tes\obj\Debug\net8.0-windows\TestWindows_WCF_SistemaMatricula.AlumnoMan02.resources
+C:\Users\adria\Documents\Isil\DESARROLLO DE APLIACIONES 2\delfgrupo\Proyecto-DAII\ProyectoSMCA-PRE\ProyectoSMCA\Windows_Tes\obj\Debug\net8.0-windows\TestWindows_WCF_SistemaMatricula.AlumnoMan03.resources
+C:\Users\adria\Documents\Isil\DESARROLLO DE APLIACIONES 2\delfgrupo\Proyecto-DAII\ProyectoSMCA-PRE\ProyectoSMCA\Windows_Tes\obj\Debug\net8.0-windows\SYSMCA_GUI.CursoMan01.resources
+C:\Users\adria\Documents\Isil\DESARROLLO DE APLIACIONES 2\delfgrupo\Proyecto-DAII\ProyectoSMCA-PRE\ProyectoSMCA\Windows_Tes\obj\Debug\net8.0-windows\SYSMCA_GUI.CursoMan02.resources
+C:\Users\adria\Documents\Isil\DESARROLLO DE APLIACIONES 2\delfgrupo\Proyecto-DAII\ProyectoSMCA-PRE\ProyectoSMCA\Windows_Tes\obj\Debug\net8.0-windows\SYSMCA_GUI.CursoMan03.resources
+C:\Users\adria\Documents\Isil\DESARROLLO DE APLIACIONES 2\delfgrupo\Proyecto-DAII\ProyectoSMCA-PRE\ProyectoSMCA\Windows_Tes\obj\Debug\net8.0-windows\Windows_Tes.Form1.resources
+C:\Users\adria\Documents\Isil\DESARROLLO DE APLIACIONES 2\delfgrupo\Proyecto-DAII\ProyectoSMCA-PRE\ProyectoSMCA\Windows_Tes\obj\Debug\net8.0-windows\AplicacionWindows_ESCUELA.frmActualizar.resources
+C:\Users\adria\Documents\Isil\DESARROLLO DE APLIACIONES 2\delfgrupo\Proyecto-DAII\ProyectoSMCA-PRE\ProyectoSMCA\Windows_Tes\obj\Debug\net8.0-windows\AplicacionWindows_ESCUELA.frmInsertar.resources
+C:\Users\adria\Documents\Isil\DESARROLLO DE APLIACIONES 2\delfgrupo\Proyecto-DAII\ProyectoSMCA-PRE\ProyectoSMCA\Windows_Tes\obj\Debug\net8.0-windows\AplicacionWindows_ESCUELA.frmMatricula.resources
+C:\Users\adria\Documents\Isil\DESARROLLO DE APLIACIONES 2\delfgrupo\Proyecto-DAII\ProyectoSMCA-PRE\ProyectoSMCA\Windows_Tes\obj\Debug\net8.0-windows\TestWindows_WCF_Matriculas.ProfesorMan01.resources
+C:\Users\adria\Documents\Isil\DESARROLLO DE APLIACIONES 2\delfgrupo\Proyecto-DAII\ProyectoSMCA-PRE\ProyectoSMCA\Windows_Tes\obj\Debug\net8.0-windows\TestWindows_WCF_Matriculas.ProfesorMan02.resources
+C:\Users\adria\Documents\Isil\DESARROLLO DE APLIACIONES 2\delfgrupo\Proyecto-DAII\ProyectoSMCA-PRE\ProyectoSMCA\Windows_Tes\obj\Debug\net8.0-windows\TestWindows_WCF_Matriculas.ProfesorMan03.resources
+C:\Users\adria\Documents\Isil\DESARROLLO DE APLIACIONES 2\delfgrupo\Proyecto-DAII\ProyectoSMCA-PRE\ProyectoSMCA\Windows_Tes\obj\Debug\net8.0-windows\Windows_Tes.Properties.Resources.resources
+C:\Users\adria\Documents\Isil\DESARROLLO DE APLIACIONES 2\delfgrupo\Proyecto-DAII\ProyectoSMCA-PRE\ProyectoSMCA\Windows_Tes\obj\Debug\net8.0-windows\Windows_Tes.csproj.GenerateResource.cache
+C:\Users\adria\Documents\Isil\DESARROLLO DE APLIACIONES 2\delfgrupo\Proyecto-DAII\ProyectoSMCA-PRE\ProyectoSMCA\Windows_Tes\obj\Debug\net8.0-windows\Windows_Tes.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\adria\Documents\Isil\DESARROLLO DE APLIACIONES 2\delfgrupo\Proyecto-DAII\ProyectoSMCA-PRE\ProyectoSMCA\Windows_Tes\obj\Debug\net8.0-windows\Windows_Tes.AssemblyInfoInputs.cache
+C:\Users\adria\Documents\Isil\DESARROLLO DE APLIACIONES 2\delfgrupo\Proyecto-DAII\ProyectoSMCA-PRE\ProyectoSMCA\Windows_Tes\obj\Debug\net8.0-windows\Windows_Tes.AssemblyInfo.cs
+C:\Users\adria\Documents\Isil\DESARROLLO DE APLIACIONES 2\delfgrupo\Proyecto-DAII\ProyectoSMCA-PRE\ProyectoSMCA\Windows_Tes\obj\Debug\net8.0-windows\Windows_Tes.csproj.CoreCompileInputs.cache
+C:\Users\adria\Documents\Isil\DESARROLLO DE APLIACIONES 2\delfgrupo\Proyecto-DAII\ProyectoSMCA-PRE\ProyectoSMCA\Windows_Tes\obj\Debug\net8.0-windows\Windows_.36D10F72.Up2Date
+C:\Users\adria\Documents\Isil\DESARROLLO DE APLIACIONES 2\delfgrupo\Proyecto-DAII\ProyectoSMCA-PRE\ProyectoSMCA\Windows_Tes\obj\Debug\net8.0-windows\Windows_Tes.dll
+C:\Users\adria\Documents\Isil\DESARROLLO DE APLIACIONES 2\delfgrupo\Proyecto-DAII\ProyectoSMCA-PRE\ProyectoSMCA\Windows_Tes\obj\Debug\net8.0-windows\refint\Windows_Tes.dll
+C:\Users\adria\Documents\Isil\DESARROLLO DE APLIACIONES 2\delfgrupo\Proyecto-DAII\ProyectoSMCA-PRE\ProyectoSMCA\Windows_Tes\obj\Debug\net8.0-windows\Windows_Tes.pdb
+C:\Users\adria\Documents\Isil\DESARROLLO DE APLIACIONES 2\delfgrupo\Proyecto-DAII\ProyectoSMCA-PRE\ProyectoSMCA\Windows_Tes\obj\Debug\net8.0-windows\Windows_Tes.genruntimeconfig.cache
+C:\Users\adria\Documents\Isil\DESARROLLO DE APLIACIONES 2\delfgrupo\Proyecto-DAII\ProyectoSMCA-PRE\ProyectoSMCA\Windows_Tes\obj\Debug\net8.0-windows\ref\Windows_Tes.dll
+D:\JAIRO\Aplicaciones2\ProyectoSMCA\Windows_Tes\bin\Debug\net8.0-windows\Windows_Tes.exe
+D:\JAIRO\Aplicaciones2\ProyectoSMCA\Windows_Tes\bin\Debug\net8.0-windows\Windows_Tes.deps.json
+D:\JAIRO\Aplicaciones2\ProyectoSMCA\Windows_Tes\bin\Debug\net8.0-windows\Windows_Tes.runtimeconfig.json
+D:\JAIRO\Aplicaciones2\ProyectoSMCA\Windows_Tes\bin\Debug\net8.0-windows\Windows_Tes.dll
+D:\JAIRO\Aplicaciones2\ProyectoSMCA\Windows_Tes\bin\Debug\net8.0-windows\Windows_Tes.pdb
+D:\JAIRO\Aplicaciones2\ProyectoSMCA\Windows_Tes\bin\Debug\net8.0-windows\Microsoft.Extensions.ObjectPool.dll
+D:\JAIRO\Aplicaciones2\ProyectoSMCA\Windows_Tes\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Logging.dll
+D:\JAIRO\Aplicaciones2\ProyectoSMCA\Windows_Tes\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Protocols.WsTrust.dll
+D:\JAIRO\Aplicaciones2\ProyectoSMCA\Windows_Tes\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Tokens.dll
+D:\JAIRO\Aplicaciones2\ProyectoSMCA\Windows_Tes\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Tokens.Saml.dll
+D:\JAIRO\Aplicaciones2\ProyectoSMCA\Windows_Tes\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Xml.dll
+D:\JAIRO\Aplicaciones2\ProyectoSMCA\Windows_Tes\bin\Debug\net8.0-windows\System.ServiceModel.Duplex.dll
+D:\JAIRO\Aplicaciones2\ProyectoSMCA\Windows_Tes\bin\Debug\net8.0-windows\System.ServiceModel.Federation.dll
+D:\JAIRO\Aplicaciones2\ProyectoSMCA\Windows_Tes\bin\Debug\net8.0-windows\System.ServiceModel.Http.dll
+D:\JAIRO\Aplicaciones2\ProyectoSMCA\Windows_Tes\bin\Debug\net8.0-windows\System.ServiceModel.NetFramingBase.dll
+D:\JAIRO\Aplicaciones2\ProyectoSMCA\Windows_Tes\bin\Debug\net8.0-windows\System.ServiceModel.NetNamedPipe.dll
+D:\JAIRO\Aplicaciones2\ProyectoSMCA\Windows_Tes\bin\Debug\net8.0-windows\System.ServiceModel.NetTcp.dll
+D:\JAIRO\Aplicaciones2\ProyectoSMCA\Windows_Tes\bin\Debug\net8.0-windows\System.ServiceModel.Primitives.dll
+D:\JAIRO\Aplicaciones2\ProyectoSMCA\Windows_Tes\bin\Debug\net8.0-windows\System.ServiceModel.Security.dll
+D:\JAIRO\Aplicaciones2\ProyectoSMCA\Windows_Tes\bin\Debug\net8.0-windows\cs\System.ServiceModel.Federation.resources.dll
+D:\JAIRO\Aplicaciones2\ProyectoSMCA\Windows_Tes\bin\Debug\net8.0-windows\de\System.ServiceModel.Federation.resources.dll
+D:\JAIRO\Aplicaciones2\ProyectoSMCA\Windows_Tes\bin\Debug\net8.0-windows\es\System.ServiceModel.Federation.resources.dll
+D:\JAIRO\Aplicaciones2\ProyectoSMCA\Windows_Tes\bin\Debug\net8.0-windows\fr\System.ServiceModel.Federation.resources.dll
+D:\JAIRO\Aplicaciones2\ProyectoSMCA\Windows_Tes\bin\Debug\net8.0-windows\it\System.ServiceModel.Federation.resources.dll
+D:\JAIRO\Aplicaciones2\ProyectoSMCA\Windows_Tes\bin\Debug\net8.0-windows\ja\System.ServiceModel.Federation.resources.dll
+D:\JAIRO\Aplicaciones2\ProyectoSMCA\Windows_Tes\bin\Debug\net8.0-windows\ko\System.ServiceModel.Federation.resources.dll
+D:\JAIRO\Aplicaciones2\ProyectoSMCA\Windows_Tes\bin\Debug\net8.0-windows\pl\System.ServiceModel.Federation.resources.dll
+D:\JAIRO\Aplicaciones2\ProyectoSMCA\Windows_Tes\bin\Debug\net8.0-windows\pt-BR\System.ServiceModel.Federation.resources.dll
+D:\JAIRO\Aplicaciones2\ProyectoSMCA\Windows_Tes\bin\Debug\net8.0-windows\ru\System.ServiceModel.Federation.resources.dll
+D:\JAIRO\Aplicaciones2\ProyectoSMCA\Windows_Tes\bin\Debug\net8.0-windows\tr\System.ServiceModel.Federation.resources.dll
+D:\JAIRO\Aplicaciones2\ProyectoSMCA\Windows_Tes\bin\Debug\net8.0-windows\zh-Hans\System.ServiceModel.Federation.resources.dll
+D:\JAIRO\Aplicaciones2\ProyectoSMCA\Windows_Tes\bin\Debug\net8.0-windows\zh-Hant\System.ServiceModel.Federation.resources.dll
+D:\JAIRO\Aplicaciones2\ProyectoSMCA\Windows_Tes\bin\Debug\net8.0-windows\cs\System.ServiceModel.Http.resources.dll
+D:\JAIRO\Aplicaciones2\ProyectoSMCA\Windows_Tes\bin\Debug\net8.0-windows\de\System.ServiceModel.Http.resources.dll
+D:\JAIRO\Aplicaciones2\ProyectoSMCA\Windows_Tes\bin\Debug\net8.0-windows\es\System.ServiceModel.Http.resources.dll
+D:\JAIRO\Aplicaciones2\ProyectoSMCA\Windows_Tes\bin\Debug\net8.0-windows\fr\System.ServiceModel.Http.resources.dll
+D:\JAIRO\Aplicaciones2\ProyectoSMCA\Windows_Tes\bin\Debug\net8.0-windows\it\System.ServiceModel.Http.resources.dll
+D:\JAIRO\Aplicaciones2\ProyectoSMCA\Windows_Tes\bin\Debug\net8.0-windows\ja\System.ServiceModel.Http.resources.dll
+D:\JAIRO\Aplicaciones2\ProyectoSMCA\Windows_Tes\bin\Debug\net8.0-windows\ko\System.ServiceModel.Http.resources.dll
+D:\JAIRO\Aplicaciones2\ProyectoSMCA\Windows_Tes\bin\Debug\net8.0-windows\pl\System.ServiceModel.Http.resources.dll
+D:\JAIRO\Aplicaciones2\ProyectoSMCA\Windows_Tes\bin\Debug\net8.0-windows\pt-BR\System.ServiceModel.Http.resources.dll
+D:\JAIRO\Aplicaciones2\ProyectoSMCA\Windows_Tes\bin\Debug\net8.0-windows\ru\System.ServiceModel.Http.resources.dll
+D:\JAIRO\Aplicaciones2\ProyectoSMCA\Windows_Tes\bin\Debug\net8.0-windows\tr\System.ServiceModel.Http.resources.dll
+D:\JAIRO\Aplicaciones2\ProyectoSMCA\Windows_Tes\bin\Debug\net8.0-windows\zh-Hans\System.ServiceModel.Http.resources.dll
+D:\JAIRO\Aplicaciones2\ProyectoSMCA\Windows_Tes\bin\Debug\net8.0-windows\zh-Hant\System.ServiceModel.Http.resources.dll
+D:\JAIRO\Aplicaciones2\ProyectoSMCA\Windows_Tes\bin\Debug\net8.0-windows\cs\System.ServiceModel.NetFramingBase.resources.dll
+D:\JAIRO\Aplicaciones2\ProyectoSMCA\Windows_Tes\bin\Debug\net8.0-windows\de\System.ServiceModel.NetFramingBase.resources.dll
+D:\JAIRO\Aplicaciones2\ProyectoSMCA\Windows_Tes\bin\Debug\net8.0-windows\es\System.ServiceModel.NetFramingBase.resources.dll
+D:\JAIRO\Aplicaciones2\ProyectoSMCA\Windows_Tes\bin\Debug\net8.0-windows\fr\System.ServiceModel.NetFramingBase.resources.dll
+D:\JAIRO\Aplicaciones2\ProyectoSMCA\Windows_Tes\bin\Debug\net8.0-windows\it\System.ServiceModel.NetFramingBase.resources.dll
+D:\JAIRO\Aplicaciones2\ProyectoSMCA\Windows_Tes\bin\Debug\net8.0-windows\ja\System.ServiceModel.NetFramingBase.resources.dll
+D:\JAIRO\Aplicaciones2\ProyectoSMCA\Windows_Tes\bin\Debug\net8.0-windows\ko\System.ServiceModel.NetFramingBase.resources.dll
+D:\JAIRO\Aplicaciones2\ProyectoSMCA\Windows_Tes\bin\Debug\net8.0-windows\pl\System.ServiceModel.NetFramingBase.resources.dll
+D:\JAIRO\Aplicaciones2\ProyectoSMCA\Windows_Tes\bin\Debug\net8.0-windows\pt-BR\System.ServiceModel.NetFramingBase.resources.dll
+D:\JAIRO\Aplicaciones2\ProyectoSMCA\Windows_Tes\bin\Debug\net8.0-windows\ru\System.ServiceModel.NetFramingBase.resources.dll
+D:\JAIRO\Aplicaciones2\ProyectoSMCA\Windows_Tes\bin\Debug\net8.0-windows\tr\System.ServiceModel.NetFramingBase.resources.dll
+D:\JAIRO\Aplicaciones2\ProyectoSMCA\Windows_Tes\bin\Debug\net8.0-windows\zh-Hans\System.ServiceModel.NetFramingBase.resources.dll
+D:\JAIRO\Aplicaciones2\ProyectoSMCA\Windows_Tes\bin\Debug\net8.0-windows\zh-Hant\System.ServiceModel.NetFramingBase.resources.dll
+D:\JAIRO\Aplicaciones2\ProyectoSMCA\Windows_Tes\bin\Debug\net8.0-windows\cs\System.ServiceModel.NetNamedPipe.resources.dll
+D:\JAIRO\Aplicaciones2\ProyectoSMCA\Windows_Tes\bin\Debug\net8.0-windows\de\System.ServiceModel.NetNamedPipe.resources.dll
+D:\JAIRO\Aplicaciones2\ProyectoSMCA\Windows_Tes\bin\Debug\net8.0-windows\es\System.ServiceModel.NetNamedPipe.resources.dll
+D:\JAIRO\Aplicaciones2\ProyectoSMCA\Windows_Tes\bin\Debug\net8.0-windows\fr\System.ServiceModel.NetNamedPipe.resources.dll
+D:\JAIRO\Aplicaciones2\ProyectoSMCA\Windows_Tes\bin\Debug\net8.0-windows\it\System.ServiceModel.NetNamedPipe.resources.dll
+D:\JAIRO\Aplicaciones2\ProyectoSMCA\Windows_Tes\bin\Debug\net8.0-windows\ja\System.ServiceModel.NetNamedPipe.resources.dll
+D:\JAIRO\Aplicaciones2\ProyectoSMCA\Windows_Tes\bin\Debug\net8.0-windows\ko\System.ServiceModel.NetNamedPipe.resources.dll
+D:\JAIRO\Aplicaciones2\ProyectoSMCA\Windows_Tes\bin\Debug\net8.0-windows\pl\System.ServiceModel.NetNamedPipe.resources.dll
+D:\JAIRO\Aplicaciones2\ProyectoSMCA\Windows_Tes\bin\Debug\net8.0-windows\pt-BR\System.ServiceModel.NetNamedPipe.resources.dll
+D:\JAIRO\Aplicaciones2\ProyectoSMCA\Windows_Tes\bin\Debug\net8.0-windows\ru\System.ServiceModel.NetNamedPipe.resources.dll
+D:\JAIRO\Aplicaciones2\ProyectoSMCA\Windows_Tes\bin\Debug\net8.0-windows\tr\System.ServiceModel.NetNamedPipe.resources.dll
+D:\JAIRO\Aplicaciones2\ProyectoSMCA\Windows_Tes\bin\Debug\net8.0-windows\zh-Hans\System.ServiceModel.NetNamedPipe.resources.dll
+D:\JAIRO\Aplicaciones2\ProyectoSMCA\Windows_Tes\bin\Debug\net8.0-windows\zh-Hant\System.ServiceModel.NetNamedPipe.resources.dll
+D:\JAIRO\Aplicaciones2\ProyectoSMCA\Windows_Tes\bin\Debug\net8.0-windows\cs\System.ServiceModel.NetTcp.resources.dll
+D:\JAIRO\Aplicaciones2\ProyectoSMCA\Windows_Tes\bin\Debug\net8.0-windows\de\System.ServiceModel.NetTcp.resources.dll
+D:\JAIRO\Aplicaciones2\ProyectoSMCA\Windows_Tes\bin\Debug\net8.0-windows\es\System.ServiceModel.NetTcp.resources.dll
+D:\JAIRO\Aplicaciones2\ProyectoSMCA\Windows_Tes\bin\Debug\net8.0-windows\fr\System.ServiceModel.NetTcp.resources.dll
+D:\JAIRO\Aplicaciones2\ProyectoSMCA\Windows_Tes\bin\Debug\net8.0-windows\it\System.ServiceModel.NetTcp.resources.dll
+D:\JAIRO\Aplicaciones2\ProyectoSMCA\Windows_Tes\bin\Debug\net8.0-windows\ja\System.ServiceModel.NetTcp.resources.dll
+D:\JAIRO\Aplicaciones2\ProyectoSMCA\Windows_Tes\bin\Debug\net8.0-windows\ko\System.ServiceModel.NetTcp.resources.dll
+D:\JAIRO\Aplicaciones2\ProyectoSMCA\Windows_Tes\bin\Debug\net8.0-windows\pl\System.ServiceModel.NetTcp.resources.dll
+D:\JAIRO\Aplicaciones2\ProyectoSMCA\Windows_Tes\bin\Debug\net8.0-windows\pt-BR\System.ServiceModel.NetTcp.resources.dll
+D:\JAIRO\Aplicaciones2\ProyectoSMCA\Windows_Tes\bin\Debug\net8.0-windows\ru\System.ServiceModel.NetTcp.resources.dll
+D:\JAIRO\Aplicaciones2\ProyectoSMCA\Windows_Tes\bin\Debug\net8.0-windows\tr\System.ServiceModel.NetTcp.resources.dll
+D:\JAIRO\Aplicaciones2\ProyectoSMCA\Windows_Tes\bin\Debug\net8.0-windows\zh-Hans\System.ServiceModel.NetTcp.resources.dll
+D:\JAIRO\Aplicaciones2\ProyectoSMCA\Windows_Tes\bin\Debug\net8.0-windows\zh-Hant\System.ServiceModel.NetTcp.resources.dll
+D:\JAIRO\Aplicaciones2\ProyectoSMCA\Windows_Tes\bin\Debug\net8.0-windows\cs\System.ServiceModel.Primitives.resources.dll
+D:\JAIRO\Aplicaciones2\ProyectoSMCA\Windows_Tes\bin\Debug\net8.0-windows\de\System.ServiceModel.Primitives.resources.dll
+D:\JAIRO\Aplicaciones2\ProyectoSMCA\Windows_Tes\bin\Debug\net8.0-windows\es\System.ServiceModel.Primitives.resources.dll
+D:\JAIRO\Aplicaciones2\ProyectoSMCA\Windows_Tes\bin\Debug\net8.0-windows\fr\System.ServiceModel.Primitives.resources.dll
+D:\JAIRO\Aplicaciones2\ProyectoSMCA\Windows_Tes\bin\Debug\net8.0-windows\it\System.ServiceModel.Primitives.resources.dll
+D:\JAIRO\Aplicaciones2\ProyectoSMCA\Windows_Tes\bin\Debug\net8.0-windows\ja\System.ServiceModel.Primitives.resources.dll
+D:\JAIRO\Aplicaciones2\ProyectoSMCA\Windows_Tes\bin\Debug\net8.0-windows\ko\System.ServiceModel.Primitives.resources.dll
+D:\JAIRO\Aplicaciones2\ProyectoSMCA\Windows_Tes\bin\Debug\net8.0-windows\pl\System.ServiceModel.Primitives.resources.dll
+D:\JAIRO\Aplicaciones2\ProyectoSMCA\Windows_Tes\bin\Debug\net8.0-windows\pt-BR\System.ServiceModel.Primitives.resources.dll
+D:\JAIRO\Aplicaciones2\ProyectoSMCA\Windows_Tes\bin\Debug\net8.0-windows\ru\System.ServiceModel.Primitives.resources.dll
+D:\JAIRO\Aplicaciones2\ProyectoSMCA\Windows_Tes\bin\Debug\net8.0-windows\tr\System.ServiceModel.Primitives.resources.dll
+D:\JAIRO\Aplicaciones2\ProyectoSMCA\Windows_Tes\bin\Debug\net8.0-windows\zh-Hans\System.ServiceModel.Primitives.resources.dll
+D:\JAIRO\Aplicaciones2\ProyectoSMCA\Windows_Tes\bin\Debug\net8.0-windows\zh-Hant\System.ServiceModel.Primitives.resources.dll
+D:\JAIRO\Aplicaciones2\ProyectoSMCA\Windows_Tes\obj\Debug\net8.0-windows\Windows_Tes.csproj.AssemblyReference.cache
+D:\JAIRO\Aplicaciones2\ProyectoSMCA\Windows_Tes\obj\Debug\net8.0-windows\TestWindows_WCF_SistemaMatricula.AlumnoMan01.resources
+D:\JAIRO\Aplicaciones2\ProyectoSMCA\Windows_Tes\obj\Debug\net8.0-windows\TestWindows_WCF_SistemaMatricula.AlumnoMan02.resources
+D:\JAIRO\Aplicaciones2\ProyectoSMCA\Windows_Tes\obj\Debug\net8.0-windows\TestWindows_WCF_SistemaMatricula.AlumnoMan03.resources
+D:\JAIRO\Aplicaciones2\ProyectoSMCA\Windows_Tes\obj\Debug\net8.0-windows\SYSMCA_GUI.CursoMan01.resources
+D:\JAIRO\Aplicaciones2\ProyectoSMCA\Windows_Tes\obj\Debug\net8.0-windows\SYSMCA_GUI.CursoMan02.resources
+D:\JAIRO\Aplicaciones2\ProyectoSMCA\Windows_Tes\obj\Debug\net8.0-windows\SYSMCA_GUI.CursoMan03.resources
+D:\JAIRO\Aplicaciones2\ProyectoSMCA\Windows_Tes\obj\Debug\net8.0-windows\Windows_Tes.Form1.resources
+D:\JAIRO\Aplicaciones2\ProyectoSMCA\Windows_Tes\obj\Debug\net8.0-windows\AplicacionWindows_ESCUELA.frmActualizar.resources
+D:\JAIRO\Aplicaciones2\ProyectoSMCA\Windows_Tes\obj\Debug\net8.0-windows\AplicacionWindows_ESCUELA.frmInsertar.resources
+D:\JAIRO\Aplicaciones2\ProyectoSMCA\Windows_Tes\obj\Debug\net8.0-windows\AplicacionWindows_ESCUELA.frmMatricula.resources
+D:\JAIRO\Aplicaciones2\ProyectoSMCA\Windows_Tes\obj\Debug\net8.0-windows\TestWindows_WCF_Matriculas.ProfesorMan01.resources
+D:\JAIRO\Aplicaciones2\ProyectoSMCA\Windows_Tes\obj\Debug\net8.0-windows\TestWindows_WCF_Matriculas.ProfesorMan02.resources
+D:\JAIRO\Aplicaciones2\ProyectoSMCA\Windows_Tes\obj\Debug\net8.0-windows\TestWindows_WCF_Matriculas.ProfesorMan03.resources
+D:\JAIRO\Aplicaciones2\ProyectoSMCA\Windows_Tes\obj\Debug\net8.0-windows\Windows_Tes.Properties.Resources.resources
+D:\JAIRO\Aplicaciones2\ProyectoSMCA\Windows_Tes\obj\Debug\net8.0-windows\Windows_Tes.csproj.GenerateResource.cache
+D:\JAIRO\Aplicaciones2\ProyectoSMCA\Windows_Tes\obj\Debug\net8.0-windows\Windows_Tes.GeneratedMSBuildEditorConfig.editorconfig
+D:\JAIRO\Aplicaciones2\ProyectoSMCA\Windows_Tes\obj\Debug\net8.0-windows\Windows_Tes.AssemblyInfoInputs.cache
+D:\JAIRO\Aplicaciones2\ProyectoSMCA\Windows_Tes\obj\Debug\net8.0-windows\Windows_Tes.AssemblyInfo.cs
+D:\JAIRO\Aplicaciones2\ProyectoSMCA\Windows_Tes\obj\Debug\net8.0-windows\Windows_Tes.csproj.CoreCompileInputs.cache
+D:\JAIRO\Aplicaciones2\ProyectoSMCA\Windows_Tes\obj\Debug\net8.0-windows\Windows_.36D10F72.Up2Date
+D:\JAIRO\Aplicaciones2\ProyectoSMCA\Windows_Tes\obj\Debug\net8.0-windows\Windows_Tes.dll
+D:\JAIRO\Aplicaciones2\ProyectoSMCA\Windows_Tes\obj\Debug\net8.0-windows\refint\Windows_Tes.dll
+D:\JAIRO\Aplicaciones2\ProyectoSMCA\Windows_Tes\obj\Debug\net8.0-windows\Windows_Tes.pdb
+D:\JAIRO\Aplicaciones2\ProyectoSMCA\Windows_Tes\obj\Debug\net8.0-windows\Windows_Tes.genruntimeconfig.cache
+D:\JAIRO\Aplicaciones2\ProyectoSMCA\Windows_Tes\obj\Debug\net8.0-windows\ref\Windows_Tes.dll
+D:\JAIRO\Aplicaciones2\ProyectoSMCA\Windows_Tes\obj\Debug\net8.0-windows\SYSMCA_GUI.MDIPrincipal.resources
