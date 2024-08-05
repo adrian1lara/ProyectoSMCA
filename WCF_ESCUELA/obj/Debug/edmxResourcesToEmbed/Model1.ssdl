@@ -1,0 +1,655 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="SistemaMatricula.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="TB_APODERADO">
+    <Key>
+      <PropertyRef Name="DNI_APO" />
+    </Key>
+    <Property Name="DNI_APO" Type="int" Nullable="false" />
+    <Property Name="NOM_APO" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="APE_APO" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="SEXO_APO" Type="char" MaxLength="1" Nullable="false" />
+    <Property Name="ID_UBIGEO" Type="int" Nullable="false" />
+    <Property Name="FOTO_APO" Type="image" />
+    <Property Name="TEL_APO" Type="varchar" MaxLength="9" Nullable="false" />
+    <Property Name="CORREO_APO" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Usu_Registro" Type="varchar" MaxLength="50" />
+    <Property Name="Fec_Registro" Type="datetime" />
+    <Property Name="Usu_Ult_Mod" Type="varchar" MaxLength="50" />
+    <Property Name="Fec_Ult_Mod" Type="datetime" />
+    <Property Name="Estado" Type="int" />
+  </EntityType>
+  <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'SistemaDeMatriculaCA.dbo.TB_APODERADO_AUD' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+  <EntityType Name="TB_APODERADO_AUD">
+    <Key>
+      <PropertyRef Name="DNI_APO" />
+      <PropertyRef Name="NOM_APO" />
+      <PropertyRef Name="APE_APO" />
+      <PropertyRef Name="SEXO_APO" />
+      <PropertyRef Name="ID_UBIGEO" />
+      <PropertyRef Name="TEL_APO" />
+      <PropertyRef Name="CORREO_APO" />
+    </Key>
+    <Property Name="DNI_APO" Type="int" Nullable="false" />
+    <Property Name="NOM_APO" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="APE_APO" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="SEXO_APO" Type="char" MaxLength="1" Nullable="false" />
+    <Property Name="ID_UBIGEO" Type="int" Nullable="false" />
+    <Property Name="TEL_APO" Type="varchar" MaxLength="9" Nullable="false" />
+    <Property Name="CORREO_APO" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="ACCION" Type="varchar" MaxLength="20" />
+    <Property Name="FECHAACCION" Type="smalldatetime" />
+  </EntityType>
+  <EntityType Name="TB_CURSO">
+    <Key>
+      <PropertyRef Name="COD_CURSO" />
+    </Key>
+    <Property Name="COD_CURSO" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ID_GRADO" Type="int" Nullable="false" />
+    <Property Name="Nom_Curso" Type="varchar" MaxLength="50" />
+    <Property Name="Fec_Registro" Type="datetime" />
+    <Property Name="Usu_Registro" Type="varchar" MaxLength="50" />
+    <Property Name="Fec_Ult_Mod" Type="datetime" />
+    <Property Name="Usu_Ult_Mod" Type="varchar" MaxLength="50" />
+    <Property Name="Est_Curso" Type="int" />
+  </EntityType>
+  <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'SistemaDeMatriculaCA.dbo.TB_CURSO_PROFESOR' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+  <EntityType Name="TB_CURSO_PROFESOR">
+    <Key>
+      <PropertyRef Name="COD_PROF" />
+      <PropertyRef Name="COD_CURSO" />
+      <PropertyRef Name="ID_SECCION" />
+      <PropertyRef Name="FEC_ASIG" />
+    </Key>
+    <Property Name="COD_PROF" Type="nchar" MaxLength="4" Nullable="false" />
+    <Property Name="COD_CURSO" Type="int" Nullable="false" />
+    <Property Name="ID_SECCION" Type="int" Nullable="false" />
+    <Property Name="FEC_ASIG" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TB_ESTUDIANTE">
+    <Key>
+      <PropertyRef Name="DNI_EST" />
+    </Key>
+    <Property Name="DNI_EST" Type="int" Nullable="false" />
+    <Property Name="NOM_EST" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="APE_EST" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="SEXO_EST" Type="char" MaxLength="1" Nullable="false" />
+    <Property Name="FOTO_EST" Type="image" />
+    <Property Name="FEC_NAC_EST" Type="datetime" Nullable="false" />
+    <Property Name="DNI_APO" Type="int" Nullable="false" />
+    <Property Name="ID_UBIGEO" Type="int" Nullable="false" />
+    <Property Name="EST_EST" Type="int" Nullable="false" />
+    <Property Name="Usu_Registro" Type="varchar" MaxLength="50" />
+    <Property Name="Fec_Registro" Type="datetime" />
+    <Property Name="Usu_Ult_Mod" Type="varchar" MaxLength="50" />
+    <Property Name="Fec_Ult_Mod" Type="datetime" />
+  </EntityType>
+  <EntityType Name="TB_GRADO">
+    <Key>
+      <PropertyRef Name="ID_GRADO" />
+    </Key>
+    <Property Name="ID_GRADO" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="NOM_GRADO" Type="varchar" MaxLength="40" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TB_HORARIO">
+    <Key>
+      <PropertyRef Name="ID_HORARIO" />
+    </Key>
+    <Property Name="ID_HORARIO" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="DIA_SEMANA" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="HORA_INICIO" Type="time" Precision="7" Nullable="false" />
+    <Property Name="HORA_FIN" Type="time" Precision="7" Nullable="false" />
+    <Property Name="COD_CURSO" Type="int" Nullable="false" />
+    <Property Name="ID_SECCION" Type="int" Nullable="false" />
+    <Property Name="Usu_Registro" Type="varchar" MaxLength="50" />
+    <Property Name="Fec_Registro" Type="datetime" />
+    <Property Name="Usu_Ult_Mod" Type="varchar" MaxLength="50" />
+    <Property Name="Fec_Ult_Mod" Type="datetime" />
+    <Property Name="Est_Horario" Type="int" />
+  </EntityType>
+  <EntityType Name="TB_MATRICULA">
+    <Key>
+      <PropertyRef Name="COD_MATRICULA" />
+    </Key>
+    <Property Name="COD_MATRICULA" Type="char" MaxLength="10" Nullable="false" />
+    <Property Name="DNI_EST" Type="int" Nullable="false" />
+    <Property Name="ID_SECCION" Type="int" Nullable="false" />
+    <Property Name="FEC_MATRI" Type="datetime" Nullable="false" />
+    <Property Name="ESTADO_MATRI" Type="int" Nullable="false" />
+    <Property Name="Usu_Registro" Type="varchar" MaxLength="50" />
+    <Property Name="Fec_Registro" Type="datetime" />
+    <Property Name="Usu_Ult_Mod" Type="varchar" MaxLength="50" />
+    <Property Name="Fec_Ult_Mod" Type="datetime" />
+  </EntityType>
+  <EntityType Name="TB_PROFESOR">
+    <Key>
+      <PropertyRef Name="COD_PROF" />
+    </Key>
+    <Property Name="COD_PROF" Type="nchar" MaxLength="4" Nullable="false" />
+    <Property Name="NOM_PROF" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="APE_PROF" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="SEXO_PROF" Type="char" MaxLength="1" Nullable="false" />
+    <Property Name="FOTO_PROF" Type="image" />
+    <Property Name="DNI_PROF" Type="varchar" MaxLength="8" Nullable="false" />
+    <Property Name="ID_UBIGEO" Type="int" Nullable="false" />
+    <Property Name="CORREO_PROF" Type="varchar" MaxLength="70" />
+    <Property Name="ESPECIALIDAD" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="TELF_PROF" Type="varchar" MaxLength="9" />
+    <Property Name="ESTADO_PROF" Type="int" Nullable="false" />
+    <Property Name="Usu_Registro" Type="varchar" MaxLength="50" />
+    <Property Name="Fec_Registro" Type="datetime" />
+    <Property Name="Usu_Ult_Mod" Type="varchar" MaxLength="50" />
+    <Property Name="Fec_Ult_Mod" Type="datetime" />
+  </EntityType>
+  <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'SistemaDeMatriculaCA.dbo.TB_PROFESOR_AUD' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+  <EntityType Name="TB_PROFESOR_AUD">
+    <Key>
+      <PropertyRef Name="COD_PROF" />
+      <PropertyRef Name="NOM_PROF" />
+      <PropertyRef Name="APE_PROF" />
+      <PropertyRef Name="SEXO_PROF" />
+      <PropertyRef Name="DNI_PROF" />
+      <PropertyRef Name="ID_UBIGEO" />
+      <PropertyRef Name="ESPECIALIDAD" />
+      <PropertyRef Name="ESTADO_PROF" />
+    </Key>
+    <Property Name="COD_PROF" Type="nchar" MaxLength="4" Nullable="false" />
+    <Property Name="NOM_PROF" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="APE_PROF" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="SEXO_PROF" Type="char" MaxLength="1" Nullable="false" />
+    <Property Name="DNI_PROF" Type="varchar" MaxLength="8" Nullable="false" />
+    <Property Name="ID_UBIGEO" Type="int" Nullable="false" />
+    <Property Name="CORREO_PROF" Type="varchar" MaxLength="70" />
+    <Property Name="ESPECIALIDAD" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="TELF_PROF" Type="varchar" MaxLength="9" />
+    <Property Name="ESTADO_PROF" Type="int" Nullable="false" />
+    <Property Name="ACCION" Type="varchar" MaxLength="20" />
+    <Property Name="FECHAACCION" Type="smalldatetime" />
+  </EntityType>
+  <EntityType Name="TB_SECCION">
+    <Key>
+      <PropertyRef Name="ID_SECCION" />
+    </Key>
+    <Property Name="ID_SECCION" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="NOM_SECC" Type="varchar" MaxLength="40" Nullable="false" />
+    <Property Name="ID_GRADO" Type="int" Nullable="false" />
+    <Property Name="COD_PROFESOR" Type="nchar" MaxLength="4" Nullable="false" />
+    <Property Name="TURNO_PROF" Type="char" MaxLength="1" Nullable="false" />
+    <Property Name="Usu_Registro" Type="varchar" MaxLength="50" />
+    <Property Name="Fec_Registro" Type="datetime" />
+    <Property Name="Usu_Ult_Mod" Type="varchar" MaxLength="50" />
+    <Property Name="Fec_Ult_Mod" Type="datetime" />
+    <Property Name="Est_Matricula" Type="int" />
+  </EntityType>
+  <EntityType Name="TB_UBIGEO">
+    <Key>
+      <PropertyRef Name="ID_UBIGEO" />
+    </Key>
+    <Property Name="ID_UBIGEO" Type="int" Nullable="false" />
+    <Property Name="ID_DEPA" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="ID_PROV" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="ID_DIST" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="DEPARTAMENTO" Type="varchar" MaxLength="40" Nullable="false" />
+    <Property Name="PROVINCIA" Type="varchar" MaxLength="40" Nullable="false" />
+    <Property Name="DISTRITO" Type="varchar" MaxLength="40" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TB_USUARIO">
+    <Key>
+      <PropertyRef Name="Login_Usuario" />
+    </Key>
+    <Property Name="Login_Usuario" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="Pass_Usuario" Type="varchar" MaxLength="20" />
+    <Property Name="Niv_Usuario" Type="int" />
+    <Property Name="Est_Usuario" Type="int" />
+    <Property Name="Fec_Registro" Type="datetime" />
+    <Property Name="Usu_Registro" Type="varchar" MaxLength="20" />
+  </EntityType>
+  <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'SistemaDeMatriculaCA.dbo.Temp_TB_SECCION' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+  <EntityType Name="Temp_TB_SECCION">
+    <Key>
+      <PropertyRef Name="NOM_SECC" />
+      <PropertyRef Name="ID_GRADO" />
+      <PropertyRef Name="COD_PROFESOR" />
+      <PropertyRef Name="TURNO_PROF" />
+    </Key>
+    <Property Name="NewID" Type="bigint" />
+    <Property Name="NOM_SECC" Type="varchar" MaxLength="40" Nullable="false" />
+    <Property Name="ID_GRADO" Type="int" Nullable="false" />
+    <Property Name="COD_PROFESOR" Type="nchar" MaxLength="4" Nullable="false" />
+    <Property Name="TURNO_PROF" Type="char" MaxLength="1" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_COD_PROFESOR">
+    <End Role="TB_PROFESOR" Type="Self.TB_PROFESOR" Multiplicity="1" />
+    <End Role="TB_CURSO_PROFESOR" Type="Self.TB_CURSO_PROFESOR" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_PROFESOR">
+        <PropertyRef Name="COD_PROF" />
+      </Principal>
+      <Dependent Role="TB_CURSO_PROFESOR">
+        <PropertyRef Name="COD_PROF" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CURSO">
+    <End Role="TB_CURSO" Type="Self.TB_CURSO" Multiplicity="1" />
+    <End Role="TB_CURSO_PROFESOR" Type="Self.TB_CURSO_PROFESOR" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_CURSO">
+        <PropertyRef Name="COD_CURSO" />
+      </Principal>
+      <Dependent Role="TB_CURSO_PROFESOR">
+        <PropertyRef Name="COD_CURSO" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_DNI_APODERADO">
+    <End Role="TB_APODERADO" Type="Self.TB_APODERADO" Multiplicity="1" />
+    <End Role="TB_ESTUDIANTE" Type="Self.TB_ESTUDIANTE" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_APODERADO">
+        <PropertyRef Name="DNI_APO" />
+      </Principal>
+      <Dependent Role="TB_ESTUDIANTE">
+        <PropertyRef Name="DNI_APO" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_DNI_ESTUDIANTE">
+    <End Role="TB_ESTUDIANTE" Type="Self.TB_ESTUDIANTE" Multiplicity="1" />
+    <End Role="TB_MATRICULA" Type="Self.TB_MATRICULA" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_ESTUDIANTE">
+        <PropertyRef Name="DNI_EST" />
+      </Principal>
+      <Dependent Role="TB_MATRICULA">
+        <PropertyRef Name="DNI_EST" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ID_SECCION">
+    <End Role="TB_SECCION" Type="Self.TB_SECCION" Multiplicity="1" />
+    <End Role="TB_MATRICULA" Type="Self.TB_MATRICULA" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_SECCION">
+        <PropertyRef Name="ID_SECCION" />
+      </Principal>
+      <Dependent Role="TB_MATRICULA">
+        <PropertyRef Name="ID_SECCION" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ID_UBIGEO">
+    <End Role="TB_UBIGEO" Type="Self.TB_UBIGEO" Multiplicity="1" />
+    <End Role="TB_APODERADO" Type="Self.TB_APODERADO" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_UBIGEO">
+        <PropertyRef Name="ID_UBIGEO" />
+      </Principal>
+      <Dependent Role="TB_APODERADO">
+        <PropertyRef Name="ID_UBIGEO" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_IDSECCION">
+    <End Role="TB_SECCION" Type="Self.TB_SECCION" Multiplicity="1" />
+    <End Role="TB_CURSO_PROFESOR" Type="Self.TB_CURSO_PROFESOR" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_SECCION">
+        <PropertyRef Name="ID_SECCION" />
+      </Principal>
+      <Dependent Role="TB_CURSO_PROFESOR">
+        <PropertyRef Name="ID_SECCION" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_IDUBIGEO">
+    <End Role="TB_UBIGEO" Type="Self.TB_UBIGEO" Multiplicity="1" />
+    <End Role="TB_ESTUDIANTE" Type="Self.TB_ESTUDIANTE" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_UBIGEO">
+        <PropertyRef Name="ID_UBIGEO" />
+      </Principal>
+      <Dependent Role="TB_ESTUDIANTE">
+        <PropertyRef Name="ID_UBIGEO" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FKCOD_PROFESOR">
+    <End Role="TB_PROFESOR" Type="Self.TB_PROFESOR" Multiplicity="1" />
+    <End Role="TB_SECCION" Type="Self.TB_SECCION" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_PROFESOR">
+        <PropertyRef Name="COD_PROF" />
+      </Principal>
+      <Dependent Role="TB_SECCION">
+        <PropertyRef Name="COD_PROFESOR" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FKID_GRADO">
+    <End Role="TB_GRADO" Type="Self.TB_GRADO" Multiplicity="1" />
+    <End Role="TB_SECCION" Type="Self.TB_SECCION" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_GRADO">
+        <PropertyRef Name="ID_GRADO" />
+      </Principal>
+      <Dependent Role="TB_SECCION">
+        <PropertyRef Name="ID_GRADO" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FKIDGRADO">
+    <End Role="TB_GRADO" Type="Self.TB_GRADO" Multiplicity="1" />
+    <End Role="TB_CURSO" Type="Self.TB_CURSO" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_GRADO">
+        <PropertyRef Name="ID_GRADO" />
+      </Principal>
+      <Dependent Role="TB_CURSO">
+        <PropertyRef Name="ID_GRADO" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FKIDUBIGEO">
+    <End Role="TB_UBIGEO" Type="Self.TB_UBIGEO" Multiplicity="1" />
+    <End Role="TB_PROFESOR" Type="Self.TB_PROFESOR" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_UBIGEO">
+        <PropertyRef Name="ID_UBIGEO" />
+      </Principal>
+      <Dependent Role="TB_PROFESOR">
+        <PropertyRef Name="ID_UBIGEO" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Function Name="usp_ActualizarApoderado" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="dniApo" Type="int" Mode="In" />
+    <Parameter Name="nomApo" Type="varchar" Mode="In" />
+    <Parameter Name="apeApo" Type="varchar" Mode="In" />
+    <Parameter Name="sexApo" Type="char" Mode="In" />
+    <Parameter Name="ubigeoApo" Type="int" Mode="In" />
+    <Parameter Name="fotoApo" Type="image" Mode="In" />
+    <Parameter Name="telfApo" Type="int" Mode="In" />
+    <Parameter Name="correoApo" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="usp_ActualizarCurso" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Cod_Curso" Type="int" Mode="In" />
+    <Parameter Name="Id_Grado" Type="int" Mode="In" />
+    <Parameter Name="Nom_Curso" Type="varchar" Mode="In" />
+    <Parameter Name="Usu_Ult_Mod" Type="varchar" Mode="In" />
+    <Parameter Name="Est_Curso" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_ActualizarEstudiante" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="dniEst" Type="char" Mode="In" />
+    <Parameter Name="nomEst" Type="varchar" Mode="In" />
+    <Parameter Name="apeEst" Type="varchar" Mode="In" />
+    <Parameter Name="sexEst" Type="char" Mode="In" />
+    <Parameter Name="fotoEst" Type="image" Mode="In" />
+    <Parameter Name="fecNacEst" Type="datetime" Mode="In" />
+    <Parameter Name="dniApo" Type="int" Mode="In" />
+    <Parameter Name="IdUbigeo" Type="int" Mode="In" />
+    <Parameter Name="estadoEst" Type="int" Mode="In" />
+    <Parameter Name="Usu_Ult_Mod" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="usp_ActualizarHorario" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="idHora" Type="int" Mode="In" />
+    <Parameter Name="diaSem" Type="varchar" Mode="In" />
+    <Parameter Name="horaIni" Type="time" Mode="In" />
+    <Parameter Name="horaFin" Type="time" Mode="In" />
+    <Parameter Name="codCurso" Type="int" Mode="In" />
+    <Parameter Name="idSecc" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_ActualizarMatricula" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="codMatri" Type="varchar" Mode="In" />
+    <Parameter Name="dniEst" Type="int" Mode="In" />
+    <Parameter Name="idSeccion" Type="int" Mode="In" />
+    <Parameter Name="fecMatri" Type="datetime2" Mode="In" />
+    <Parameter Name="estMatri" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_ActualizarProfesor" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="codProf" Type="char" Mode="In" />
+    <Parameter Name="nomProf" Type="varchar" Mode="In" />
+    <Parameter Name="apeProf" Type="varchar" Mode="In" />
+    <Parameter Name="sexProf" Type="char" Mode="In" />
+    <Parameter Name="fotoProf" Type="image" Mode="In" />
+    <Parameter Name="dniProf" Type="varchar" Mode="In" />
+    <Parameter Name="ubigeoProf" Type="int" Mode="In" />
+    <Parameter Name="correoProf" Type="varchar" Mode="In" />
+    <Parameter Name="especialidadProf" Type="varchar" Mode="In" />
+    <Parameter Name="telfProf" Type="varchar" Mode="In" />
+    <Parameter Name="estadoProf" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_ActualizarSeccion" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="idSeccion" Type="int" Mode="In" />
+    <Parameter Name="nomSeccion" Type="varchar" Mode="In" />
+    <Parameter Name="idGrado" Type="int" Mode="In" />
+    <Parameter Name="codProfesor" Type="nchar" Mode="In" />
+    <Parameter Name="turnoProfesor" Type="char" Mode="In" />
+  </Function>
+  <Function Name="usp_ConsultarApoderado" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="dniApo" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_ConsultarCurso" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Cod_Curso" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_ConsultarEstudiante" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="dniEst" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_ConsultarHorario" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="idHora" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_ConsultarMatricula" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="codMatri" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="usp_ConsultarProfesor" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="codProf" Type="char" Mode="In" />
+  </Function>
+  <Function Name="usp_ConsultarSeccion" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="idSeccion" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_ConsultarUsuario" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Login_Usuario" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="usp_EliminarApoderado" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="dniApo" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_EliminarCurso" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Cod_Curso" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_EliminarEstudiante" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="dniEst" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_EliminarHorario" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="idHora" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_EliminarMatricula" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="codMatri" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="usp_EliminarProfesor" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="codProf" Type="char" Mode="In" />
+  </Function>
+  <Function Name="usp_EliminarSeccion" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="idSeccion" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_InsertarApoderado" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="dniApo" Type="int" Mode="In" />
+    <Parameter Name="nomApo" Type="varchar" Mode="In" />
+    <Parameter Name="apeApo" Type="varchar" Mode="In" />
+    <Parameter Name="sexApo" Type="char" Mode="In" />
+    <Parameter Name="ubigeoApo" Type="int" Mode="In" />
+    <Parameter Name="fotoApo" Type="image" Mode="In" />
+    <Parameter Name="telfApo" Type="int" Mode="In" />
+    <Parameter Name="correoApo" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="usp_InsertarCurso" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Id_Grado" Type="int" Mode="In" />
+    <Parameter Name="NOM_CURSO" Type="varchar" Mode="In" />
+    <Parameter Name="Usu_Registro" Type="varchar" Mode="In" />
+    <Parameter Name="Usu_Ult_Mod" Type="varchar" Mode="In" />
+    <Parameter Name="Est_Curso" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_InsertarEstudiante" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="dniEst" Type="int" Mode="In" />
+    <Parameter Name="nomEst" Type="varchar" Mode="In" />
+    <Parameter Name="apeEst" Type="varchar" Mode="In" />
+    <Parameter Name="sexEst" Type="char" Mode="In" />
+    <Parameter Name="fotoEst" Type="image" Mode="In" />
+    <Parameter Name="fecNacEst" Type="datetime" Mode="In" />
+    <Parameter Name="dniApo" Type="int" Mode="In" />
+    <Parameter Name="idUbigeo" Type="int" Mode="In" />
+    <Parameter Name="estadoEst" Type="int" Mode="In" />
+    <Parameter Name="Usu_Registro" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="usp_InsertarHorario" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diaSem" Type="varchar" Mode="In" />
+    <Parameter Name="horaIni" Type="time" Mode="In" />
+    <Parameter Name="horaFin" Type="time" Mode="In" />
+    <Parameter Name="codCurso" Type="int" Mode="In" />
+    <Parameter Name="idSecc" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_InsertarMatricula" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="codMat" Type="varchar" Mode="In" />
+    <Parameter Name="dniEst" Type="int" Mode="In" />
+    <Parameter Name="idSeccion" Type="int" Mode="In" />
+    <Parameter Name="fecMatri" Type="datetime2" Mode="In" />
+    <Parameter Name="estMatri" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_InsertarProfesor" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="nomProf" Type="varchar" Mode="In" />
+    <Parameter Name="apeProf" Type="varchar" Mode="In" />
+    <Parameter Name="sexProf" Type="char" Mode="In" />
+    <Parameter Name="fotoProf" Type="image" Mode="In" />
+    <Parameter Name="dniProf" Type="varchar" Mode="In" />
+    <Parameter Name="ubigeoProf" Type="int" Mode="In" />
+    <Parameter Name="correoProf" Type="varchar" Mode="In" />
+    <Parameter Name="especialidadProf" Type="varchar" Mode="In" />
+    <Parameter Name="telfProf" Type="varchar" Mode="In" />
+    <Parameter Name="estadoProf" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_InsertarSeccion" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="nomSeccion" Type="varchar" Mode="In" />
+    <Parameter Name="idGrado" Type="int" Mode="In" />
+    <Parameter Name="codProfesor" Type="nchar" Mode="In" />
+    <Parameter Name="turnoProfesor" Type="char" Mode="In" />
+  </Function>
+  <Function Name="usp_ListarApoderado" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="usp_ListarCurso" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="usp_ListarDistritos" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="usp_ListarEstudiante" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="usp_ListarGrado" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="usp_ListarHorario" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="OrdenarPor" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="usp_ListarMatricula" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="usp_ListarProfesor" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="usp_ListarSeccion" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <EntityContainer Name="SistemaMatriculaStoreContainer">
+    <EntitySet Name="TB_APODERADO" EntityType="Self.TB_APODERADO" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TB_CURSO" EntityType="Self.TB_CURSO" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TB_ESTUDIANTE" EntityType="Self.TB_ESTUDIANTE" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TB_GRADO" EntityType="Self.TB_GRADO" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TB_HORARIO" EntityType="Self.TB_HORARIO" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TB_MATRICULA" EntityType="Self.TB_MATRICULA" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TB_PROFESOR" EntityType="Self.TB_PROFESOR" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TB_SECCION" EntityType="Self.TB_SECCION" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TB_UBIGEO" EntityType="Self.TB_UBIGEO" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TB_USUARIO" EntityType="Self.TB_USUARIO" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TB_APODERADO_AUD" EntityType="Self.TB_APODERADO_AUD" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [TB_APODERADO_AUD].[DNI_APO] AS [DNI_APO], 
+    [TB_APODERADO_AUD].[NOM_APO] AS [NOM_APO], 
+    [TB_APODERADO_AUD].[APE_APO] AS [APE_APO], 
+    [TB_APODERADO_AUD].[SEXO_APO] AS [SEXO_APO], 
+    [TB_APODERADO_AUD].[ID_UBIGEO] AS [ID_UBIGEO], 
+    [TB_APODERADO_AUD].[TEL_APO] AS [TEL_APO], 
+    [TB_APODERADO_AUD].[CORREO_APO] AS [CORREO_APO], 
+    [TB_APODERADO_AUD].[ACCION] AS [ACCION], 
+    [TB_APODERADO_AUD].[FECHAACCION] AS [FECHAACCION]
+    FROM [dbo].[TB_APODERADO_AUD] AS [TB_APODERADO_AUD]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="TB_CURSO_PROFESOR" EntityType="Self.TB_CURSO_PROFESOR" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [TB_CURSO_PROFESOR].[COD_PROF] AS [COD_PROF], 
+    [TB_CURSO_PROFESOR].[COD_CURSO] AS [COD_CURSO], 
+    [TB_CURSO_PROFESOR].[ID_SECCION] AS [ID_SECCION], 
+    [TB_CURSO_PROFESOR].[FEC_ASIG] AS [FEC_ASIG]
+    FROM [dbo].[TB_CURSO_PROFESOR] AS [TB_CURSO_PROFESOR]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="TB_PROFESOR_AUD" EntityType="Self.TB_PROFESOR_AUD" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [TB_PROFESOR_AUD].[COD_PROF] AS [COD_PROF], 
+    [TB_PROFESOR_AUD].[NOM_PROF] AS [NOM_PROF], 
+    [TB_PROFESOR_AUD].[APE_PROF] AS [APE_PROF], 
+    [TB_PROFESOR_AUD].[SEXO_PROF] AS [SEXO_PROF], 
+    [TB_PROFESOR_AUD].[DNI_PROF] AS [DNI_PROF], 
+    [TB_PROFESOR_AUD].[ID_UBIGEO] AS [ID_UBIGEO], 
+    [TB_PROFESOR_AUD].[CORREO_PROF] AS [CORREO_PROF], 
+    [TB_PROFESOR_AUD].[ESPECIALIDAD] AS [ESPECIALIDAD], 
+    [TB_PROFESOR_AUD].[TELF_PROF] AS [TELF_PROF], 
+    [TB_PROFESOR_AUD].[ESTADO_PROF] AS [ESTADO_PROF], 
+    [TB_PROFESOR_AUD].[ACCION] AS [ACCION], 
+    [TB_PROFESOR_AUD].[FECHAACCION] AS [FECHAACCION]
+    FROM [dbo].[TB_PROFESOR_AUD] AS [TB_PROFESOR_AUD]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="Temp_TB_SECCION" EntityType="Self.Temp_TB_SECCION" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [Temp_TB_SECCION].[NewID] AS [NewID], 
+    [Temp_TB_SECCION].[NOM_SECC] AS [NOM_SECC], 
+    [Temp_TB_SECCION].[ID_GRADO] AS [ID_GRADO], 
+    [Temp_TB_SECCION].[COD_PROFESOR] AS [COD_PROFESOR], 
+    [Temp_TB_SECCION].[TURNO_PROF] AS [TURNO_PROF]
+    FROM [dbo].[Temp_TB_SECCION] AS [Temp_TB_SECCION]</DefiningQuery>
+    </EntitySet>
+    <AssociationSet Name="FK_COD_PROFESOR" Association="Self.FK_COD_PROFESOR">
+      <End Role="TB_PROFESOR" EntitySet="TB_PROFESOR" />
+      <End Role="TB_CURSO_PROFESOR" EntitySet="TB_CURSO_PROFESOR" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CURSO" Association="Self.FK_CURSO">
+      <End Role="TB_CURSO" EntitySet="TB_CURSO" />
+      <End Role="TB_CURSO_PROFESOR" EntitySet="TB_CURSO_PROFESOR" />
+    </AssociationSet>
+    <AssociationSet Name="FK_DNI_APODERADO" Association="Self.FK_DNI_APODERADO">
+      <End Role="TB_APODERADO" EntitySet="TB_APODERADO" />
+      <End Role="TB_ESTUDIANTE" EntitySet="TB_ESTUDIANTE" />
+    </AssociationSet>
+    <AssociationSet Name="FK_DNI_ESTUDIANTE" Association="Self.FK_DNI_ESTUDIANTE">
+      <End Role="TB_ESTUDIANTE" EntitySet="TB_ESTUDIANTE" />
+      <End Role="TB_MATRICULA" EntitySet="TB_MATRICULA" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ID_SECCION" Association="Self.FK_ID_SECCION">
+      <End Role="TB_SECCION" EntitySet="TB_SECCION" />
+      <End Role="TB_MATRICULA" EntitySet="TB_MATRICULA" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ID_UBIGEO" Association="Self.FK_ID_UBIGEO">
+      <End Role="TB_UBIGEO" EntitySet="TB_UBIGEO" />
+      <End Role="TB_APODERADO" EntitySet="TB_APODERADO" />
+    </AssociationSet>
+    <AssociationSet Name="FK_IDSECCION" Association="Self.FK_IDSECCION">
+      <End Role="TB_SECCION" EntitySet="TB_SECCION" />
+      <End Role="TB_CURSO_PROFESOR" EntitySet="TB_CURSO_PROFESOR" />
+    </AssociationSet>
+    <AssociationSet Name="FK_IDUBIGEO" Association="Self.FK_IDUBIGEO">
+      <End Role="TB_UBIGEO" EntitySet="TB_UBIGEO" />
+      <End Role="TB_ESTUDIANTE" EntitySet="TB_ESTUDIANTE" />
+    </AssociationSet>
+    <AssociationSet Name="FKCOD_PROFESOR" Association="Self.FKCOD_PROFESOR">
+      <End Role="TB_PROFESOR" EntitySet="TB_PROFESOR" />
+      <End Role="TB_SECCION" EntitySet="TB_SECCION" />
+    </AssociationSet>
+    <AssociationSet Name="FKID_GRADO" Association="Self.FKID_GRADO">
+      <End Role="TB_GRADO" EntitySet="TB_GRADO" />
+      <End Role="TB_SECCION" EntitySet="TB_SECCION" />
+    </AssociationSet>
+    <AssociationSet Name="FKIDGRADO" Association="Self.FKIDGRADO">
+      <End Role="TB_GRADO" EntitySet="TB_GRADO" />
+      <End Role="TB_CURSO" EntitySet="TB_CURSO" />
+    </AssociationSet>
+    <AssociationSet Name="FKIDUBIGEO" Association="Self.FKIDUBIGEO">
+      <End Role="TB_UBIGEO" EntitySet="TB_UBIGEO" />
+      <End Role="TB_PROFESOR" EntitySet="TB_PROFESOR" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

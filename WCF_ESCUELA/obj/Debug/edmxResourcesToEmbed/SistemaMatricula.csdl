@@ -1,0 +1,773 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="SistemaDeMatriculaCAModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="TB_APODERADO">
+    <Key>
+      <PropertyRef Name="DNI_APO" />
+    </Key>
+    <Property Name="DNI_APO" Type="Int32" Nullable="false" />
+    <Property Name="NOM_APO" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="APE_APO" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="SEXO_APO" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="ID_UBIGEO" Type="Int32" Nullable="false" />
+    <Property Name="FOTO_APO" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="TEL_APO" Type="String" MaxLength="9" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="CORREO_APO" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Usu_Registro" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Fec_Registro" Type="DateTime" Precision="3" />
+    <Property Name="Usu_Ult_Mod" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Fec_Ult_Mod" Type="DateTime" Precision="3" />
+    <Property Name="Estado" Type="Int32" />
+    <NavigationProperty Name="TB_ESTUDIANTE" Relationship="Self.FK_DNI_APODERADO" FromRole="TB_APODERADO" ToRole="TB_ESTUDIANTE" />
+    <NavigationProperty Name="TB_UBIGEO" Relationship="Self.FK_ID_UBIGEO" FromRole="TB_APODERADO" ToRole="TB_UBIGEO" />
+  </EntityType>
+  <EntityType Name="TB_CURSO">
+    <Key>
+      <PropertyRef Name="COD_CURSO" />
+    </Key>
+    <Property Name="COD_CURSO" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ID_GRADO" Type="Int32" Nullable="false" />
+    <Property Name="Nom_Curso" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Fec_Registro" Type="DateTime" Precision="3" />
+    <Property Name="Usu_Registro" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Fec_Ult_Mod" Type="DateTime" Precision="3" />
+    <Property Name="Usu_Ult_Mod" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Est_Curso" Type="Int32" />
+    <NavigationProperty Name="TB_CURSO_PROFESOR" Relationship="Self.FK_CURSO" FromRole="TB_CURSO" ToRole="TB_CURSO_PROFESOR" />
+    <NavigationProperty Name="TB_GRADO" Relationship="Self.FKIDGRADO" FromRole="TB_CURSO" ToRole="TB_GRADO" />
+  </EntityType>
+  <EntityType Name="TB_ESTUDIANTE">
+    <Key>
+      <PropertyRef Name="DNI_EST" />
+    </Key>
+    <Property Name="DNI_EST" Type="Int32" Nullable="false" />
+    <Property Name="NOM_EST" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="APE_EST" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="SEXO_EST" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="FOTO_EST" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="FEC_NAC_EST" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="DNI_APO" Type="Int32" Nullable="false" />
+    <Property Name="ID_UBIGEO" Type="Int32" Nullable="false" />
+    <Property Name="EST_EST" Type="Int32" Nullable="false" />
+    <Property Name="Usu_Registro" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Fec_Registro" Type="DateTime" Precision="3" />
+    <Property Name="Usu_Ult_Mod" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Fec_Ult_Mod" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="TB_APODERADO" Relationship="Self.FK_DNI_APODERADO" FromRole="TB_ESTUDIANTE" ToRole="TB_APODERADO" />
+    <NavigationProperty Name="TB_MATRICULA" Relationship="Self.FK_DNI_ESTUDIANTE" FromRole="TB_ESTUDIANTE" ToRole="TB_MATRICULA" />
+    <NavigationProperty Name="TB_UBIGEO" Relationship="Self.FK_IDUBIGEO" FromRole="TB_ESTUDIANTE" ToRole="TB_UBIGEO" />
+  </EntityType>
+  <EntityType Name="TB_GRADO">
+    <Key>
+      <PropertyRef Name="ID_GRADO" />
+    </Key>
+    <Property Name="ID_GRADO" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="NOM_GRADO" Type="String" MaxLength="40" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="TB_CURSO" Relationship="Self.FKIDGRADO" FromRole="TB_GRADO" ToRole="TB_CURSO" />
+    <NavigationProperty Name="TB_SECCION" Relationship="Self.FKID_GRADO" FromRole="TB_GRADO" ToRole="TB_SECCION" />
+  </EntityType>
+  <EntityType Name="TB_HORARIO">
+    <Key>
+      <PropertyRef Name="ID_HORARIO" />
+    </Key>
+    <Property Name="ID_HORARIO" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="DIA_SEMANA" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="HORA_INICIO" Type="Time" Nullable="false" Precision="7" />
+    <Property Name="HORA_FIN" Type="Time" Nullable="false" Precision="7" />
+    <Property Name="COD_CURSO" Type="Int32" Nullable="false" />
+    <Property Name="ID_SECCION" Type="Int32" Nullable="false" />
+    <Property Name="Usu_Registro" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Fec_Registro" Type="DateTime" Precision="3" />
+    <Property Name="Usu_Ult_Mod" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Fec_Ult_Mod" Type="DateTime" Precision="3" />
+    <Property Name="Est_Horario" Type="Int32" />
+  </EntityType>
+  <EntityType Name="TB_MATRICULA">
+    <Key>
+      <PropertyRef Name="COD_MATRICULA" />
+    </Key>
+    <Property Name="COD_MATRICULA" Type="String" MaxLength="4" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="DNI_EST" Type="Int32" Nullable="false" />
+    <Property Name="ID_SECCION" Type="Int32" Nullable="false" />
+    <Property Name="ESTADO_MATRI" Type="Int32" Nullable="false" />
+    <Property Name="Usu_Registro" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Fec_Registro" Type="DateTime" Precision="3" />
+    <Property Name="Usu_Ult_Mod" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Fec_Ult_Mod" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="TB_ESTUDIANTE" Relationship="Self.FK_DNI_ESTUDIANTE" FromRole="TB_MATRICULA" ToRole="TB_ESTUDIANTE" />
+    <NavigationProperty Name="TB_SECCION" Relationship="Self.FK_ID_SECCION" FromRole="TB_MATRICULA" ToRole="TB_SECCION" />
+  </EntityType>
+  <EntityType Name="TB_PROFESOR">
+    <Key>
+      <PropertyRef Name="COD_PROF" />
+    </Key>
+    <Property Name="COD_PROF" Type="String" MaxLength="4" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="NOM_PROF" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="APE_PROF" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="SEXO_PROF" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="FOTO_PROF" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="DNI_PROF" Type="String" MaxLength="8" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ID_UBIGEO" Type="Int32" Nullable="false" />
+    <Property Name="CORREO_PROF" Type="String" MaxLength="70" FixedLength="false" Unicode="false" />
+    <Property Name="ESPECIALIDAD" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="TELF_PROF" Type="String" MaxLength="9" FixedLength="false" Unicode="false" />
+    <Property Name="ESTADO_PROF" Type="Int32" Nullable="false" />
+    <Property Name="Usu_Registro" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Fec_Registro" Type="DateTime" Precision="3" />
+    <Property Name="Usu_Ult_Mod" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Fec_Ult_Mod" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="TB_CURSO_PROFESOR" Relationship="Self.FK_COD_PROFESOR" FromRole="TB_PROFESOR" ToRole="TB_CURSO_PROFESOR" />
+    <NavigationProperty Name="TB_SECCION" Relationship="Self.FKCOD_PROFESOR" FromRole="TB_PROFESOR" ToRole="TB_SECCION" />
+    <NavigationProperty Name="TB_UBIGEO" Relationship="Self.FKIDUBIGEO" FromRole="TB_PROFESOR" ToRole="TB_UBIGEO" />
+  </EntityType>
+  <EntityType Name="TB_SECCION">
+    <Key>
+      <PropertyRef Name="ID_SECCION" />
+    </Key>
+    <Property Name="ID_SECCION" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="NOM_SECC" Type="String" MaxLength="40" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ID_GRADO" Type="Int32" Nullable="false" />
+    <Property Name="COD_PROFESOR" Type="String" MaxLength="4" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="TURNO_PROF" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="Usu_Registro" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Fec_Registro" Type="DateTime" Precision="3" />
+    <Property Name="Usu_Ult_Mod" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Fec_Ult_Mod" Type="DateTime" Precision="3" />
+    <Property Name="Est_Matricula" Type="Int32" />
+    <NavigationProperty Name="TB_GRADO" Relationship="Self.FKID_GRADO" FromRole="TB_SECCION" ToRole="TB_GRADO" />
+    <NavigationProperty Name="TB_MATRICULA" Relationship="Self.FK_ID_SECCION" FromRole="TB_SECCION" ToRole="TB_MATRICULA" />
+    <NavigationProperty Name="TB_PROFESOR" Relationship="Self.FKCOD_PROFESOR" FromRole="TB_SECCION" ToRole="TB_PROFESOR" />
+    <NavigationProperty Name="TB_CURSO_PROFESOR" Relationship="Self.FK_IDSECCION" FromRole="TB_SECCION" ToRole="TB_CURSO_PROFESOR" />
+  </EntityType>
+  <EntityType Name="TB_UBIGEO">
+    <Key>
+      <PropertyRef Name="ID_UBIGEO" />
+    </Key>
+    <Property Name="ID_UBIGEO" Type="Int32" Nullable="false" />
+    <Property Name="ID_DEPA" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ID_PROV" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ID_DIST" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="DEPARTAMENTO" Type="String" MaxLength="40" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="PROVINCIA" Type="String" MaxLength="40" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="DISTRITO" Type="String" MaxLength="40" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="TB_APODERADO" Relationship="Self.FK_ID_UBIGEO" FromRole="TB_UBIGEO" ToRole="TB_APODERADO" />
+    <NavigationProperty Name="TB_ESTUDIANTE" Relationship="Self.FK_IDUBIGEO" FromRole="TB_UBIGEO" ToRole="TB_ESTUDIANTE" />
+    <NavigationProperty Name="TB_PROFESOR" Relationship="Self.FKIDUBIGEO" FromRole="TB_UBIGEO" ToRole="TB_PROFESOR" />
+  </EntityType>
+  <EntityType Name="TB_USUARIO">
+    <Key>
+      <PropertyRef Name="Login_Usuario" />
+    </Key>
+    <Property Name="Login_Usuario" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Pass_Usuario" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Niv_Usuario" Type="Int32" />
+    <Property Name="Est_Usuario" Type="Int32" />
+    <Property Name="Fec_Registro" Type="DateTime" Precision="3" />
+    <Property Name="Usu_Registro" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="TB_CURSO_PROFESOR">
+    <Key>
+      <PropertyRef Name="COD_PROF" />
+      <PropertyRef Name="COD_CURSO" />
+      <PropertyRef Name="ID_SECCION" />
+      <PropertyRef Name="FEC_ASIG" />
+    </Key>
+    <Property Name="COD_PROF" Type="String" MaxLength="4" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="COD_CURSO" Type="Int32" Nullable="false" />
+    <Property Name="ID_SECCION" Type="Int32" Nullable="false" />
+    <Property Name="FEC_ASIG" Type="DateTime" Nullable="false" Precision="3" />
+    <NavigationProperty Name="TB_CURSO" Relationship="Self.FK_CURSO" FromRole="TB_CURSO_PROFESOR" ToRole="TB_CURSO" />
+    <NavigationProperty Name="TB_PROFESOR" Relationship="Self.FK_COD_PROFESOR" FromRole="TB_CURSO_PROFESOR" ToRole="TB_PROFESOR" />
+    <NavigationProperty Name="TB_SECCION" Relationship="Self.FK_IDSECCION" FromRole="TB_CURSO_PROFESOR" ToRole="TB_SECCION" />
+  </EntityType>
+  <Association Name="FK_DNI_APODERADO">
+    <End Role="TB_APODERADO" Type="Self.TB_APODERADO" Multiplicity="1" />
+    <End Role="TB_ESTUDIANTE" Type="Self.TB_ESTUDIANTE" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_APODERADO">
+        <PropertyRef Name="DNI_APO" />
+      </Principal>
+      <Dependent Role="TB_ESTUDIANTE">
+        <PropertyRef Name="DNI_APO" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ID_UBIGEO">
+    <End Role="TB_UBIGEO" Type="Self.TB_UBIGEO" Multiplicity="1" />
+    <End Role="TB_APODERADO" Type="Self.TB_APODERADO" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_UBIGEO">
+        <PropertyRef Name="ID_UBIGEO" />
+      </Principal>
+      <Dependent Role="TB_APODERADO">
+        <PropertyRef Name="ID_UBIGEO" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CURSO">
+    <End Role="TB_CURSO" Type="Self.TB_CURSO" Multiplicity="1" />
+    <End Role="TB_CURSO_PROFESOR" Type="Self.TB_CURSO_PROFESOR" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_CURSO">
+        <PropertyRef Name="COD_CURSO" />
+      </Principal>
+      <Dependent Role="TB_CURSO_PROFESOR">
+        <PropertyRef Name="COD_CURSO" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FKIDGRADO">
+    <End Role="TB_GRADO" Type="Self.TB_GRADO" Multiplicity="1" />
+    <End Role="TB_CURSO" Type="Self.TB_CURSO" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_GRADO">
+        <PropertyRef Name="ID_GRADO" />
+      </Principal>
+      <Dependent Role="TB_CURSO">
+        <PropertyRef Name="ID_GRADO" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_DNI_ESTUDIANTE">
+    <End Role="TB_ESTUDIANTE" Type="Self.TB_ESTUDIANTE" Multiplicity="1" />
+    <End Role="TB_MATRICULA" Type="Self.TB_MATRICULA" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_ESTUDIANTE">
+        <PropertyRef Name="DNI_EST" />
+      </Principal>
+      <Dependent Role="TB_MATRICULA">
+        <PropertyRef Name="DNI_EST" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_IDUBIGEO">
+    <End Role="TB_UBIGEO" Type="Self.TB_UBIGEO" Multiplicity="1" />
+    <End Role="TB_ESTUDIANTE" Type="Self.TB_ESTUDIANTE" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_UBIGEO">
+        <PropertyRef Name="ID_UBIGEO" />
+      </Principal>
+      <Dependent Role="TB_ESTUDIANTE">
+        <PropertyRef Name="ID_UBIGEO" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FKID_GRADO">
+    <End Role="TB_GRADO" Type="Self.TB_GRADO" Multiplicity="1" />
+    <End Role="TB_SECCION" Type="Self.TB_SECCION" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_GRADO">
+        <PropertyRef Name="ID_GRADO" />
+      </Principal>
+      <Dependent Role="TB_SECCION">
+        <PropertyRef Name="ID_GRADO" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ID_SECCION">
+    <End Role="TB_SECCION" Type="Self.TB_SECCION" Multiplicity="1" />
+    <End Role="TB_MATRICULA" Type="Self.TB_MATRICULA" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_SECCION">
+        <PropertyRef Name="ID_SECCION" />
+      </Principal>
+      <Dependent Role="TB_MATRICULA">
+        <PropertyRef Name="ID_SECCION" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_COD_PROFESOR">
+    <End Role="TB_PROFESOR" Type="Self.TB_PROFESOR" Multiplicity="1" />
+    <End Role="TB_CURSO_PROFESOR" Type="Self.TB_CURSO_PROFESOR" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_PROFESOR">
+        <PropertyRef Name="COD_PROF" />
+      </Principal>
+      <Dependent Role="TB_CURSO_PROFESOR">
+        <PropertyRef Name="COD_PROF" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FKCOD_PROFESOR">
+    <End Role="TB_PROFESOR" Type="Self.TB_PROFESOR" Multiplicity="1" />
+    <End Role="TB_SECCION" Type="Self.TB_SECCION" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_PROFESOR">
+        <PropertyRef Name="COD_PROF" />
+      </Principal>
+      <Dependent Role="TB_SECCION">
+        <PropertyRef Name="COD_PROFESOR" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FKIDUBIGEO">
+    <End Role="TB_UBIGEO" Type="Self.TB_UBIGEO" Multiplicity="1" />
+    <End Role="TB_PROFESOR" Type="Self.TB_PROFESOR" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_UBIGEO">
+        <PropertyRef Name="ID_UBIGEO" />
+      </Principal>
+      <Dependent Role="TB_PROFESOR">
+        <PropertyRef Name="ID_UBIGEO" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_IDSECCION">
+    <End Role="TB_SECCION" Type="Self.TB_SECCION" Multiplicity="1" />
+    <End Role="TB_CURSO_PROFESOR" Type="Self.TB_CURSO_PROFESOR" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_SECCION">
+        <PropertyRef Name="ID_SECCION" />
+      </Principal>
+      <Dependent Role="TB_CURSO_PROFESOR">
+        <PropertyRef Name="ID_SECCION" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="SistemaDeMatriculaCAEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="TB_APODERADO" EntityType="Self.TB_APODERADO" />
+    <EntitySet Name="TB_CURSO" EntityType="Self.TB_CURSO" />
+    <EntitySet Name="TB_ESTUDIANTE" EntityType="Self.TB_ESTUDIANTE" />
+    <EntitySet Name="TB_GRADO" EntityType="Self.TB_GRADO" />
+    <EntitySet Name="TB_HORARIO" EntityType="Self.TB_HORARIO" />
+    <EntitySet Name="TB_MATRICULA" EntityType="Self.TB_MATRICULA" />
+    <EntitySet Name="TB_PROFESOR" EntityType="Self.TB_PROFESOR" />
+    <EntitySet Name="TB_SECCION" EntityType="Self.TB_SECCION" />
+    <EntitySet Name="TB_UBIGEO" EntityType="Self.TB_UBIGEO" />
+    <EntitySet Name="TB_USUARIO" EntityType="Self.TB_USUARIO" />
+    <EntitySet Name="TB_CURSO_PROFESOR" EntityType="Self.TB_CURSO_PROFESOR" />
+    <AssociationSet Name="FK_DNI_APODERADO" Association="Self.FK_DNI_APODERADO">
+      <End Role="TB_APODERADO" EntitySet="TB_APODERADO" />
+      <End Role="TB_ESTUDIANTE" EntitySet="TB_ESTUDIANTE" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ID_UBIGEO" Association="Self.FK_ID_UBIGEO">
+      <End Role="TB_UBIGEO" EntitySet="TB_UBIGEO" />
+      <End Role="TB_APODERADO" EntitySet="TB_APODERADO" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CURSO" Association="Self.FK_CURSO">
+      <End Role="TB_CURSO" EntitySet="TB_CURSO" />
+      <End Role="TB_CURSO_PROFESOR" EntitySet="TB_CURSO_PROFESOR" />
+    </AssociationSet>
+    <AssociationSet Name="FKIDGRADO" Association="Self.FKIDGRADO">
+      <End Role="TB_GRADO" EntitySet="TB_GRADO" />
+      <End Role="TB_CURSO" EntitySet="TB_CURSO" />
+    </AssociationSet>
+    <AssociationSet Name="FK_DNI_ESTUDIANTE" Association="Self.FK_DNI_ESTUDIANTE">
+      <End Role="TB_ESTUDIANTE" EntitySet="TB_ESTUDIANTE" />
+      <End Role="TB_MATRICULA" EntitySet="TB_MATRICULA" />
+    </AssociationSet>
+    <AssociationSet Name="FK_IDUBIGEO" Association="Self.FK_IDUBIGEO">
+      <End Role="TB_UBIGEO" EntitySet="TB_UBIGEO" />
+      <End Role="TB_ESTUDIANTE" EntitySet="TB_ESTUDIANTE" />
+    </AssociationSet>
+    <AssociationSet Name="FKID_GRADO" Association="Self.FKID_GRADO">
+      <End Role="TB_GRADO" EntitySet="TB_GRADO" />
+      <End Role="TB_SECCION" EntitySet="TB_SECCION" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ID_SECCION" Association="Self.FK_ID_SECCION">
+      <End Role="TB_SECCION" EntitySet="TB_SECCION" />
+      <End Role="TB_MATRICULA" EntitySet="TB_MATRICULA" />
+    </AssociationSet>
+    <AssociationSet Name="FK_COD_PROFESOR" Association="Self.FK_COD_PROFESOR">
+      <End Role="TB_PROFESOR" EntitySet="TB_PROFESOR" />
+      <End Role="TB_CURSO_PROFESOR" EntitySet="TB_CURSO_PROFESOR" />
+    </AssociationSet>
+    <AssociationSet Name="FKCOD_PROFESOR" Association="Self.FKCOD_PROFESOR">
+      <End Role="TB_PROFESOR" EntitySet="TB_PROFESOR" />
+      <End Role="TB_SECCION" EntitySet="TB_SECCION" />
+    </AssociationSet>
+    <AssociationSet Name="FKIDUBIGEO" Association="Self.FKIDUBIGEO">
+      <End Role="TB_UBIGEO" EntitySet="TB_UBIGEO" />
+      <End Role="TB_PROFESOR" EntitySet="TB_PROFESOR" />
+    </AssociationSet>
+    <AssociationSet Name="FK_IDSECCION" Association="Self.FK_IDSECCION">
+      <End Role="TB_SECCION" EntitySet="TB_SECCION" />
+      <End Role="TB_CURSO_PROFESOR" EntitySet="TB_CURSO_PROFESOR" />
+    </AssociationSet>
+    <FunctionImport Name="usp_ActualizarApoderado">
+      <Parameter Name="dniApo" Mode="In" Type="Int32" />
+      <Parameter Name="nomApo" Mode="In" Type="String" />
+      <Parameter Name="apeApo" Mode="In" Type="String" />
+      <Parameter Name="sexApo" Mode="In" Type="String" />
+      <Parameter Name="ubigeoApo" Mode="In" Type="Int32" />
+      <Parameter Name="fotoApo" Mode="In" Type="Binary" />
+      <Parameter Name="telfApo" Mode="In" Type="Int32" />
+      <Parameter Name="correoApo" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="usp_ActualizarCurso">
+      <Parameter Name="Cod_Curso" Mode="In" Type="Int32" />
+      <Parameter Name="Id_Grado" Mode="In" Type="Int32" />
+      <Parameter Name="Nom_Curso" Mode="In" Type="String" />
+      <Parameter Name="Usu_Ult_Mod" Mode="In" Type="String" />
+      <Parameter Name="Est_Curso" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="usp_ActualizarEstudiante">
+      <Parameter Name="dniEst" Mode="In" Type="String" />
+      <Parameter Name="nomEst" Mode="In" Type="String" />
+      <Parameter Name="apeEst" Mode="In" Type="String" />
+      <Parameter Name="sexEst" Mode="In" Type="String" />
+      <Parameter Name="fotoEst" Mode="In" Type="Binary" />
+      <Parameter Name="fecNacEst" Mode="In" Type="DateTime" />
+      <Parameter Name="dniApo" Mode="In" Type="Int32" />
+      <Parameter Name="IdUbigeo" Mode="In" Type="Int32" />
+      <Parameter Name="estadoEst" Mode="In" Type="Int32" />
+      <Parameter Name="Usu_Ult_Mod" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="usp_ActualizarHorario">
+      <Parameter Name="idHora" Mode="In" Type="Int32" />
+      <Parameter Name="diaSem" Mode="In" Type="String" />
+      <Parameter Name="horaIni" Mode="In" Type="Time" />
+      <Parameter Name="horaFin" Mode="In" Type="Time" />
+      <Parameter Name="codCurso" Mode="In" Type="Int32" />
+      <Parameter Name="idSecc" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="usp_ActualizarMatricula">
+      <Parameter Name="codMatri" Mode="In" Type="String" />
+      <Parameter Name="dniEst" Mode="In" Type="Int32" />
+      <Parameter Name="idSeccion" Mode="In" Type="Int32" />
+      <Parameter Name="estMatri" Mode="In" Type="Int32" />
+      <Parameter Name="Usu_Ult_Mod" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="usp_ActualizarProfesor">
+      <Parameter Name="codProf" Mode="In" Type="String" />
+      <Parameter Name="nomProf" Mode="In" Type="String" />
+      <Parameter Name="apeProf" Mode="In" Type="String" />
+      <Parameter Name="sexProf" Mode="In" Type="String" />
+      <Parameter Name="fotoProf" Mode="In" Type="Binary" />
+      <Parameter Name="dniProf" Mode="In" Type="String" />
+      <Parameter Name="ubigeoProf" Mode="In" Type="Int32" />
+      <Parameter Name="correoProf" Mode="In" Type="String" />
+      <Parameter Name="especialidadProf" Mode="In" Type="String" />
+      <Parameter Name="telfProf" Mode="In" Type="String" />
+      <Parameter Name="estadoProf" Mode="In" Type="Int32" />
+      <Parameter Name="Usu_ult" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="usp_ActualizarSeccion">
+      <Parameter Name="idSeccion" Mode="In" Type="Int32" />
+      <Parameter Name="nomSeccion" Mode="In" Type="String" />
+      <Parameter Name="idGrado" Mode="In" Type="Int32" />
+      <Parameter Name="codProfesor" Mode="In" Type="String" />
+      <Parameter Name="turnoProfesor" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="usp_ConsultarApoderado" ReturnType="Collection(SistemaDeMatriculaCAModel.usp_ConsultarApoderado_Result)">
+      <Parameter Name="dniApo" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="usp_ConsultarCurso" ReturnType="Collection(SistemaDeMatriculaCAModel.usp_ConsultarCurso_Result)">
+      <Parameter Name="Cod_Curso" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="usp_ConsultarEstudiante" ReturnType="Collection(SistemaDeMatriculaCAModel.usp_ConsultarEstudiante_Result)">
+      <Parameter Name="dniEst" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="usp_ConsultarHorario" ReturnType="Collection(SistemaDeMatriculaCAModel.usp_ConsultarHorario_Result)">
+      <Parameter Name="idHora" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="usp_ConsultarMatricula" ReturnType="Collection(SistemaDeMatriculaCAModel.usp_ConsultarMatricula_Result)">
+      <Parameter Name="codMatri" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="usp_ConsultarProfesor" ReturnType="Collection(SistemaDeMatriculaCAModel.usp_ConsultarProfesor_Result)">
+      <Parameter Name="codProf" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="usp_ConsultarSeccion" ReturnType="Collection(SistemaDeMatriculaCAModel.usp_ConsultarSeccion_Result)">
+      <Parameter Name="idSeccion" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="usp_ConsultarUsuario" ReturnType="Collection(SistemaDeMatriculaCAModel.usp_ConsultarUsuario_Result)">
+      <Parameter Name="Login_Usuario" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="usp_EliminarApoderado">
+      <Parameter Name="dniApo" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="usp_EliminarCurso">
+      <Parameter Name="Cod_Curso" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="usp_EliminarEstudiante">
+      <Parameter Name="dniEst" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="usp_EliminarHorario">
+      <Parameter Name="idHora" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="usp_EliminarMatricula">
+      <Parameter Name="codMatri" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="usp_EliminarProfesor">
+      <Parameter Name="codProf" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="usp_EliminarSeccion">
+      <Parameter Name="idSeccion" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="usp_InsertarApoderado">
+      <Parameter Name="dniApo" Mode="In" Type="Int32" />
+      <Parameter Name="nomApo" Mode="In" Type="String" />
+      <Parameter Name="apeApo" Mode="In" Type="String" />
+      <Parameter Name="sexApo" Mode="In" Type="String" />
+      <Parameter Name="ubigeoApo" Mode="In" Type="Int32" />
+      <Parameter Name="fotoApo" Mode="In" Type="Binary" />
+      <Parameter Name="telfApo" Mode="In" Type="Int32" />
+      <Parameter Name="correoApo" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="usp_InsertarCurso">
+      <Parameter Name="Id_Grado" Mode="In" Type="Int32" />
+      <Parameter Name="NOM_CURSO" Mode="In" Type="String" />
+      <Parameter Name="Usu_Registro" Mode="In" Type="String" />
+      <Parameter Name="Usu_Ult_Mod" Mode="In" Type="String" />
+      <Parameter Name="Est_Curso" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="usp_InsertarEstudiante">
+      <Parameter Name="dniEst" Mode="In" Type="Int32" />
+      <Parameter Name="nomEst" Mode="In" Type="String" />
+      <Parameter Name="apeEst" Mode="In" Type="String" />
+      <Parameter Name="sexEst" Mode="In" Type="String" />
+      <Parameter Name="fotoEst" Mode="In" Type="Binary" />
+      <Parameter Name="fecNacEst" Mode="In" Type="DateTime" />
+      <Parameter Name="dniApo" Mode="In" Type="Int32" />
+      <Parameter Name="idUbigeo" Mode="In" Type="Int32" />
+      <Parameter Name="estadoEst" Mode="In" Type="Int32" />
+      <Parameter Name="Usu_Registro" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="usp_InsertarHorario">
+      <Parameter Name="diaSem" Mode="In" Type="String" />
+      <Parameter Name="horaIni" Mode="In" Type="Time" />
+      <Parameter Name="horaFin" Mode="In" Type="Time" />
+      <Parameter Name="codCurso" Mode="In" Type="Int32" />
+      <Parameter Name="idSecc" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="usp_InsertarMatricula">
+      <Parameter Name="dniEst" Mode="In" Type="Int32" />
+      <Parameter Name="idSeccion" Mode="In" Type="Int32" />
+      <Parameter Name="Usu_Registro" Mode="In" Type="String" />
+      <Parameter Name="estMatri" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="usp_InsertarProfesor">
+      <Parameter Name="nomProf" Mode="In" Type="String" />
+      <Parameter Name="apeProf" Mode="In" Type="String" />
+      <Parameter Name="sexProf" Mode="In" Type="String" />
+      <Parameter Name="fotoProf" Mode="In" Type="Binary" />
+      <Parameter Name="dniProf" Mode="In" Type="String" />
+      <Parameter Name="ubigeoProf" Mode="In" Type="Int32" />
+      <Parameter Name="correoProf" Mode="In" Type="String" />
+      <Parameter Name="especialidadProf" Mode="In" Type="String" />
+      <Parameter Name="telfProf" Mode="In" Type="String" />
+      <Parameter Name="estadoProf" Mode="In" Type="Int32" />
+      <Parameter Name="Usu_registro" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="usp_InsertarSeccion">
+      <Parameter Name="nomSeccion" Mode="In" Type="String" />
+      <Parameter Name="idGrado" Mode="In" Type="Int32" />
+      <Parameter Name="codProfesor" Mode="In" Type="String" />
+      <Parameter Name="turnoProfesor" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="usp_ListarApoderado" ReturnType="Collection(SistemaDeMatriculaCAModel.usp_ListarApoderado_Result)" />
+    <FunctionImport Name="usp_ListarCurso" ReturnType="Collection(SistemaDeMatriculaCAModel.usp_ListarCurso_Result)" />
+    <FunctionImport Name="usp_ListarDistritos" ReturnType="Collection(SistemaDeMatriculaCAModel.usp_ListarDistritos_Result)" />
+    <FunctionImport Name="usp_ListarEstudiante" ReturnType="Collection(SistemaDeMatriculaCAModel.usp_ListarEstudiante_Result)" />
+    <FunctionImport Name="usp_ListarGrado" ReturnType="Collection(SistemaDeMatriculaCAModel.usp_ListarGrado_Result)" />
+    <FunctionImport Name="usp_ListarHorario" ReturnType="Collection(SistemaDeMatriculaCAModel.usp_ListarHorario_Result)">
+      <Parameter Name="OrdenarPor" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="usp_ListarMatricula" ReturnType="Collection(SistemaDeMatriculaCAModel.usp_ListarMatricula_Result)" />
+    <FunctionImport Name="usp_ListarProfesor" ReturnType="Collection(SistemaDeMatriculaCAModel.usp_ListarProfesor_Result)" />
+    <FunctionImport Name="usp_ListarSeccion" ReturnType="Collection(SistemaDeMatriculaCAModel.usp_ListarSeccion_Result)" />
+    <FunctionImport Name="usp_ListarUbicacion" ReturnType="Collection(SistemaDeMatriculaCAModel.usp_ListarUbicacion_Result)" />
+  </EntityContainer>
+  <ComplexType Name="usp_ConsultarApoderado_Result">
+    <Property Type="Int32" Name="Dni_Apo" Nullable="false" />
+    <Property Type="String" Name="Nom_Apo" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="Ape_Apo" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="Sexo_Apo" Nullable="false" MaxLength="1" />
+    <Property Type="Int32" Name="Id_Ubigeo" Nullable="false" />
+    <Property Type="String" Name="Departamento" Nullable="false" MaxLength="40" />
+    <Property Type="String" Name="Provincia" Nullable="false" MaxLength="40" />
+    <Property Type="String" Name="Distrito" Nullable="false" MaxLength="40" />
+    <Property Type="Binary" Name="Foto_Apo" Nullable="true" MaxLength="Max" />
+    <Property Type="String" Name="Tel_Apo" Nullable="false" MaxLength="9" />
+    <Property Type="String" Name="Correo_Apo" Nullable="false" MaxLength="50" />
+  </ComplexType>
+  <ComplexType Name="usp_ConsultarCurso_Result">
+    <Property Type="Int32" Name="Cod_Curso" Nullable="false" />
+    <Property Type="String" Name="Nombre_Curso" Nullable="true" MaxLength="50" />
+    <Property Type="Int32" Name="Id_Grado" Nullable="false" />
+    <Property Type="String" Name="Nombre_Grado" Nullable="false" MaxLength="40" />
+    <Property Type="Int32" Name="Id_Seccion" Nullable="false" />
+    <Property Type="String" Name="Nombre_Seccion" Nullable="false" MaxLength="40" />
+    <Property Type="String" Name="Cod_Profesor" Nullable="false" MaxLength="4" />
+    <Property Type="String" Name="Nombre_Profesor" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="Apellido_Profesor" Nullable="false" MaxLength="50" />
+    <Property Type="Int32" Name="Estado_Curso" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="usp_ConsultarEstudiante_Result">
+    <Property Type="Int32" Name="Dni_Est" Nullable="false" />
+    <Property Type="String" Name="Nom_Est" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="Ape_Est" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="Sexo_Est" Nullable="false" MaxLength="1" />
+    <Property Type="Binary" Name="Foto_Est" Nullable="true" MaxLength="Max" />
+    <Property Type="DateTime" Name="Fec_Nac_Est" Nullable="false" Precision="23" />
+    <Property Type="Int32" Name="Dni_Apo" Nullable="false" />
+    <Property Type="String" Name="Nom_Apo" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="Ape_Apo" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="Tel_Apo" Nullable="false" MaxLength="9" />
+    <Property Type="Int32" Name="Id_Ubigeo" Nullable="false" />
+    <Property Type="String" Name="Departamento" Nullable="false" MaxLength="40" />
+    <Property Type="String" Name="Provincia" Nullable="false" MaxLength="40" />
+    <Property Type="String" Name="Distrito" Nullable="false" MaxLength="40" />
+    <Property Type="Int32" Name="Est_Est" Nullable="false" />
+    <Property Type="String" Name="Estado" Nullable="true" MaxLength="8" />
+  </ComplexType>
+  <ComplexType Name="usp_ConsultarHorario_Result">
+    <Property Type="Int32" Name="Id_Horario" Nullable="false" />
+    <Property Type="String" Name="Dia_Semana" Nullable="false" MaxLength="20" />
+    <Property Type="Time" Name="Hora_Inicio" Nullable="false" />
+    <Property Type="Time" Name="Hora_Fin" Nullable="false" />
+    <Property Type="Int32" Name="Cod_Curso" Nullable="false" />
+    <Property Type="Int32" Name="Id_Seccion" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="usp_ConsultarMatricula_Result">
+    <Property Type="String" Name="Cod_Matricula" Nullable="false" MaxLength="4" />
+    <Property Type="Int32" Name="Dni_Est" Nullable="false" />
+    <Property Type="String" Name="Nom_Est" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="Ape_Est" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="Sección_Matriculada" Nullable="false" MaxLength="40" />
+    <Property Type="Int32" Name="Estado_Matri" Nullable="false" />
+    <Property Type="String" Name="Estado" Nullable="true" MaxLength="8" />
+  </ComplexType>
+  <ComplexType Name="usp_ConsultarProfesor_Result">
+    <Property Type="String" Name="Cod_Prof" Nullable="false" MaxLength="4" />
+    <Property Type="String" Name="Nom_Prof" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="Ape_Prof" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="Sexo_Prof" Nullable="false" MaxLength="1" />
+    <Property Type="Binary" Name="Foto_Prof" Nullable="true" MaxLength="Max" />
+    <Property Type="String" Name="DNI_Prof" Nullable="false" MaxLength="8" />
+    <Property Type="Int32" Name="Id_Ubigeo" Nullable="false" />
+    <Property Type="String" Name="Departamento" Nullable="false" MaxLength="40" />
+    <Property Type="String" Name="Provincia" Nullable="false" MaxLength="40" />
+    <Property Type="String" Name="Distrito" Nullable="false" MaxLength="40" />
+    <Property Type="String" Name="Correo_Prof" Nullable="true" MaxLength="70" />
+    <Property Type="String" Name="Especialidad" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="Telf_Prof" Nullable="true" MaxLength="9" />
+    <Property Type="Int32" Name="Estado_prof" Nullable="false" />
+    <Property Type="String" Name="Estado" Nullable="true" MaxLength="8" />
+  </ComplexType>
+  <ComplexType Name="usp_ConsultarSeccion_Result">
+    <Property Type="Int32" Name="Id_Seccion" Nullable="false" />
+    <Property Type="String" Name="Nom_Secc" Nullable="false" MaxLength="40" />
+    <Property Type="Int32" Name="Id_Grado" Nullable="false" />
+    <Property Type="String" Name="Nom_Grado" Nullable="false" MaxLength="40" />
+    <Property Type="String" Name="Cod_Prof" Nullable="false" MaxLength="4" />
+    <Property Type="String" Name="Nom_Prof" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="Ape_Prof" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="Turno_prof" Nullable="false" MaxLength="1" />
+    <Property Type="String" Name="Especialidad" Nullable="false" MaxLength="50" />
+    <Property Type="Int32" Name="Estado_prof" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="usp_ConsultarUsuario_Result">
+    <Property Type="String" Name="Login_Usuario" Nullable="false" MaxLength="20" />
+    <Property Type="String" Name="Pass_Usuario" Nullable="true" MaxLength="20" />
+    <Property Type="Int32" Name="Niv_Usuario" Nullable="true" />
+    <Property Type="Int32" Name="Est_usuario" Nullable="true" />
+    <Property Type="DateTime" Name="Fec_Registro" Nullable="true" Precision="23" />
+    <Property Type="String" Name="Usu_Registro" Nullable="true" MaxLength="20" />
+  </ComplexType>
+  <ComplexType Name="usp_ListarApoderado_Result">
+    <Property Type="Int32" Name="Dni_Apo" Nullable="false" />
+    <Property Type="String" Name="Nom_Apo" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="Ape_Apo" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="Sexo_Apo" Nullable="false" MaxLength="1" />
+    <Property Type="Int32" Name="Id_Ubigeo" Nullable="false" />
+    <Property Type="String" Name="Departamento" Nullable="false" MaxLength="40" />
+    <Property Type="String" Name="Provincia" Nullable="false" MaxLength="40" />
+    <Property Type="String" Name="Distrito" Nullable="false" MaxLength="40" />
+    <Property Type="Binary" Name="Foto_Apo" Nullable="true" MaxLength="Max" />
+    <Property Type="String" Name="Tel_Apo" Nullable="false" MaxLength="9" />
+    <Property Type="String" Name="Correo_Apo" Nullable="false" MaxLength="50" />
+  </ComplexType>
+  <ComplexType Name="usp_ListarCurso_Result">
+    <Property Type="Int32" Name="Cod_Curso" Nullable="false" />
+    <Property Type="String" Name="Nombre_Curso" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="Nombre_Grado" Nullable="false" MaxLength="40" />
+    <Property Type="String" Name="Nombre_Profesor" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="Apellido_Profesor" Nullable="false" MaxLength="50" />
+  </ComplexType>
+  <ComplexType Name="usp_ListarDistritos_Result">
+    <Property Type="Int32" Name="ID_UBIGEO" Nullable="false" />
+    <Property Type="String" Name="ID_DEPA" Nullable="false" MaxLength="20" />
+    <Property Type="String" Name="ID_PROV" Nullable="false" MaxLength="20" />
+    <Property Type="String" Name="ID_DIST" Nullable="false" MaxLength="20" />
+    <Property Type="String" Name="DEPARTAMENTO" Nullable="false" MaxLength="40" />
+    <Property Type="String" Name="PROVINCIA" Nullable="false" MaxLength="40" />
+    <Property Type="String" Name="DISTRITO" Nullable="false" MaxLength="40" />
+  </ComplexType>
+  <ComplexType Name="usp_ListarEstudiante_Result">
+    <Property Type="Int32" Name="Dni_Est" Nullable="false" />
+    <Property Type="String" Name="Nom_Est" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="Ape_Est" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="Sexo_Est" Nullable="false" MaxLength="1" />
+    <Property Type="Binary" Name="Foto_Est" Nullable="true" MaxLength="Max" />
+    <Property Type="DateTime" Name="Fec_Nac_Est" Nullable="false" Precision="23" />
+    <Property Type="Int32" Name="Dni_Apo" Nullable="false" />
+    <Property Type="String" Name="Nom_Apo" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="Ape_Apo" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="Tel_Apo" Nullable="false" MaxLength="9" />
+    <Property Type="Int32" Name="Id_Ubigeo" Nullable="false" />
+    <Property Type="String" Name="Departamento" Nullable="false" MaxLength="40" />
+    <Property Type="String" Name="Provincia" Nullable="false" MaxLength="40" />
+    <Property Type="String" Name="Distrito" Nullable="false" MaxLength="40" />
+    <Property Type="Int32" Name="Est_Est" Nullable="false" />
+    <Property Type="String" Name="Estado" Nullable="true" MaxLength="8" />
+  </ComplexType>
+  <ComplexType Name="usp_ListarGrado_Result">
+    <Property Type="Int32" Name="ID_GRADO" Nullable="false" />
+    <Property Type="String" Name="NOM_GRADO" Nullable="false" MaxLength="40" />
+  </ComplexType>
+  <ComplexType Name="usp_ListarHorario_Result">
+    <Property Type="Int32" Name="ID_HORARIO" Nullable="false" />
+    <Property Type="String" Name="DIA_SEMANA" Nullable="false" MaxLength="20" />
+    <Property Type="Time" Name="HORA_INICIO" Nullable="false" />
+    <Property Type="Time" Name="HORA_FIN" Nullable="false" />
+    <Property Type="Int32" Name="COD_CURSO" Nullable="false" />
+    <Property Type="Int32" Name="ID_SECCION" Nullable="false" />
+    <Property Type="String" Name="Usu_Registro" Nullable="true" MaxLength="50" />
+    <Property Type="DateTime" Name="Fec_Registro" Nullable="true" Precision="23" />
+    <Property Type="String" Name="Usu_Ult_Mod" Nullable="true" MaxLength="50" />
+    <Property Type="DateTime" Name="Fec_Ult_Mod" Nullable="true" Precision="23" />
+    <Property Type="Int32" Name="Est_Horario" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="usp_ListarMatricula_Result">
+    <Property Type="String" Name="Cod_Matricula" Nullable="false" MaxLength="4" />
+    <Property Type="Int32" Name="Dni_Est" Nullable="false" />
+    <Property Type="String" Name="Nom_Est" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="Ape_Est" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="Sección_Matriculada" Nullable="false" MaxLength="40" />
+    <Property Type="Int32" Name="Estado_Matri" Nullable="false" />
+    <Property Type="String" Name="Estado" Nullable="true" MaxLength="8" />
+  </ComplexType>
+  <ComplexType Name="usp_ListarProfesor_Result">
+    <Property Type="String" Name="Cod_Prof" Nullable="false" MaxLength="4" />
+    <Property Type="String" Name="Nom_Prof" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="Ape_Prof" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="Sexo_Prof" Nullable="false" MaxLength="1" />
+    <Property Type="Binary" Name="Foto_Prof" Nullable="true" MaxLength="Max" />
+    <Property Type="String" Name="DNI_Prof" Nullable="false" MaxLength="8" />
+    <Property Type="Int32" Name="Id_Ubigeo" Nullable="false" />
+    <Property Type="String" Name="Departamento" Nullable="false" MaxLength="40" />
+    <Property Type="String" Name="Provincia" Nullable="false" MaxLength="40" />
+    <Property Type="String" Name="Distrito" Nullable="false" MaxLength="40" />
+    <Property Type="String" Name="Correo_Prof" Nullable="true" MaxLength="70" />
+    <Property Type="String" Name="Especialidad" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="Telf_Prof" Nullable="true" MaxLength="9" />
+    <Property Type="Int32" Name="Estado_prof" Nullable="false" />
+    <Property Type="String" Name="Estado" Nullable="true" MaxLength="8" />
+  </ComplexType>
+  <ComplexType Name="usp_ListarSeccion_Result">
+    <Property Type="Int32" Name="Id_Seccion" Nullable="false" />
+    <Property Type="String" Name="Nom_Secc" Nullable="false" MaxLength="40" />
+    <Property Type="Int32" Name="Id_Grado" Nullable="false" />
+    <Property Type="String" Name="Nom_Grado" Nullable="false" MaxLength="40" />
+    <Property Type="String" Name="Cod_Prof" Nullable="false" MaxLength="4" />
+    <Property Type="String" Name="Nom_Prof" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="Ape_Prof" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="Turno_prof" Nullable="false" MaxLength="1" />
+    <Property Type="String" Name="Especialidad" Nullable="false" MaxLength="50" />
+    <Property Type="Int32" Name="Estado_prof" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="usp_ListarUbicacion_Result">
+    <Property Type="Int32" Name="Id_Ubigeo" Nullable="false" />
+    <Property Type="String" Name="Distrito" Nullable="false" MaxLength="40" />
+  </ComplexType>
+</Schema>

@@ -1,0 +1,464 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="SistemaDeMatriculaCAModelStoreContainer" CdmEntityContainer="SistemaDeMatriculaCAEntities">
+    <EntitySetMapping Name="TB_APODERADO">
+      <EntityTypeMapping TypeName="SistemaDeMatriculaCAModel.TB_APODERADO">
+        <MappingFragment StoreEntitySet="TB_APODERADO">
+          <ScalarProperty Name="DNI_APO" ColumnName="DNI_APO" />
+          <ScalarProperty Name="NOM_APO" ColumnName="NOM_APO" />
+          <ScalarProperty Name="APE_APO" ColumnName="APE_APO" />
+          <ScalarProperty Name="SEXO_APO" ColumnName="SEXO_APO" />
+          <ScalarProperty Name="ID_UBIGEO" ColumnName="ID_UBIGEO" />
+          <ScalarProperty Name="FOTO_APO" ColumnName="FOTO_APO" />
+          <ScalarProperty Name="TEL_APO" ColumnName="TEL_APO" />
+          <ScalarProperty Name="CORREO_APO" ColumnName="CORREO_APO" />
+          <ScalarProperty Name="Usu_Registro" ColumnName="Usu_Registro" />
+          <ScalarProperty Name="Fec_Registro" ColumnName="Fec_Registro" />
+          <ScalarProperty Name="Usu_Ult_Mod" ColumnName="Usu_Ult_Mod" />
+          <ScalarProperty Name="Fec_Ult_Mod" ColumnName="Fec_Ult_Mod" />
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TB_CURSO">
+      <EntityTypeMapping TypeName="SistemaDeMatriculaCAModel.TB_CURSO">
+        <MappingFragment StoreEntitySet="TB_CURSO">
+          <ScalarProperty Name="COD_CURSO" ColumnName="COD_CURSO" />
+          <ScalarProperty Name="ID_GRADO" ColumnName="ID_GRADO" />
+          <ScalarProperty Name="Nom_Curso" ColumnName="Nom_Curso" />
+          <ScalarProperty Name="Fec_Registro" ColumnName="Fec_Registro" />
+          <ScalarProperty Name="Usu_Registro" ColumnName="Usu_Registro" />
+          <ScalarProperty Name="Fec_Ult_Mod" ColumnName="Fec_Ult_Mod" />
+          <ScalarProperty Name="Usu_Ult_Mod" ColumnName="Usu_Ult_Mod" />
+          <ScalarProperty Name="Est_Curso" ColumnName="Est_Curso" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TB_ESTUDIANTE">
+      <EntityTypeMapping TypeName="SistemaDeMatriculaCAModel.TB_ESTUDIANTE">
+        <MappingFragment StoreEntitySet="TB_ESTUDIANTE">
+          <ScalarProperty Name="DNI_EST" ColumnName="DNI_EST" />
+          <ScalarProperty Name="NOM_EST" ColumnName="NOM_EST" />
+          <ScalarProperty Name="APE_EST" ColumnName="APE_EST" />
+          <ScalarProperty Name="SEXO_EST" ColumnName="SEXO_EST" />
+          <ScalarProperty Name="FOTO_EST" ColumnName="FOTO_EST" />
+          <ScalarProperty Name="FEC_NAC_EST" ColumnName="FEC_NAC_EST" />
+          <ScalarProperty Name="DNI_APO" ColumnName="DNI_APO" />
+          <ScalarProperty Name="ID_UBIGEO" ColumnName="ID_UBIGEO" />
+          <ScalarProperty Name="EST_EST" ColumnName="EST_EST" />
+          <ScalarProperty Name="Usu_Registro" ColumnName="Usu_Registro" />
+          <ScalarProperty Name="Fec_Registro" ColumnName="Fec_Registro" />
+          <ScalarProperty Name="Usu_Ult_Mod" ColumnName="Usu_Ult_Mod" />
+          <ScalarProperty Name="Fec_Ult_Mod" ColumnName="Fec_Ult_Mod" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TB_GRADO">
+      <EntityTypeMapping TypeName="SistemaDeMatriculaCAModel.TB_GRADO">
+        <MappingFragment StoreEntitySet="TB_GRADO">
+          <ScalarProperty Name="ID_GRADO" ColumnName="ID_GRADO" />
+          <ScalarProperty Name="NOM_GRADO" ColumnName="NOM_GRADO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TB_HORARIO">
+      <EntityTypeMapping TypeName="SistemaDeMatriculaCAModel.TB_HORARIO">
+        <MappingFragment StoreEntitySet="TB_HORARIO">
+          <ScalarProperty Name="ID_HORARIO" ColumnName="ID_HORARIO" />
+          <ScalarProperty Name="DIA_SEMANA" ColumnName="DIA_SEMANA" />
+          <ScalarProperty Name="HORA_INICIO" ColumnName="HORA_INICIO" />
+          <ScalarProperty Name="HORA_FIN" ColumnName="HORA_FIN" />
+          <ScalarProperty Name="COD_CURSO" ColumnName="COD_CURSO" />
+          <ScalarProperty Name="ID_SECCION" ColumnName="ID_SECCION" />
+          <ScalarProperty Name="Usu_Registro" ColumnName="Usu_Registro" />
+          <ScalarProperty Name="Fec_Registro" ColumnName="Fec_Registro" />
+          <ScalarProperty Name="Usu_Ult_Mod" ColumnName="Usu_Ult_Mod" />
+          <ScalarProperty Name="Fec_Ult_Mod" ColumnName="Fec_Ult_Mod" />
+          <ScalarProperty Name="Est_Horario" ColumnName="Est_Horario" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TB_MATRICULA">
+      <EntityTypeMapping TypeName="SistemaDeMatriculaCAModel.TB_MATRICULA">
+        <MappingFragment StoreEntitySet="TB_MATRICULA">
+          <ScalarProperty Name="COD_MATRICULA" ColumnName="COD_MATRICULA" />
+          <ScalarProperty Name="DNI_EST" ColumnName="DNI_EST" />
+          <ScalarProperty Name="ID_SECCION" ColumnName="ID_SECCION" />
+          <ScalarProperty Name="ESTADO_MATRI" ColumnName="ESTADO_MATRI" />
+          <ScalarProperty Name="Usu_Registro" ColumnName="Usu_Registro" />
+          <ScalarProperty Name="Fec_Registro" ColumnName="Fec_Registro" />
+          <ScalarProperty Name="Usu_Ult_Mod" ColumnName="Usu_Ult_Mod" />
+          <ScalarProperty Name="Fec_Ult_Mod" ColumnName="Fec_Ult_Mod" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TB_PROFESOR">
+      <EntityTypeMapping TypeName="SistemaDeMatriculaCAModel.TB_PROFESOR">
+        <MappingFragment StoreEntitySet="TB_PROFESOR">
+          <ScalarProperty Name="COD_PROF" ColumnName="COD_PROF" />
+          <ScalarProperty Name="NOM_PROF" ColumnName="NOM_PROF" />
+          <ScalarProperty Name="APE_PROF" ColumnName="APE_PROF" />
+          <ScalarProperty Name="SEXO_PROF" ColumnName="SEXO_PROF" />
+          <ScalarProperty Name="FOTO_PROF" ColumnName="FOTO_PROF" />
+          <ScalarProperty Name="DNI_PROF" ColumnName="DNI_PROF" />
+          <ScalarProperty Name="ID_UBIGEO" ColumnName="ID_UBIGEO" />
+          <ScalarProperty Name="CORREO_PROF" ColumnName="CORREO_PROF" />
+          <ScalarProperty Name="ESPECIALIDAD" ColumnName="ESPECIALIDAD" />
+          <ScalarProperty Name="TELF_PROF" ColumnName="TELF_PROF" />
+          <ScalarProperty Name="ESTADO_PROF" ColumnName="ESTADO_PROF" />
+          <ScalarProperty Name="Usu_Registro" ColumnName="Usu_Registro" />
+          <ScalarProperty Name="Fec_Registro" ColumnName="Fec_Registro" />
+          <ScalarProperty Name="Usu_Ult_Mod" ColumnName="Usu_Ult_Mod" />
+          <ScalarProperty Name="Fec_Ult_Mod" ColumnName="Fec_Ult_Mod" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TB_SECCION">
+      <EntityTypeMapping TypeName="SistemaDeMatriculaCAModel.TB_SECCION">
+        <MappingFragment StoreEntitySet="TB_SECCION">
+          <ScalarProperty Name="ID_SECCION" ColumnName="ID_SECCION" />
+          <ScalarProperty Name="NOM_SECC" ColumnName="NOM_SECC" />
+          <ScalarProperty Name="ID_GRADO" ColumnName="ID_GRADO" />
+          <ScalarProperty Name="COD_PROFESOR" ColumnName="COD_PROFESOR" />
+          <ScalarProperty Name="TURNO_PROF" ColumnName="TURNO_PROF" />
+          <ScalarProperty Name="Usu_Registro" ColumnName="Usu_Registro" />
+          <ScalarProperty Name="Fec_Registro" ColumnName="Fec_Registro" />
+          <ScalarProperty Name="Usu_Ult_Mod" ColumnName="Usu_Ult_Mod" />
+          <ScalarProperty Name="Fec_Ult_Mod" ColumnName="Fec_Ult_Mod" />
+          <ScalarProperty Name="Est_Matricula" ColumnName="Est_Matricula" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TB_UBIGEO">
+      <EntityTypeMapping TypeName="SistemaDeMatriculaCAModel.TB_UBIGEO">
+        <MappingFragment StoreEntitySet="TB_UBIGEO">
+          <ScalarProperty Name="ID_UBIGEO" ColumnName="ID_UBIGEO" />
+          <ScalarProperty Name="ID_DEPA" ColumnName="ID_DEPA" />
+          <ScalarProperty Name="ID_PROV" ColumnName="ID_PROV" />
+          <ScalarProperty Name="ID_DIST" ColumnName="ID_DIST" />
+          <ScalarProperty Name="DEPARTAMENTO" ColumnName="DEPARTAMENTO" />
+          <ScalarProperty Name="PROVINCIA" ColumnName="PROVINCIA" />
+          <ScalarProperty Name="DISTRITO" ColumnName="DISTRITO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TB_USUARIO">
+      <EntityTypeMapping TypeName="SistemaDeMatriculaCAModel.TB_USUARIO">
+        <MappingFragment StoreEntitySet="TB_USUARIO">
+          <ScalarProperty Name="Login_Usuario" ColumnName="Login_Usuario" />
+          <ScalarProperty Name="Pass_Usuario" ColumnName="Pass_Usuario" />
+          <ScalarProperty Name="Niv_Usuario" ColumnName="Niv_Usuario" />
+          <ScalarProperty Name="Est_Usuario" ColumnName="Est_Usuario" />
+          <ScalarProperty Name="Fec_Registro" ColumnName="Fec_Registro" />
+          <ScalarProperty Name="Usu_Registro" ColumnName="Usu_Registro" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TB_CURSO_PROFESOR">
+      <EntityTypeMapping TypeName="SistemaDeMatriculaCAModel.TB_CURSO_PROFESOR">
+        <MappingFragment StoreEntitySet="TB_CURSO_PROFESOR">
+          <ScalarProperty Name="COD_PROF" ColumnName="COD_PROF" />
+          <ScalarProperty Name="COD_CURSO" ColumnName="COD_CURSO" />
+          <ScalarProperty Name="ID_SECCION" ColumnName="ID_SECCION" />
+          <ScalarProperty Name="FEC_ASIG" ColumnName="FEC_ASIG" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="usp_ActualizarApoderado" FunctionName="SistemaDeMatriculaCAModel.Store.usp_ActualizarApoderado" />
+    <FunctionImportMapping FunctionImportName="usp_ActualizarCurso" FunctionName="SistemaDeMatriculaCAModel.Store.usp_ActualizarCurso" />
+    <FunctionImportMapping FunctionImportName="usp_ActualizarEstudiante" FunctionName="SistemaDeMatriculaCAModel.Store.usp_ActualizarEstudiante" />
+    <FunctionImportMapping FunctionImportName="usp_ActualizarHorario" FunctionName="SistemaDeMatriculaCAModel.Store.usp_ActualizarHorario" />
+    <FunctionImportMapping FunctionImportName="usp_ActualizarMatricula" FunctionName="SistemaDeMatriculaCAModel.Store.usp_ActualizarMatricula" />
+    <FunctionImportMapping FunctionImportName="usp_ActualizarProfesor" FunctionName="SistemaDeMatriculaCAModel.Store.usp_ActualizarProfesor" />
+    <FunctionImportMapping FunctionImportName="usp_ActualizarSeccion" FunctionName="SistemaDeMatriculaCAModel.Store.usp_ActualizarSeccion" />
+    <FunctionImportMapping FunctionImportName="usp_ConsultarApoderado" FunctionName="SistemaDeMatriculaCAModel.Store.usp_ConsultarApoderado">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="SistemaDeMatriculaCAModel.usp_ConsultarApoderado_Result">
+          <ScalarProperty Name="Dni_Apo" ColumnName="Dni_Apo" />
+          <ScalarProperty Name="Nom_Apo" ColumnName="Nom_Apo" />
+          <ScalarProperty Name="Ape_Apo" ColumnName="Ape_Apo" />
+          <ScalarProperty Name="Sexo_Apo" ColumnName="Sexo_Apo" />
+          <ScalarProperty Name="Id_Ubigeo" ColumnName="Id_Ubigeo" />
+          <ScalarProperty Name="Departamento" ColumnName="Departamento" />
+          <ScalarProperty Name="Provincia" ColumnName="Provincia" />
+          <ScalarProperty Name="Distrito" ColumnName="Distrito" />
+          <ScalarProperty Name="Foto_Apo" ColumnName="Foto_Apo" />
+          <ScalarProperty Name="Tel_Apo" ColumnName="Tel_Apo" />
+          <ScalarProperty Name="Correo_Apo" ColumnName="Correo_Apo" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_ConsultarCurso" FunctionName="SistemaDeMatriculaCAModel.Store.usp_ConsultarCurso">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="SistemaDeMatriculaCAModel.usp_ConsultarCurso_Result">
+          <ScalarProperty Name="Cod_Curso" ColumnName="Cod_Curso" />
+          <ScalarProperty Name="Nombre_Curso" ColumnName="Nombre_Curso" />
+          <ScalarProperty Name="Id_Grado" ColumnName="Id_Grado" />
+          <ScalarProperty Name="Nombre_Grado" ColumnName="Nombre_Grado" />
+          <ScalarProperty Name="Id_Seccion" ColumnName="Id_Seccion" />
+          <ScalarProperty Name="Nombre_Seccion" ColumnName="Nombre_Seccion" />
+          <ScalarProperty Name="Cod_Profesor" ColumnName="Cod_Profesor" />
+          <ScalarProperty Name="Nombre_Profesor" ColumnName="Nombre_Profesor" />
+          <ScalarProperty Name="Apellido_Profesor" ColumnName="Apellido_Profesor" />
+          <ScalarProperty Name="Estado_Curso" ColumnName="Estado_Curso" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_ConsultarEstudiante" FunctionName="SistemaDeMatriculaCAModel.Store.usp_ConsultarEstudiante">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="SistemaDeMatriculaCAModel.usp_ConsultarEstudiante_Result">
+          <ScalarProperty Name="Dni_Est" ColumnName="Dni_Est" />
+          <ScalarProperty Name="Nom_Est" ColumnName="Nom_Est" />
+          <ScalarProperty Name="Ape_Est" ColumnName="Ape_Est" />
+          <ScalarProperty Name="Sexo_Est" ColumnName="Sexo_Est" />
+          <ScalarProperty Name="Foto_Est" ColumnName="Foto_Est" />
+          <ScalarProperty Name="Fec_Nac_Est" ColumnName="Fec_Nac_Est" />
+          <ScalarProperty Name="Dni_Apo" ColumnName="Dni_Apo" />
+          <ScalarProperty Name="Nom_Apo" ColumnName="Nom_Apo" />
+          <ScalarProperty Name="Ape_Apo" ColumnName="Ape_Apo" />
+          <ScalarProperty Name="Tel_Apo" ColumnName="Tel_Apo" />
+          <ScalarProperty Name="Id_Ubigeo" ColumnName="Id_Ubigeo" />
+          <ScalarProperty Name="Departamento" ColumnName="Departamento" />
+          <ScalarProperty Name="Provincia" ColumnName="Provincia" />
+          <ScalarProperty Name="Distrito" ColumnName="Distrito" />
+          <ScalarProperty Name="Est_Est" ColumnName="Est_Est" />
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_ConsultarHorario" FunctionName="SistemaDeMatriculaCAModel.Store.usp_ConsultarHorario">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="SistemaDeMatriculaCAModel.usp_ConsultarHorario_Result">
+          <ScalarProperty Name="Id_Horario" ColumnName="Id_Horario" />
+          <ScalarProperty Name="Dia_Semana" ColumnName="Dia_Semana" />
+          <ScalarProperty Name="Hora_Inicio" ColumnName="Hora_Inicio" />
+          <ScalarProperty Name="Hora_Fin" ColumnName="Hora_Fin" />
+          <ScalarProperty Name="Cod_Curso" ColumnName="Cod_Curso" />
+          <ScalarProperty Name="Id_Seccion" ColumnName="Id_Seccion" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_ConsultarMatricula" FunctionName="SistemaDeMatriculaCAModel.Store.usp_ConsultarMatricula">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="SistemaDeMatriculaCAModel.usp_ConsultarMatricula_Result">
+          <ScalarProperty Name="Cod_Matricula" ColumnName="Cod_Matricula" />
+          <ScalarProperty Name="Dni_Est" ColumnName="Dni_Est" />
+          <ScalarProperty Name="Nom_Est" ColumnName="Nom_Est" />
+          <ScalarProperty Name="Ape_Est" ColumnName="Ape_Est" />
+          <ScalarProperty Name="Sección_Matriculada" ColumnName="Sección Matriculada" />
+          <ScalarProperty Name="Estado_Matri" ColumnName="Estado_Matri" />
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_ConsultarProfesor" FunctionName="SistemaDeMatriculaCAModel.Store.usp_ConsultarProfesor">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="SistemaDeMatriculaCAModel.usp_ConsultarProfesor_Result">
+          <ScalarProperty Name="Cod_Prof" ColumnName="Cod_Prof" />
+          <ScalarProperty Name="Nom_Prof" ColumnName="Nom_Prof" />
+          <ScalarProperty Name="Ape_Prof" ColumnName="Ape_Prof" />
+          <ScalarProperty Name="Sexo_Prof" ColumnName="Sexo_Prof" />
+          <ScalarProperty Name="Foto_Prof" ColumnName="Foto_Prof" />
+          <ScalarProperty Name="DNI_Prof" ColumnName="DNI_Prof" />
+          <ScalarProperty Name="Id_Ubigeo" ColumnName="Id_Ubigeo" />
+          <ScalarProperty Name="Departamento" ColumnName="Departamento" />
+          <ScalarProperty Name="Provincia" ColumnName="Provincia" />
+          <ScalarProperty Name="Distrito" ColumnName="Distrito" />
+          <ScalarProperty Name="Correo_Prof" ColumnName="Correo_Prof" />
+          <ScalarProperty Name="Especialidad" ColumnName="Especialidad" />
+          <ScalarProperty Name="Telf_Prof" ColumnName="Telf_Prof" />
+          <ScalarProperty Name="Estado_prof" ColumnName="Estado_prof" />
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_ConsultarSeccion" FunctionName="SistemaDeMatriculaCAModel.Store.usp_ConsultarSeccion">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="SistemaDeMatriculaCAModel.usp_ConsultarSeccion_Result">
+          <ScalarProperty Name="Id_Seccion" ColumnName="Id_Seccion" />
+          <ScalarProperty Name="Nom_Secc" ColumnName="Nom_Secc" />
+          <ScalarProperty Name="Id_Grado" ColumnName="Id_Grado" />
+          <ScalarProperty Name="Nom_Grado" ColumnName="Nom_Grado" />
+          <ScalarProperty Name="Cod_Prof" ColumnName="Cod_Prof" />
+          <ScalarProperty Name="Nom_Prof" ColumnName="Nom_Prof" />
+          <ScalarProperty Name="Ape_Prof" ColumnName="Ape_Prof" />
+          <ScalarProperty Name="Turno_prof" ColumnName="Turno_prof" />
+          <ScalarProperty Name="Especialidad" ColumnName="Especialidad" />
+          <ScalarProperty Name="Estado_prof" ColumnName="Estado_prof" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_ConsultarUsuario" FunctionName="SistemaDeMatriculaCAModel.Store.usp_ConsultarUsuario">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="SistemaDeMatriculaCAModel.usp_ConsultarUsuario_Result">
+          <ScalarProperty Name="Login_Usuario" ColumnName="Login_Usuario" />
+          <ScalarProperty Name="Pass_Usuario" ColumnName="Pass_Usuario" />
+          <ScalarProperty Name="Niv_Usuario" ColumnName="Niv_Usuario" />
+          <ScalarProperty Name="Est_usuario" ColumnName="Est_usuario" />
+          <ScalarProperty Name="Fec_Registro" ColumnName="Fec_Registro" />
+          <ScalarProperty Name="Usu_Registro" ColumnName="Usu_Registro" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_EliminarApoderado" FunctionName="SistemaDeMatriculaCAModel.Store.usp_EliminarApoderado" />
+    <FunctionImportMapping FunctionImportName="usp_EliminarCurso" FunctionName="SistemaDeMatriculaCAModel.Store.usp_EliminarCurso" />
+    <FunctionImportMapping FunctionImportName="usp_EliminarEstudiante" FunctionName="SistemaDeMatriculaCAModel.Store.usp_EliminarEstudiante" />
+    <FunctionImportMapping FunctionImportName="usp_EliminarHorario" FunctionName="SistemaDeMatriculaCAModel.Store.usp_EliminarHorario" />
+    <FunctionImportMapping FunctionImportName="usp_EliminarMatricula" FunctionName="SistemaDeMatriculaCAModel.Store.usp_EliminarMatricula" />
+    <FunctionImportMapping FunctionImportName="usp_EliminarProfesor" FunctionName="SistemaDeMatriculaCAModel.Store.usp_EliminarProfesor" />
+    <FunctionImportMapping FunctionImportName="usp_EliminarSeccion" FunctionName="SistemaDeMatriculaCAModel.Store.usp_EliminarSeccion" />
+    <FunctionImportMapping FunctionImportName="usp_InsertarApoderado" FunctionName="SistemaDeMatriculaCAModel.Store.usp_InsertarApoderado" />
+    <FunctionImportMapping FunctionImportName="usp_InsertarCurso" FunctionName="SistemaDeMatriculaCAModel.Store.usp_InsertarCurso" />
+    <FunctionImportMapping FunctionImportName="usp_InsertarEstudiante" FunctionName="SistemaDeMatriculaCAModel.Store.usp_InsertarEstudiante" />
+    <FunctionImportMapping FunctionImportName="usp_InsertarHorario" FunctionName="SistemaDeMatriculaCAModel.Store.usp_InsertarHorario" />
+    <FunctionImportMapping FunctionImportName="usp_InsertarMatricula" FunctionName="SistemaDeMatriculaCAModel.Store.usp_InsertarMatricula" />
+    <FunctionImportMapping FunctionImportName="usp_InsertarProfesor" FunctionName="SistemaDeMatriculaCAModel.Store.usp_InsertarProfesor" />
+    <FunctionImportMapping FunctionImportName="usp_InsertarSeccion" FunctionName="SistemaDeMatriculaCAModel.Store.usp_InsertarSeccion" />
+    <FunctionImportMapping FunctionImportName="usp_ListarApoderado" FunctionName="SistemaDeMatriculaCAModel.Store.usp_ListarApoderado">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="SistemaDeMatriculaCAModel.usp_ListarApoderado_Result">
+          <ScalarProperty Name="Dni_Apo" ColumnName="Dni_Apo" />
+          <ScalarProperty Name="Nom_Apo" ColumnName="Nom_Apo" />
+          <ScalarProperty Name="Ape_Apo" ColumnName="Ape_Apo" />
+          <ScalarProperty Name="Sexo_Apo" ColumnName="Sexo_Apo" />
+          <ScalarProperty Name="Id_Ubigeo" ColumnName="Id_Ubigeo" />
+          <ScalarProperty Name="Departamento" ColumnName="Departamento" />
+          <ScalarProperty Name="Provincia" ColumnName="Provincia" />
+          <ScalarProperty Name="Distrito" ColumnName="Distrito" />
+          <ScalarProperty Name="Foto_Apo" ColumnName="Foto_Apo" />
+          <ScalarProperty Name="Tel_Apo" ColumnName="Tel_Apo" />
+          <ScalarProperty Name="Correo_Apo" ColumnName="Correo_Apo" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_ListarCurso" FunctionName="SistemaDeMatriculaCAModel.Store.usp_ListarCurso">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="SistemaDeMatriculaCAModel.usp_ListarCurso_Result">
+          <ScalarProperty Name="Cod_Curso" ColumnName="Cod_Curso" />
+          <ScalarProperty Name="Nombre_Curso" ColumnName="Nombre_Curso" />
+          <ScalarProperty Name="Nombre_Grado" ColumnName="Nombre_Grado" />
+          <ScalarProperty Name="Nombre_Profesor" ColumnName="Nombre_Profesor" />
+          <ScalarProperty Name="Apellido_Profesor" ColumnName="Apellido_Profesor" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_ListarDistritos" FunctionName="SistemaDeMatriculaCAModel.Store.usp_ListarDistritos">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="SistemaDeMatriculaCAModel.usp_ListarDistritos_Result">
+          <ScalarProperty Name="ID_UBIGEO" ColumnName="ID_UBIGEO" />
+          <ScalarProperty Name="ID_DEPA" ColumnName="ID_DEPA" />
+          <ScalarProperty Name="ID_PROV" ColumnName="ID_PROV" />
+          <ScalarProperty Name="ID_DIST" ColumnName="ID_DIST" />
+          <ScalarProperty Name="DEPARTAMENTO" ColumnName="DEPARTAMENTO" />
+          <ScalarProperty Name="PROVINCIA" ColumnName="PROVINCIA" />
+          <ScalarProperty Name="DISTRITO" ColumnName="DISTRITO" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_ListarEstudiante" FunctionName="SistemaDeMatriculaCAModel.Store.usp_ListarEstudiante">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="SistemaDeMatriculaCAModel.usp_ListarEstudiante_Result">
+          <ScalarProperty Name="Dni_Est" ColumnName="Dni_Est" />
+          <ScalarProperty Name="Nom_Est" ColumnName="Nom_Est" />
+          <ScalarProperty Name="Ape_Est" ColumnName="Ape_Est" />
+          <ScalarProperty Name="Sexo_Est" ColumnName="Sexo_Est" />
+          <ScalarProperty Name="Foto_Est" ColumnName="Foto_Est" />
+          <ScalarProperty Name="Fec_Nac_Est" ColumnName="Fec_Nac_Est" />
+          <ScalarProperty Name="Dni_Apo" ColumnName="Dni_Apo" />
+          <ScalarProperty Name="Nom_Apo" ColumnName="Nom_Apo" />
+          <ScalarProperty Name="Ape_Apo" ColumnName="Ape_Apo" />
+          <ScalarProperty Name="Tel_Apo" ColumnName="Tel_Apo" />
+          <ScalarProperty Name="Id_Ubigeo" ColumnName="Id_Ubigeo" />
+          <ScalarProperty Name="Departamento" ColumnName="Departamento" />
+          <ScalarProperty Name="Provincia" ColumnName="Provincia" />
+          <ScalarProperty Name="Distrito" ColumnName="Distrito" />
+          <ScalarProperty Name="Est_Est" ColumnName="Est_Est" />
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_ListarGrado" FunctionName="SistemaDeMatriculaCAModel.Store.usp_ListarGrado">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="SistemaDeMatriculaCAModel.usp_ListarGrado_Result">
+          <ScalarProperty Name="ID_GRADO" ColumnName="ID_GRADO" />
+          <ScalarProperty Name="NOM_GRADO" ColumnName="NOM_GRADO" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_ListarHorario" FunctionName="SistemaDeMatriculaCAModel.Store.usp_ListarHorario">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="SistemaDeMatriculaCAModel.usp_ListarHorario_Result">
+          <ScalarProperty Name="ID_HORARIO" ColumnName="ID_HORARIO" />
+          <ScalarProperty Name="DIA_SEMANA" ColumnName="DIA_SEMANA" />
+          <ScalarProperty Name="HORA_INICIO" ColumnName="HORA_INICIO" />
+          <ScalarProperty Name="HORA_FIN" ColumnName="HORA_FIN" />
+          <ScalarProperty Name="COD_CURSO" ColumnName="COD_CURSO" />
+          <ScalarProperty Name="ID_SECCION" ColumnName="ID_SECCION" />
+          <ScalarProperty Name="Usu_Registro" ColumnName="Usu_Registro" />
+          <ScalarProperty Name="Fec_Registro" ColumnName="Fec_Registro" />
+          <ScalarProperty Name="Usu_Ult_Mod" ColumnName="Usu_Ult_Mod" />
+          <ScalarProperty Name="Fec_Ult_Mod" ColumnName="Fec_Ult_Mod" />
+          <ScalarProperty Name="Est_Horario" ColumnName="Est_Horario" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_ListarMatricula" FunctionName="SistemaDeMatriculaCAModel.Store.usp_ListarMatricula">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="SistemaDeMatriculaCAModel.usp_ListarMatricula_Result">
+          <ScalarProperty Name="Cod_Matricula" ColumnName="Cod_Matricula" />
+          <ScalarProperty Name="Dni_Est" ColumnName="Dni_Est" />
+          <ScalarProperty Name="Nom_Est" ColumnName="Nom_Est" />
+          <ScalarProperty Name="Ape_Est" ColumnName="Ape_Est" />
+          <ScalarProperty Name="Sección_Matriculada" ColumnName="Sección Matriculada" />
+          <ScalarProperty Name="Estado_Matri" ColumnName="Estado_Matri" />
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_ListarProfesor" FunctionName="SistemaDeMatriculaCAModel.Store.usp_ListarProfesor">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="SistemaDeMatriculaCAModel.usp_ListarProfesor_Result">
+          <ScalarProperty Name="Cod_Prof" ColumnName="Cod_Prof" />
+          <ScalarProperty Name="Nom_Prof" ColumnName="Nom_Prof" />
+          <ScalarProperty Name="Ape_Prof" ColumnName="Ape_Prof" />
+          <ScalarProperty Name="Sexo_Prof" ColumnName="Sexo_Prof" />
+          <ScalarProperty Name="Foto_Prof" ColumnName="Foto_Prof" />
+          <ScalarProperty Name="DNI_Prof" ColumnName="DNI_Prof" />
+          <ScalarProperty Name="Id_Ubigeo" ColumnName="Id_Ubigeo" />
+          <ScalarProperty Name="Departamento" ColumnName="Departamento" />
+          <ScalarProperty Name="Provincia" ColumnName="Provincia" />
+          <ScalarProperty Name="Distrito" ColumnName="Distrito" />
+          <ScalarProperty Name="Correo_Prof" ColumnName="Correo_Prof" />
+          <ScalarProperty Name="Especialidad" ColumnName="Especialidad" />
+          <ScalarProperty Name="Telf_Prof" ColumnName="Telf_Prof" />
+          <ScalarProperty Name="Estado_prof" ColumnName="Estado_prof" />
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_ListarSeccion" FunctionName="SistemaDeMatriculaCAModel.Store.usp_ListarSeccion">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="SistemaDeMatriculaCAModel.usp_ListarSeccion_Result">
+          <ScalarProperty Name="Id_Seccion" ColumnName="Id_Seccion" />
+          <ScalarProperty Name="Nom_Secc" ColumnName="Nom_Secc" />
+          <ScalarProperty Name="Id_Grado" ColumnName="Id_Grado" />
+          <ScalarProperty Name="Nom_Grado" ColumnName="Nom_Grado" />
+          <ScalarProperty Name="Cod_Prof" ColumnName="Cod_Prof" />
+          <ScalarProperty Name="Nom_Prof" ColumnName="Nom_Prof" />
+          <ScalarProperty Name="Ape_Prof" ColumnName="Ape_Prof" />
+          <ScalarProperty Name="Turno_prof" ColumnName="Turno_prof" />
+          <ScalarProperty Name="Especialidad" ColumnName="Especialidad" />
+          <ScalarProperty Name="Estado_prof" ColumnName="Estado_prof" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_ListarUbicacion" FunctionName="SistemaDeMatriculaCAModel.Store.usp_ListarUbicacion">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="SistemaDeMatriculaCAModel.usp_ListarUbicacion_Result">
+          <ScalarProperty Name="Id_Ubigeo" ColumnName="Id_Ubigeo" />
+          <ScalarProperty Name="Distrito" ColumnName="Distrito" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+  </EntityContainerMapping>
+</Mapping>

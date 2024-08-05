@@ -1,0 +1,84 @@
+C:\Users\adria\Documents\Isil\DESARROLLO DE APLIACIONES 2\ProyectoSMCA\WCF_ESCUELA\bin\Debug\WCF_ESCUELA.dll.config
+C:\Users\adria\Documents\Isil\DESARROLLO DE APLIACIONES 2\ProyectoSMCA\WCF_ESCUELA\bin\Debug\WCF_ESCUELA.dll
+C:\Users\adria\Documents\Isil\DESARROLLO DE APLIACIONES 2\ProyectoSMCA\WCF_ESCUELA\bin\Debug\WCF_ESCUELA.pdb
+C:\Users\adria\Documents\Isil\DESARROLLO DE APLIACIONES 2\ProyectoSMCA\WCF_ESCUELA\bin\Debug\EntityFramework.dll
+C:\Users\adria\Documents\Isil\DESARROLLO DE APLIACIONES 2\ProyectoSMCA\WCF_ESCUELA\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\adria\Documents\Isil\DESARROLLO DE APLIACIONES 2\ProyectoSMCA\WCF_ESCUELA\bin\Debug\EntityFramework.xml
+C:\Users\adria\Documents\Isil\DESARROLLO DE APLIACIONES 2\ProyectoSMCA\WCF_ESCUELA\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\adria\Documents\Isil\DESARROLLO DE APLIACIONES 2\ProyectoSMCA\WCF_ESCUELA\obj\Debug\WCF_ESCUELA.csproj.AssemblyReference.cache
+C:\Users\adria\Documents\Isil\DESARROLLO DE APLIACIONES 2\ProyectoSMCA\WCF_ESCUELA\obj\Debug\WCF_ESCUELA.csproj.CoreCompileInputs.cache
+C:\Users\adria\Documents\Isil\DESARROLLO DE APLIACIONES 2\ProyectoSMCA\WCF_ESCUELA\obj\Debug\WCF_ESCU.A1C515E5.Up2Date
+C:\Users\adria\Documents\Isil\DESARROLLO DE APLIACIONES 2\ProyectoSMCA\WCF_ESCUELA\obj\Debug\WCF_ESCUELA.dll
+C:\Users\adria\Documents\Isil\DESARROLLO DE APLIACIONES 2\ProyectoSMCA\WCF_ESCUELA\obj\Debug\WCF_ESCUELA.pdb
+D:\JAIRO\Aplicaciones2\ProyectoSMCA\WCF_ESCUELA\bin\Debug\WCF_ESCUELA.dll.config
+D:\JAIRO\Aplicaciones2\ProyectoSMCA\WCF_ESCUELA\bin\Debug\WCF_ESCUELA.dll
+D:\JAIRO\Aplicaciones2\ProyectoSMCA\WCF_ESCUELA\bin\Debug\WCF_ESCUELA.pdb
+D:\JAIRO\Aplicaciones2\ProyectoSMCA\WCF_ESCUELA\bin\Debug\EntityFramework.dll
+D:\JAIRO\Aplicaciones2\ProyectoSMCA\WCF_ESCUELA\bin\Debug\EntityFramework.SqlServer.dll
+D:\JAIRO\Aplicaciones2\ProyectoSMCA\WCF_ESCUELA\bin\Debug\EntityFramework.xml
+D:\JAIRO\Aplicaciones2\ProyectoSMCA\WCF_ESCUELA\bin\Debug\EntityFramework.SqlServer.xml
+D:\JAIRO\Aplicaciones2\ProyectoSMCA\WCF_ESCUELA\obj\Debug\WCF_ESCUELA.csproj.AssemblyReference.cache
+D:\JAIRO\Aplicaciones2\ProyectoSMCA\WCF_ESCUELA\obj\Debug\WCF_ESCUELA.csproj.CoreCompileInputs.cache
+D:\JAIRO\Aplicaciones2\ProyectoSMCA\WCF_ESCUELA\obj\Debug\WCF_ESCUELA.dll
+D:\JAIRO\Aplicaciones2\ProyectoSMCA\WCF_ESCUELA\obj\Debug\WCF_ESCUELA.pdb
+C:\Users\admin\Desktop\Carpeta de prueba - Miercoles\ProyectoSMCA\WCF_ESCUELA\obj\Debug\WCF_ESCUELA.csproj.AssemblyReference.cache
+C:\Users\admin\Desktop\Carpeta de prueba - Miercoles\ProyectoSMCA\WCF_ESCUELA\obj\Debug\WCF_ESCUELA.csproj.CoreCompileInputs.cache
+C:\Users\admin\Desktop\Carpeta de prueba - Miercoles\ProyectoSMCA\WCF_ESCUELA\obj\Debug\WCF_ESCUELA.dll
+C:\Users\admin\Desktop\Carpeta de prueba - Miercoles\ProyectoSMCA\WCF_ESCUELA\obj\Debug\WCF_ESCUELA.pdb
+C:\Users\admin\Desktop\Carpeta de prueba - Miercoles\ProyectoSMCA\WCF_ESCUELA\bin\Debug\WCF_ESCUELA.dll.config
+C:\Users\admin\Desktop\Carpeta de prueba - Miercoles\ProyectoSMCA\WCF_ESCUELA\bin\Debug\WCF_ESCUELA.dll
+C:\Users\admin\Desktop\Carpeta de prueba - Miercoles\ProyectoSMCA\WCF_ESCUELA\bin\Debug\WCF_ESCUELA.pdb
+C:\Users\admin\Desktop\Carpeta de prueba - Miercoles\ProyectoSMCA\WCF_ESCUELA\bin\Debug\EntityFramework.dll
+C:\Users\admin\Desktop\Carpeta de prueba - Miercoles\ProyectoSMCA\WCF_ESCUELA\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\admin\Desktop\Carpeta de prueba - Miercoles\ProyectoSMCA\WCF_ESCUELA\bin\Debug\EntityFramework.xml
+C:\Users\admin\Desktop\Carpeta de prueba - Miercoles\ProyectoSMCA\WCF_ESCUELA\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\admin\Desktop\Carpeta de prueba - Miercoles\ProyectoSMCA\WCF_ESCUELA\obj\Debug\WCF_ESCUELA.csproj.CopyComplete
+C:\Users\LINCOLN\Desktop\PROYECTO-CRUD-PARCIAL\ProyectoSMCA-Alan\WCF_ESCUELA\bin\Debug\WCF_ESCUELA.dll.config
+C:\Users\LINCOLN\Desktop\PROYECTO-CRUD-PARCIAL\ProyectoSMCA-Alan\WCF_ESCUELA\bin\Debug\WCF_ESCUELA.dll
+C:\Users\LINCOLN\Desktop\PROYECTO-CRUD-PARCIAL\ProyectoSMCA-Alan\WCF_ESCUELA\bin\Debug\WCF_ESCUELA.pdb
+C:\Users\LINCOLN\Desktop\PROYECTO-CRUD-PARCIAL\ProyectoSMCA-Alan\WCF_ESCUELA\bin\Debug\EntityFramework.dll
+C:\Users\LINCOLN\Desktop\PROYECTO-CRUD-PARCIAL\ProyectoSMCA-Alan\WCF_ESCUELA\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\LINCOLN\Desktop\PROYECTO-CRUD-PARCIAL\ProyectoSMCA-Alan\WCF_ESCUELA\bin\Debug\EntityFramework.xml
+C:\Users\LINCOLN\Desktop\PROYECTO-CRUD-PARCIAL\ProyectoSMCA-Alan\WCF_ESCUELA\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\LINCOLN\Desktop\PROYECTO-CRUD-PARCIAL\ProyectoSMCA-Alan\WCF_ESCUELA\obj\Debug\WCF_ESCUELA.csproj.AssemblyReference.cache
+C:\Users\LINCOLN\Desktop\PROYECTO-CRUD-PARCIAL\ProyectoSMCA-Alan\WCF_ESCUELA\obj\Debug\WCF_ESCUELA.csproj.CoreCompileInputs.cache
+C:\Users\LINCOLN\Desktop\PROYECTO-CRUD-PARCIAL\ProyectoSMCA-Alan\WCF_ESCUELA\obj\Debug\WCF_ESCU.A1C515E5.Up2Date
+C:\Users\LINCOLN\Desktop\PROYECTO-CRUD-PARCIAL\ProyectoSMCA-Alan\WCF_ESCUELA\obj\Debug\WCF_ESCUELA.dll
+C:\Users\LINCOLN\Desktop\PROYECTO-CRUD-PARCIAL\ProyectoSMCA-Alan\WCF_ESCUELA\obj\Debug\WCF_ESCUELA.pdb
+C:\Users\adria\Documents\Isil\DESARROLLO DE APLIACIONES 2\delfgrupo\Proyecto-DAII\ProyectoSMCA-PRE\ProyectoSMCA-Alan\WCF_ESCUELA\bin\Debug\WCF_ESCUELA.dll.config
+C:\Users\adria\Documents\Isil\DESARROLLO DE APLIACIONES 2\delfgrupo\Proyecto-DAII\ProyectoSMCA-PRE\ProyectoSMCA-Alan\WCF_ESCUELA\bin\Debug\WCF_ESCUELA.dll
+C:\Users\adria\Documents\Isil\DESARROLLO DE APLIACIONES 2\delfgrupo\Proyecto-DAII\ProyectoSMCA-PRE\ProyectoSMCA-Alan\WCF_ESCUELA\bin\Debug\WCF_ESCUELA.pdb
+C:\Users\adria\Documents\Isil\DESARROLLO DE APLIACIONES 2\delfgrupo\Proyecto-DAII\ProyectoSMCA-PRE\ProyectoSMCA-Alan\WCF_ESCUELA\bin\Debug\EntityFramework.dll
+C:\Users\adria\Documents\Isil\DESARROLLO DE APLIACIONES 2\delfgrupo\Proyecto-DAII\ProyectoSMCA-PRE\ProyectoSMCA-Alan\WCF_ESCUELA\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\adria\Documents\Isil\DESARROLLO DE APLIACIONES 2\delfgrupo\Proyecto-DAII\ProyectoSMCA-PRE\ProyectoSMCA-Alan\WCF_ESCUELA\bin\Debug\EntityFramework.xml
+C:\Users\adria\Documents\Isil\DESARROLLO DE APLIACIONES 2\delfgrupo\Proyecto-DAII\ProyectoSMCA-PRE\ProyectoSMCA-Alan\WCF_ESCUELA\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\adria\Documents\Isil\DESARROLLO DE APLIACIONES 2\delfgrupo\Proyecto-DAII\ProyectoSMCA-PRE\ProyectoSMCA-Alan\WCF_ESCUELA\obj\Debug\WCF_ESCUELA.csproj.AssemblyReference.cache
+C:\Users\adria\Documents\Isil\DESARROLLO DE APLIACIONES 2\delfgrupo\Proyecto-DAII\ProyectoSMCA-PRE\ProyectoSMCA-Alan\WCF_ESCUELA\obj\Debug\WCF_ESCUELA.csproj.CoreCompileInputs.cache
+C:\Users\adria\Documents\Isil\DESARROLLO DE APLIACIONES 2\delfgrupo\Proyecto-DAII\ProyectoSMCA-PRE\ProyectoSMCA-Alan\WCF_ESCUELA\obj\Debug\WCF_ESCU.A1C515E5.Up2Date
+C:\Users\adria\Documents\Isil\DESARROLLO DE APLIACIONES 2\delfgrupo\Proyecto-DAII\ProyectoSMCA-PRE\ProyectoSMCA-Alan\WCF_ESCUELA\obj\Debug\WCF_ESCUELA.dll
+C:\Users\adria\Documents\Isil\DESARROLLO DE APLIACIONES 2\delfgrupo\Proyecto-DAII\ProyectoSMCA-PRE\ProyectoSMCA-Alan\WCF_ESCUELA\obj\Debug\WCF_ESCUELA.pdb
+C:\Users\adria\Documents\Isil\DESARROLLO DE APLIACIONES 2\delfgrupo\Proyecto-DAII\ProyectoSMCA-PRE\ProyectoSMCA\WCF_ESCUELA\bin\Debug\WCF_ESCUELA.dll.config
+C:\Users\adria\Documents\Isil\DESARROLLO DE APLIACIONES 2\delfgrupo\Proyecto-DAII\ProyectoSMCA-PRE\ProyectoSMCA\WCF_ESCUELA\bin\Debug\WCF_ESCUELA.dll
+C:\Users\adria\Documents\Isil\DESARROLLO DE APLIACIONES 2\delfgrupo\Proyecto-DAII\ProyectoSMCA-PRE\ProyectoSMCA\WCF_ESCUELA\bin\Debug\WCF_ESCUELA.pdb
+C:\Users\adria\Documents\Isil\DESARROLLO DE APLIACIONES 2\delfgrupo\Proyecto-DAII\ProyectoSMCA-PRE\ProyectoSMCA\WCF_ESCUELA\bin\Debug\EntityFramework.dll
+C:\Users\adria\Documents\Isil\DESARROLLO DE APLIACIONES 2\delfgrupo\Proyecto-DAII\ProyectoSMCA-PRE\ProyectoSMCA\WCF_ESCUELA\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\adria\Documents\Isil\DESARROLLO DE APLIACIONES 2\delfgrupo\Proyecto-DAII\ProyectoSMCA-PRE\ProyectoSMCA\WCF_ESCUELA\bin\Debug\EntityFramework.xml
+C:\Users\adria\Documents\Isil\DESARROLLO DE APLIACIONES 2\delfgrupo\Proyecto-DAII\ProyectoSMCA-PRE\ProyectoSMCA\WCF_ESCUELA\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\adria\Documents\Isil\DESARROLLO DE APLIACIONES 2\delfgrupo\Proyecto-DAII\ProyectoSMCA-PRE\ProyectoSMCA\WCF_ESCUELA\obj\Debug\WCF_ESCUELA.csproj.AssemblyReference.cache
+C:\Users\adria\Documents\Isil\DESARROLLO DE APLIACIONES 2\delfgrupo\Proyecto-DAII\ProyectoSMCA-PRE\ProyectoSMCA\WCF_ESCUELA\obj\Debug\WCF_ESCUELA.csproj.CoreCompileInputs.cache
+C:\Users\adria\Documents\Isil\DESARROLLO DE APLIACIONES 2\delfgrupo\Proyecto-DAII\ProyectoSMCA-PRE\ProyectoSMCA\WCF_ESCUELA\obj\Debug\WCF_ESCU.A1C515E5.Up2Date
+C:\Users\adria\Documents\Isil\DESARROLLO DE APLIACIONES 2\delfgrupo\Proyecto-DAII\ProyectoSMCA-PRE\ProyectoSMCA\WCF_ESCUELA\obj\Debug\WCF_ESCUELA.dll
+C:\Users\adria\Documents\Isil\DESARROLLO DE APLIACIONES 2\delfgrupo\Proyecto-DAII\ProyectoSMCA-PRE\ProyectoSMCA\WCF_ESCUELA\obj\Debug\WCF_ESCUELA.pdb
+D:\JAIRO\Aplicaciones2\ProyectoSMCA\WCF_ESCUELA\obj\Debug\WCF_ESCU.A1C515E5.Up2Date
+C:\Users\Usuario\Documents\adrian\ProyectoSMCA\ProyectoSMCA\WCF_ESCUELA\bin\Debug\WCF_ESCUELA.dll.config
+C:\Users\Usuario\Documents\adrian\ProyectoSMCA\ProyectoSMCA\WCF_ESCUELA\bin\Debug\WCF_ESCUELA.dll
+C:\Users\Usuario\Documents\adrian\ProyectoSMCA\ProyectoSMCA\WCF_ESCUELA\bin\Debug\WCF_ESCUELA.pdb
+C:\Users\Usuario\Documents\adrian\ProyectoSMCA\ProyectoSMCA\WCF_ESCUELA\bin\Debug\EntityFramework.dll
+C:\Users\Usuario\Documents\adrian\ProyectoSMCA\ProyectoSMCA\WCF_ESCUELA\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Usuario\Documents\adrian\ProyectoSMCA\ProyectoSMCA\WCF_ESCUELA\bin\Debug\EntityFramework.xml
+C:\Users\Usuario\Documents\adrian\ProyectoSMCA\ProyectoSMCA\WCF_ESCUELA\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Usuario\Documents\adrian\ProyectoSMCA\ProyectoSMCA\WCF_ESCUELA\obj\Debug\WCF_ESCUELA.csproj.AssemblyReference.cache
+C:\Users\Usuario\Documents\adrian\ProyectoSMCA\ProyectoSMCA\WCF_ESCUELA\obj\Debug\WCF_ESCUELA.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Documents\adrian\ProyectoSMCA\ProyectoSMCA\WCF_ESCUELA\obj\Debug\WCF_ESCU.A1C515E5.Up2Date
+C:\Users\Usuario\Documents\adrian\ProyectoSMCA\ProyectoSMCA\WCF_ESCUELA\obj\Debug\WCF_ESCUELA.dll
+C:\Users\Usuario\Documents\adrian\ProyectoSMCA\ProyectoSMCA\WCF_ESCUELA\obj\Debug\WCF_ESCUELA.pdb
