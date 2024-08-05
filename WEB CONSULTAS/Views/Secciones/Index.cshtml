@@ -1,0 +1,70 @@
+﻿@model PagedList.IPagedList<WEB_CONSULTAS.ProxyConsultas.SeccionDC>
+@using PagedList.Mvc;
+
+@{
+    ViewBag.Title = "Profesores";
+}
+
+<main class="d-flex">
+    <nav class="d-flex flex-column flex-shrink-0 p-3 bg-light rounded-end">
+        <h2 class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">Consultas</h2>        <ul class="nav nav-pills flex-column mb-auto">
+            <li class="nav-item d-flex align-items-center link-hover rounded p-1"><i class="fa-regular fa-id-card"></i>@Html.ActionLink("Matriculas", "Index", "Matriculas", new { area = "" }, new { @class = "nav-link" })</li>
+            <li class="nav-item d-flex align-items-center link-hover rounded p-1"><i class="fa-solid fa-graduation-cap"></i>@Html.ActionLink("Estudiantes", "Index", "Estudiantes", new { area = "" }, new { @class = "nav-link" })</li>
+            <li class="nav-item d-flex align-items-center link-hover rounded p-1"><i class="fa-solid fa-chalkboard-user"></i>@Html.ActionLink("Profesores", "Index", "Profesores", new { area = "" }, new { @class = "nav-link" })</li>
+            <li class="nav-item d-flex align-items-center link-hover rounded p-1"><i class="fa-solid fa-book"></i>@Html.ActionLink("Cursos", "Index", "Cursos", new { area = "" }, new { @class = "nav-link" })</li>
+            <li class="nav-item d-flex align-items-center link-hover rounded p-1"><i class="fa-solid fa-table-list"></i>@Html.ActionLink("Secciones", "Index", "Secciones", new { area = "" }, new { @class = "nav-link" })</li>
+        </ul>
+
+    </nav>
+    <div class="container-fluid">
+        <h1>Lista Secciones</h1>
+        @using (Html.BeginForm("Buscar", "Secciones", FormMethod.Post))
+        {
+            <div class="row g-3">
+                <div class="col-auto p-2">
+                    <label class="form-label">Código de Profesor</label>
+                </div>
+                <div class="col-auto">
+                    <input name="codigo" type="text" placeholder="P101" required />
+                </div>
+                <div class="col-auto">
+                    <input type="submit" value="Buscar" class="btn btn-primary mb-3" />
+                </div>
+            </div>
+        }
+
+        @if (Model != null && Model.Count > 0)
+        {
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th scope="col">Codigo</th>
+                        <th scope="col">Nombre</th>
+                        <th scope="col">Cod. grado</th>
+                        <th scope="col">Cod. Profesor</th>
+                        <th scope="col">Turno Profesor</th>
+                        <th scope="col">Estado</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var seccion in Model)
+                    {
+                        <tr>
+                            <td>@seccion.Cod_Seccion</td>
+                            <td>@seccion.Nom_Seccion</td>
+                            <td>@seccion.Cod_Grado</td>
+                            <td>@seccion.Cod_Profesor</td>
+                            <td>@seccion.Turno_Profesor</td>
+                            <td>@seccion.Estado</td>
+
+                        </tr>
+                    }
+                </tbody>
+            </table>
+
+            <div class="custom-pagination">
+                @Html.PagedListPager(Model, page => Url.Action("Index", new { page }))
+            </div>
+        }
+    </div>
+</main>

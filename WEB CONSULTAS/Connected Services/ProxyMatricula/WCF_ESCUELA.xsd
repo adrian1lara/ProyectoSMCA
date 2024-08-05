@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/WCF_ESCUELA" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/WCF_ESCUELA" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="MatriculaDC">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Ape_Est" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ApellNom_ven" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="COD_MATRICULA" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DNI_EST" type="xs:int" />
+      <xs:element minOccurs="0" name="ESTADO_MATRI" type="xs:short" />
+      <xs:element minOccurs="0" name="Estado" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FEC_MATRI" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Fec_Registro" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Fec_Ult_Mod" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="ID_SECCION" type="xs:short" />
+      <xs:element minOccurs="0" name="Nom_Est" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Nom_Secc" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Usu_Registro" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Usu_Ult_Mod" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="MatriculaDC" nillable="true" type="tns:MatriculaDC" />
+  <xs:complexType name="ArrayOfMatriculaDC">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="MatriculaDC" nillable="true" type="tns:MatriculaDC" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfMatriculaDC" nillable="true" type="tns:ArrayOfMatriculaDC" />
+</xs:schema>

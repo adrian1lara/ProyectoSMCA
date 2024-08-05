@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import namespace="http://schemas.datacontract.org/2004/07/WCF_ESCUELA" />
+  <xs:element name="ConsultarSeccionesPorProfesorId">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="strCodigo" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConsultarSeccionesPorProfesorIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/WCF_ESCUELA" minOccurs="0" name="ConsultarSeccionesPorProfesorIdResult" nillable="true" type="q1:ArrayOfSeccionDC" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ContarAlumnosPorSeccionId">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="id" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ContarAlumnosPorSeccionIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ContarAlumnosPorSeccionIdResult" type="xs:short" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConsultarMatriculaPorAlumnoDNI">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="dni" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConsultarMatriculaPorAlumnoDNIResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/WCF_ESCUELA" minOccurs="0" name="ConsultarMatriculaPorAlumnoDNIResult" nillable="true" type="q2:MatriculaDC" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConsultarMatriculadosPorFechas">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Fec_ini" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="Fec_Fin" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConsultarMatriculadosPorFechasResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/WCF_ESCUELA" minOccurs="0" name="ConsultarMatriculadosPorFechasResult" nillable="true" type="q3:ArrayOfMatriculaDC" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConsultarProfesoresPorEspecialidad">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Especialidad" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConsultarProfesoresPorEspecialidadResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/WCF_ESCUELA" minOccurs="0" name="ConsultarProfesoresPorEspecialidadResult" nillable="true" type="q4:ArrayOfProfesorDC" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConsultarEstudiantesPorGradoId">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="id" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConsultarEstudiantesPorGradoIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/WCF_ESCUELA" minOccurs="0" name="ConsultarEstudiantesPorGradoIdResult" nillable="true" type="q5:ArrayOfEstudianteDC" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

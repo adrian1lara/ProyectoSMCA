@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tns="http://tempuri.org/" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" name="ServicioConsultas" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import namespace="http://tempuri.org/" />
+      <xsd:import namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import namespace="http://schemas.datacontract.org/2004/07/WCF_ESCUELA" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IServicioConsultas_ConsultarSeccionesPorProfesorId_InputMessage">
+    <wsdl:part name="parameters" element="tns:ConsultarSeccionesPorProfesorId" />
+  </wsdl:message>
+  <wsdl:message name="IServicioConsultas_ConsultarSeccionesPorProfesorId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ConsultarSeccionesPorProfesorIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioConsultas_ContarAlumnosPorSeccionId_InputMessage">
+    <wsdl:part name="parameters" element="tns:ContarAlumnosPorSeccionId" />
+  </wsdl:message>
+  <wsdl:message name="IServicioConsultas_ContarAlumnosPorSeccionId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ContarAlumnosPorSeccionIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioConsultas_ConsultarMatriculaPorAlumnoDNI_InputMessage">
+    <wsdl:part name="parameters" element="tns:ConsultarMatriculaPorAlumnoDNI" />
+  </wsdl:message>
+  <wsdl:message name="IServicioConsultas_ConsultarMatriculaPorAlumnoDNI_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ConsultarMatriculaPorAlumnoDNIResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioConsultas_ConsultarMatriculadosPorFechas_InputMessage">
+    <wsdl:part name="parameters" element="tns:ConsultarMatriculadosPorFechas" />
+  </wsdl:message>
+  <wsdl:message name="IServicioConsultas_ConsultarMatriculadosPorFechas_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ConsultarMatriculadosPorFechasResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioConsultas_ConsultarProfesoresPorEspecialidad_InputMessage">
+    <wsdl:part name="parameters" element="tns:ConsultarProfesoresPorEspecialidad" />
+  </wsdl:message>
+  <wsdl:message name="IServicioConsultas_ConsultarProfesoresPorEspecialidad_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ConsultarProfesoresPorEspecialidadResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioConsultas_ConsultarEstudiantesPorGradoId_InputMessage">
+    <wsdl:part name="parameters" element="tns:ConsultarEstudiantesPorGradoId" />
+  </wsdl:message>
+  <wsdl:message name="IServicioConsultas_ConsultarEstudiantesPorGradoId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ConsultarEstudiantesPorGradoIdResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IServicioConsultas">
+    <wsdl:operation name="ConsultarSeccionesPorProfesorId">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicioConsultas/ConsultarSeccionesPorProfesorId" message="tns:IServicioConsultas_ConsultarSeccionesPorProfesorId_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicioConsultas/ConsultarSeccionesPorProfesorIdResponse" message="tns:IServicioConsultas_ConsultarSeccionesPorProfesorId_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ContarAlumnosPorSeccionId">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicioConsultas/ContarAlumnosPorSeccionId" message="tns:IServicioConsultas_ContarAlumnosPorSeccionId_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicioConsultas/ContarAlumnosPorSeccionIdResponse" message="tns:IServicioConsultas_ContarAlumnosPorSeccionId_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarMatriculaPorAlumnoDNI">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicioConsultas/ConsultarMatriculaPorAlumnoDNI" message="tns:IServicioConsultas_ConsultarMatriculaPorAlumnoDNI_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicioConsultas/ConsultarMatriculaPorAlumnoDNIResponse" message="tns:IServicioConsultas_ConsultarMatriculaPorAlumnoDNI_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarMatriculadosPorFechas">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicioConsultas/ConsultarMatriculadosPorFechas" message="tns:IServicioConsultas_ConsultarMatriculadosPorFechas_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicioConsultas/ConsultarMatriculadosPorFechasResponse" message="tns:IServicioConsultas_ConsultarMatriculadosPorFechas_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarProfesoresPorEspecialidad">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicioConsultas/ConsultarProfesoresPorEspecialidad" message="tns:IServicioConsultas_ConsultarProfesoresPorEspecialidad_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicioConsultas/ConsultarProfesoresPorEspecialidadResponse" message="tns:IServicioConsultas_ConsultarProfesoresPorEspecialidad_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarEstudiantesPorGradoId">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicioConsultas/ConsultarEstudiantesPorGradoId" message="tns:IServicioConsultas_ConsultarEstudiantesPorGradoId_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicioConsultas/ConsultarEstudiantesPorGradoIdResponse" message="tns:IServicioConsultas_ConsultarEstudiantesPorGradoId_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IServicioConsultas" type="tns:IServicioConsultas">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ConsultarSeccionesPorProfesorId">
+      <soap:operation soapAction="http://tempuri.org/IServicioConsultas/ConsultarSeccionesPorProfesorId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ContarAlumnosPorSeccionId">
+      <soap:operation soapAction="http://tempuri.org/IServicioConsultas/ContarAlumnosPorSeccionId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarMatriculaPorAlumnoDNI">
+      <soap:operation soapAction="http://tempuri.org/IServicioConsultas/ConsultarMatriculaPorAlumnoDNI" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarMatriculadosPorFechas">
+      <soap:operation soapAction="http://tempuri.org/IServicioConsultas/ConsultarMatriculadosPorFechas" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarProfesoresPorEspecialidad">
+      <soap:operation soapAction="http://tempuri.org/IServicioConsultas/ConsultarProfesoresPorEspecialidad" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarEstudiantesPorGradoId">
+      <soap:operation soapAction="http://tempuri.org/IServicioConsultas/ConsultarEstudiantesPorGradoId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ServicioConsultas">
+    <wsdl:port name="BasicHttpBinding_IServicioConsultas" binding="tns:BasicHttpBinding_IServicioConsultas">
+      <soap:address location="http://localhost:8733/Design_Time_Addresses/WCF_ESCUELA/ServicioConsultas/" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

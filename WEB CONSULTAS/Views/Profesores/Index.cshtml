@@ -1,0 +1,75 @@
+﻿@model PagedList.IPagedList
+@using PagedList.Mvc;
+
+@{
+    ViewBag.Title = "Profesores";
+}
+
+<main class="d-flex">
+    <nav class="d-flex flex-column flex-shrink-0 p-3 bg-light rounded-end">
+        <h2 class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">Consultas</h2>        <ul class="nav nav-pills flex-column mb-auto">
+            <li class="nav-item d-flex align-items-center link-hover rounded p-1"><i class="fa-regular fa-id-card"></i>@Html.ActionLink("Matriculas", "Index", "Matriculas", new { area = "" }, new { @class = "nav-link" })</li>
+            <li class="nav-item d-flex align-items-center link-hover rounded p-1"><i class="fa-solid fa-graduation-cap"></i>@Html.ActionLink("Estudiantes", "Index", "Estudiantes", new { area = "" }, new { @class = "nav-link" })</li>
+            <li class="nav-item d-flex align-items-center link-hover rounded p-1"><i class="fa-solid fa-chalkboard-user"></i>@Html.ActionLink("Profesores", "Index", "Profesores", new { area = "" }, new { @class = "nav-link" })</li>
+            <li class="nav-item d-flex align-items-center link-hover rounded p-1"><i class="fa-solid fa-book"></i>@Html.ActionLink("Cursos", "Index", "Cursos", new { area = "" }, new { @class = "nav-link" })</li>
+            <li class="nav-item d-flex align-items-center link-hover rounded p-1"><i class="fa-solid fa-table-list"></i>@Html.ActionLink("Secciones", "Index", "Secciones", new { area = "" }, new { @class = "nav-link" })</li>
+        </ul>
+
+    </nav>
+    <div class="container-fluid">
+        <h1>Lista de Profesores</h1>
+        @using (Html.BeginForm("Buscar", "Profesores"))
+        {
+            <div class="row g-3">
+                <div class="col-auto p-2">
+                    <label class="form-label">Especialidad</label>
+                </div>
+                <div class="col-auto">
+                    @Html.DropDownList("especialidad",
+                   (IEnumerable<SelectListItem>)ViewBag.ListarEspecialidad, new { @class = "form-select" })
+                </div>
+
+                <div class="col-auto">
+                    <input type="submit" name="Buscar" class="btn btn-primary mb-3" />
+                </div>
+            </div>
+        }
+
+
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th scope="col">Codigo</th>
+                    <th scope="col">Apellido y Nombre</th>
+                    <th scope="col">Sexo</th>
+                    <th scope="col">Dni</th>
+                    <th scope="col">correo</th>
+                    <th scope="col">telfono</th>
+                    <th scope="col">Especialidad</th>
+                    <th scope="col">Estado</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var profesor in ViewBag.PagedList)
+                {
+                    <tr>
+                        <td>@profesor.COD_PROF</td>
+                        <td>@profesor.ApeNom_Prof</td>
+                        <td>@profesor.SEXO_PROF</td>
+                        <td>@profesor.DNI_PROF</td>
+                        <td>@profesor.CORREO_PROF</td>
+                        <td>@profesor.TELF_PROF</td>
+                        <td>@profesor.ESPECIALIDAD</td>
+                        <td>@profesor.Estado</td>
+
+                    </tr>
+                }
+            </tbody>
+        </table>
+
+        <div class="custom-pagination">
+            @Html.PagedListPager(Model, page => Url.Action("Index", new { page }))
+        </div>
+
+    </div>
+</main>

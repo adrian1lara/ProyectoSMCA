@@ -1,0 +1,87 @@
+﻿@model PagedList.IPagedList<WEB_CONSULTAS.ProxyMatricula.MatriculaDC>
+@using PagedList.Mvc;
+
+@{
+    ViewBag.Title = "Matriculas";
+}
+
+<main class="d-flex">
+    <nav class="d-flex flex-column flex-shrink-0 p-3 bg-light rounded-end">
+        <h2 class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">Consultas</h2>        <ul class="nav nav-pills flex-column mb-auto">
+            <li class="nav-item d-flex align-items-center link-hover rounded p-1"><i class="fa-regular fa-id-card"></i>@Html.ActionLink("Matriculas", "Index", "Matriculas", new { area = "" }, new { @class = "nav-link" })</li>
+            <li class="nav-item d-flex align-items-center link-hover rounded p-1"><i class="fa-solid fa-graduation-cap"></i>@Html.ActionLink("Estudiantes", "Index", "Estudiantes", new { area = "" }, new { @class = "nav-link" })</li>
+            <li class="nav-item d-flex align-items-center link-hover rounded p-1"><i class="fa-solid fa-chalkboard-user"></i>@Html.ActionLink("Profesores", "Index", "Profesores", new { area = "" }, new { @class = "nav-link" })</li>
+            <li class="nav-item d-flex align-items-center link-hover rounded p-1"><i class="fa-solid fa-book"></i>@Html.ActionLink("Cursos", "Index", "Cursos", new { area = "" }, new { @class = "nav-link" })</li>
+            <li class="nav-item d-flex align-items-center link-hover rounded p-1"><i class="fa-solid fa-table-list"></i>@Html.ActionLink("Secciones", "Index", "Secciones", new { area = "" }, new { @class = "nav-link" })</li>
+        </ul>
+
+    </nav>
+    <div class="container-fluid">
+        <h2>Listar Matriculas</h2>
+        @using (Html.BeginForm("Buscar", "Matriculas", FormMethod.Post))
+        {
+            <div class="row g-3">
+                <div class="col-auto p-2">
+                    <label class="form-label">DNI</label>
+                </div>
+                <div class="col-auto">
+                    <input type="number" name="dni" required class="form-control"/>
+                </div>
+
+                <div class="col-auto">
+                    <input type="submit" name="Buscar" class="btn btn-primary mb-3" />
+                </div>
+            </div>
+        }
+
+        @using (Html.BeginForm("BuscarFechas", "Matriculas", FormMethod.Post))
+        {
+            <div class="row g-3">
+                <div class="col-auto p-2">
+                    <label class="form-label">Fechas</label>
+                </div>
+                <div class="col-auto">
+                    <input type="date" name="startDate" required class="form-control"
+                           value="@((ViewBag.DefaultStartDate ?? DateTime.Now.AddYears(-2)).ToString("yyyy-MM-dd"))" />
+                </div>
+
+                <div class="col-auto">
+                    <input type="date" name="endDate" required class="form-control"
+                           value="@((ViewBag.DefaultEndDate ?? DateTime.Now).ToString("yyyy-MM-dd"))" />
+                </div>
+                <div class="col-auto">
+                    <input type="submit" name="BuscarFechas" class="btn btn-primary mb-3" />
+                </div>
+            </div>
+        }
+
+        @if (Model != null && Model.Count > 0)
+        {
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th scope="col">Codigo</th>
+                        <th scope="col">DNI. Estudiante</th>
+                        <th scope="col">Seccion</th>
+                        <th scope="col">Estado</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var matricula in Model)
+                    {
+                        <tr>
+                            <td>@matricula.COD_MATRICULA</td>
+                            <td>@matricula.DNI_EST</td>
+                            <td>@matricula.Nom_Secc</td>
+                            <td>@matricula.Estado</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+
+            <div class="custom-pagination">
+                @Html.PagedListPager(Model, page => Url.Action("Index", new { page }))
+            </div>
+        }
+    </div>
+</main>
